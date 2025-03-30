@@ -14,6 +14,8 @@ from datetime import datetime
 import logging
 import os
 import sys
+import tempfile
+import shutil
 
 # Set up logging
 logging.basicConfig(
@@ -27,20 +29,22 @@ logging.basicConfig(
 logger = logging.getLogger()
 
 def setup_driver():
-    """Set up and return the Chrome WebDriver with appropriate options"""
+    """Set up and return the Chrome WebDriver with appropriate options for GitHub Actions"""
     # Set up Chrome options
     chrome_options = Options()
+    
+    # Essential options for GitHub Actions
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--headless")  # Always run headless in GitHub Actions
     
-    # Fix for the SessionNotCreatedException
-    unique_dir = f"/tmp/chrome-data-{random.randint(0, 1000000)}"
-    chrome_options.add_argument(f"--user-data-dir={unique_dir}")
-    chrome_options.add_argument("--remote-debugging-port=9222")
+    # Create a unique temporary directory that will be automatically cleaned up
+    temp_dir = tempfile.mkdtemp(prefix="chrome-data-")
+    logger.info(f"Created temporary directory for Chrome: {temp_dir}")
     
-    # Comment this line if you want to see the browser in action
-    # chrome_options.add_argument("--headless")
-
+    # Use the temporary directory for Chrome data
+    chrome_options.add_argument(f"--user-data-dir={temp_dir}")
+    
     # Add user agent to appear more like a regular browser
     chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
     
@@ -51,13 +55,21 @@ def setup_driver():
     chrome_options.add_argument("--window-size=1920,1080")
     chrome_options.add_argument("--disable-notifications")
     
+    # Add these options for running in CI environment
+    chrome_options.add_argument("--disable-setuid-sandbox")
+    chrome_options.add_argument("--disable-software-rasterizer")
+    
     try:
-        # Initialize Chrome driver directly
+        # Initialize Chrome driver
         driver = webdriver.Chrome(options=chrome_options)
-        driver.maximize_window()
-        return driver
+        return driver, temp_dir
     except Exception as e:
         logger.error(f"Failed to initialize WebDriver: {str(e)}")
+        # Clean up the directory we created
+        try:
+            shutil.rmtree(temp_dir, ignore_errors=True)
+        except Exception:
+            pass
         sys.exit(1)
 
 def click_read_all_button(driver, button, max_retries=3):
@@ -117,11 +129,16 @@ def scrape_coinmarketcap():
     read_all_selector = "span.read-all"
     
     driver = None
+    temp_dir = None
     posts_data = []
+    
+    # Set a maximum runtime for GitHub Actions (3 hours)
+    max_runtime = 3 * 60 * 60  # 3 hours in seconds
+    start_time = time.time()
     
     try:
         # Initialize WebDriver
-        driver = setup_driver()
+        driver, temp_dir = setup_driver()
         
         # Open the CoinMarketCap community page for AAVE
         url = "https://coinmarketcap.com/community/search/latest/aave/"
@@ -157,6 +174,12 @@ def scrape_coinmarketcap():
         logger.info("Starting data collection...")
     
         while True:
+            # Check if we've exceeded the maximum runtime
+            current_runtime = time.time() - start_time
+            if current_runtime > max_runtime:
+                logger.info(f"Reached maximum runtime of {max_runtime/3600:.1f} hours, stopping.")
+                break
+                
             try:
                 # Wait for new posts to load after scrolling with increased timeout
                 WebDriverWait(driver, 20).until(
@@ -349,6 +372,14 @@ def scrape_coinmarketcap():
         if driver:
             driver.quit()
             logger.info("Browser closed")
+        
+        # Clean up the temporary directory
+        if temp_dir and os.path.exists(temp_dir):
+            try:
+                shutil.rmtree(temp_dir, ignore_errors=True)
+                logger.info(f"Cleaned up temporary directory: {temp_dir}")
+            except Exception as e:
+                logger.warning(f"Failed to clean up temporary directory: {str(e)}")
 
 if __name__ == "__main__":
     try:
