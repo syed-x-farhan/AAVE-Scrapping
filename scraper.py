@@ -14,7 +14,6 @@ from datetime import datetime
 import logging
 import os
 import sys
-from webdriver_manager.chrome import ChromeDriverManager
 
 # Set up logging
 logging.basicConfig(
@@ -53,21 +52,13 @@ def setup_driver():
     chrome_options.add_argument("--disable-notifications")
     
     try:
-        # Use webdriver_manager to handle driver installation
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=chrome_options)
+        # Initialize Chrome driver directly
+        driver = webdriver.Chrome(options=chrome_options)
         driver.maximize_window()
         return driver
     except Exception as e:
         logger.error(f"Failed to initialize WebDriver: {str(e)}")
-        # Fallback to direct initialization if webdriver_manager fails
-        try:
-            driver = webdriver.Chrome(options=chrome_options)
-            driver.maximize_window()
-            return driver
-        except Exception as e2:
-            logger.error(f"Fallback initialization also failed: {str(e2)}")
-            sys.exit(1)
+        sys.exit(1)
 
 def click_read_all_button(driver, button, max_retries=3):
     """Attempt to click a 'Read all' button with retries"""
