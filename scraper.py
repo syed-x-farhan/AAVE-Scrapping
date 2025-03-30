@@ -16,6 +16,7 @@ import os
 import sys
 import tempfile
 import shutil
+import json
 
 # Set up logging
 logging.basicConfig(
@@ -175,6 +176,72 @@ def save_data(posts_data, filename, intermediate=False):
     df.to_csv(outfile, index=False)
     logger.info(f"Saved {len(posts_data)} posts to {outfile}")
 
+def save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count):
+    """Save checkpoint data to resume scraping if interrupted"""
+    checkpoint_data = {
+        "collected_post_ids": list(collected_post_ids),
+        "oldest_timestamp_ms": oldest_timestamp_ms,
+        "scroll_count": scroll_count,
+        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    
+    os.makedirs("checkpoints", exist_ok=True)
+    
+    with open("checkpoints/scraper_checkpoint.json", "w") as f:
+        json.dump(checkpoint_data, f)
+    
+    logger.info(f"Saved checkpoint with {len(collected_post_ids)} post IDs")
+
+def load_checkpoint():
+    """Load checkpoint data to resume scraping"""
+    try:
+        if os.path.exists("checkpoints/scraper_checkpoint.json"):
+            with open("checkpoints/scraper_checkpoint.json", "r") as f:
+                checkpoint_data = json.load(f)
+            
+            collected_post_ids = set(checkpoint_data.get("collected_post_ids", []))
+            oldest_timestamp_ms = checkpoint_data.get("oldest_timestamp_ms", float('inf'))
+            scroll_count = checkpoint_data.get("scroll_count", 0)
+            
+            logger.info(f"Loaded checkpoint with {len(collected_post_ids)} post IDs, oldest timestamp: {datetime.fromtimestamp(oldest_timestamp_ms/1000).strftime('%Y-%m-%d') if oldest_timestamp_ms != float('inf') else 'None'}")
+            
+            return collected_post_ids, oldest_timestamp_ms, scroll_count
+        else:
+            logger.info("No checkpoint file found, starting fresh")
+            return set(), float('inf'), 0
+    except Exception as e:
+        logger.warning(f"Error loading checkpoint: {str(e)}, starting fresh")
+        return set(), float('inf'), 0
+
+def load_existing_data():
+    """Load existing data to resume scraping"""
+    posts_data = []
+    collected_post_ids = set()
+    
+    try:
+        if os.path.exists("output/aave_posts_complete.csv"):
+            df = pd.read_csv("output/aave_posts_complete.csv")
+            posts_data = df.to_dict('records')
+            collected_post_ids = set(df['post_id'].astype(str).tolist())
+            logger.info(f"Loaded {len(posts_data)} existing posts from output file")
+            return posts_data, collected_post_ids
+        else:
+            # Check for intermediate files
+            intermediate_files = [f for f in os.listdir("output") if f.startswith("aave_posts_intermediate_") and f.endswith(".csv")]
+            if intermediate_files:
+                # Get the most recent one (with highest number of posts)
+                most_recent = sorted(intermediate_files, key=lambda x: int(x.split("_")[-1].split(".")[0]), reverse=True)[0]
+                df = pd.read_csv(os.path.join("output", most_recent))
+                posts_data = df.to_dict('records')
+                collected_post_ids = set(df['post_id'].astype(str).tolist())
+                logger.info(f"Loaded {len(posts_data)} existing posts from intermediate file {most_recent}")
+                return posts_data, collected_post_ids
+    except Exception as e:
+        logger.warning(f"Error loading existing data: {str(e)}")
+    
+    logger.info("No existing data found, starting fresh")
+    return [], set()
+
 def process_post(driver, wrapper, collected_post_ids, read_all_selector):
     """Process a single post wrapper element with stale-safe operations"""
     try:
@@ -263,19 +330,34 @@ def process_post(driver, wrapper, collected_post_ids, read_all_selector):
         
 def scrape_coinmarketcap():
     """Main function to scrape CoinMarketCap community posts"""
-    # Define target date (October 4, 2020) as timestamp
-    target_date = datetime(2020, 10, 4).timestamp() * 1000  # Convert to milliseconds
+    # Define target date (January 1, 2022) as timestamp
+    target_date = datetime(2022, 1, 1).timestamp() * 1000  # Convert to milliseconds
     
     # Read All button CSS selector
     read_all_selector = "span.read-all"
     
     driver = None
     temp_dir = None
-    posts_data = []
+    
+    # Try to load existing data and checkpoint
+    posts_data, collected_ids_from_data = load_existing_data()
+    collected_post_ids_checkpoint, oldest_timestamp_checkpoint, scroll_count_checkpoint = load_checkpoint()
+    
+    # Merge post IDs from both sources
+    collected_post_ids = collected_ids_from_data.union(collected_post_ids_checkpoint)
+    oldest_timestamp_ms = oldest_timestamp_checkpoint
+    scroll_count = scroll_count_checkpoint
     
     # Set a maximum runtime for GitHub Actions (3 hours)
     max_runtime = 3 * 60 * 60  # 3 hours in seconds
     start_time = time.time()
+    
+    # Set checkpoint saving interval (save every 5 minutes)
+    checkpoint_interval = 5 * 60  # 5 minutes in seconds
+    last_checkpoint_time = start_time
+    
+    # Track if we were interrupted in the previous run
+    interrupted = len(collected_post_ids) > 0
     
     try:
         # Initialize WebDriver
@@ -314,13 +396,23 @@ def scrape_coinmarketcap():
                 driver.quit()
             return
     
-        collected_post_ids = set()
-        oldest_timestamp_ms = float('inf')
-        scroll_count = 0
         no_new_posts_count = 0  # Track consecutive scrolls with no new posts
         stale_count = 0  # Count stale elements
         
-        logger.info("Starting data collection...")
+        logger.info(f"Starting data collection with {len(collected_post_ids)} already collected posts...")
+        if interrupted:
+            logger.info(f"Resuming from previous run. Oldest timestamp: {datetime.fromtimestamp(oldest_timestamp_ms/1000).strftime('%Y-%m-%d') if oldest_timestamp_ms != float('inf') else 'None'}")
+        
+        # Scroll down to load more content if we're resuming
+        if interrupted:
+            # Scroll down multiple times to get closer to where we left off
+            initial_scrolls = min(50, scroll_count // 2)  # Do roughly half the scrolls we did before
+            logger.info(f"Doing {initial_scrolls} initial scrolls to get back to previous position...")
+            for i in range(initial_scrolls):
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(0.5)
+                if i % 10 == 0:
+                    logger.info(f"Initial scroll progress: {i+1}/{initial_scrolls}")
     
         while True:
             # Check if we've exceeded the maximum runtime
@@ -328,6 +420,12 @@ def scrape_coinmarketcap():
             if current_runtime > max_runtime:
                 logger.info(f"Reached maximum runtime of {max_runtime/3600:.1f} hours, stopping.")
                 break
+                
+            # Save checkpoint periodically
+            current_time = time.time()
+            if current_time - last_checkpoint_time > checkpoint_interval:
+                save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count)
+                last_checkpoint_time = current_time
                 
             try:
                 # Wait for posts to load after scrolling
@@ -377,7 +475,7 @@ def scrape_coinmarketcap():
                             oldest_timestamp_ms = timestamp_ms
                             
                         if timestamp_ms and timestamp_ms < target_date:
-                            logger.info(f"Reached target date (October 4, 2020), stopping. Post timestamp: {datetime.fromtimestamp(timestamp_ms/1000).strftime('%Y-%m-%d')}")
+                            logger.info(f"Reached target date (January 1, 2022), stopping. Post timestamp: {datetime.fromtimestamp(timestamp_ms/1000).strftime('%Y-%m-%d')}")
                             reached_target_date = True
                             break
                             
@@ -468,14 +566,16 @@ def scrape_coinmarketcap():
                 if oldest_timestamp_ms != float('inf'):
                     logger.info(f"Oldest post timestamp: {datetime.fromtimestamp(oldest_timestamp_ms/1000).strftime('%Y-%m-%d')}")
     
-        # Save the final results
+        # Save the final results and checkpoint
         save_data(posts_data, "aave_posts_complete.csv", intermediate=False)
+        save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count)
         
     except Exception as e:
         logger.error(f"Critical error: {e}")
         if posts_data:
             logger.info(f"Saving {len(posts_data)} posts collected before error...")
             save_data(posts_data, "aave_posts_error_recovery.csv", intermediate=False)
+            save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count)
     
     finally:
         if driver:
