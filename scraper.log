@@ -1366,3 +1366,71 @@
 2025-03-30 21:18:19,526 - INFO - Saved checkpoint with 665 post IDs
 2025-03-30 21:18:19,631 - INFO - Browser closed
 2025-03-30 21:18:19,711 - INFO - Cleaned up temporary directory: /tmp/chrome-data-4j5n3vl6
+2025-03-31 21:14:59,238 - INFO - Loaded 665 existing posts from output file
+2025-03-31 21:14:59,239 - INFO - Loaded checkpoint with 665 post IDs, oldest timestamp: 2025-01-28
+2025-03-31 21:14:59,239 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-vj34fyh9
+2025-03-31 21:15:00,132 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/aave/
+2025-03-31 21:15:06,192 - INFO - No cookie consent dialog found
+2025-03-31 21:15:06,199 - INFO - Posts loaded successfully.
+2025-03-31 21:15:06,199 - INFO - Starting data collection with 665 already collected posts...
+2025-03-31 21:15:06,199 - INFO - Resuming from previous run. Oldest timestamp: 2025-01-28
+2025-03-31 21:15:06,199 - INFO - Doing 50 initial scrolls to get back to previous position...
+2025-03-31 21:15:06,881 - INFO - Initial scroll progress: 1/50
+2025-03-31 21:15:12,367 - INFO - Initial scroll progress: 11/50
+2025-03-31 21:15:17,979 - INFO - Initial scroll progress: 21/50
+2025-03-31 21:15:23,734 - INFO - Initial scroll progress: 31/50
+2025-03-31 21:15:29,499 - INFO - Initial scroll progress: 41/50
+2025-03-31 21:15:36,896 - INFO - Successfully clicked 'Read all' button
+2025-03-31 21:15:38,964 - INFO - Collected post from 2025-03-05 04:20:37 by Unknown
+2025-03-31 21:15:42,164 - INFO - Waiting 4.27 seconds before scrolling...
+2025-03-31 21:15:49,441 - INFO - Completed 235 scrolls, collected 666 posts so far.
+2025-03-31 21:15:49,441 - INFO - Oldest post timestamp: 2025-01-28
+2025-03-31 21:15:52,213 - INFO - Collected post from 2025-03-04 19:34:45 by Unknown
+2025-03-31 21:15:54,322 - INFO - Waiting 3.37 seconds before scrolling...
+2025-03-31 21:16:05,087 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-03-31 21:16:05,087 - INFO - Waiting 4.49 seconds before scrolling...
+2025-03-31 21:16:17,020 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-03-31 21:16:17,020 - INFO - Waiting 4.15 seconds before scrolling...
+2025-03-31 21:16:25,420 - INFO - Collected post from 2025-03-04 17:44:50 by Unknown
+2025-03-31 21:16:26,016 - INFO - Collected post from 2025-03-04 17:22:05 by Unknown
+2025-03-31 21:16:28,700 - INFO - Waiting 4.80 seconds before scrolling...
+2025-03-31 21:16:40,898 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-03-31 21:16:40,898 - INFO - Waiting 3.00 seconds before scrolling...
+2025-03-31 21:16:46,911 - INFO - Completed 240 scrolls, collected 669 posts so far.
+2025-03-31 21:16:46,911 - INFO - Oldest post timestamp: 2025-01-28
+2025-03-31 21:16:51,285 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-03-31 21:16:51,285 - INFO - Taking a longer break (13.58s) to avoid rate limiting...
+2025-03-31 21:17:04,869 - INFO - Waiting 4.40 seconds before scrolling...
+2025-03-31 21:17:12,936 - INFO - Collected post from 2025-03-04 13:19:45 by Unknown
+2025-03-31 21:17:13,517 - INFO - Collected post from 2025-03-04 13:13:45 by Unknown
+2025-03-31 21:17:17,207 - INFO - Waiting 4.06 seconds before scrolling...
+2025-03-31 21:17:29,671 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-03-31 21:17:29,671 - INFO - Waiting 4.38 seconds before scrolling...
+2025-03-31 21:17:41,906 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-03-31 21:17:41,906 - INFO - Waiting 4.46 seconds before scrolling...
+2025-03-31 21:17:50,062 - INFO - Collected post from 2025-03-03 20:28:45 by Unknown
+2025-03-31 21:17:51,176 - INFO - Successfully clicked 'Read all' button
+2025-03-31 21:17:53,202 - INFO - Collected post from 2025-03-03 20:01:45 by Unknown
+2025-03-31 21:17:56,948 - INFO - Waiting 4.48 seconds before scrolling...
+2025-03-31 21:18:04,432 - INFO - Completed 245 scrolls, collected 673 posts so far.
+2025-03-31 21:18:04,432 - INFO - Oldest post timestamp: 2025-01-28
+2025-03-31 21:18:09,298 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-03-31 21:18:09,298 - INFO - Waiting 3.40 seconds before scrolling...
+2025-03-31 21:18:19,563 - INFO - Collected post from 2025-03-03 15:01:45 by Unknown
+2025-03-31 21:18:20,608 - INFO - Waiting 3.29 seconds before scrolling...
+2025-03-31 21:18:31,729 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-03-31 21:18:31,729 - INFO - Waiting 4.27 seconds before scrolling...
+2025-03-31 21:18:43,335 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-03-31 21:18:43,335 - INFO - Waiting 3.75 seconds before scrolling...
+2025-03-31 21:18:54,913 - WARNING - No new posts in this scroll (3/5 attempts)
+2025-03-31 21:18:54,914 - INFO - Waiting 4.98 seconds before scrolling...
+2025-03-31 21:19:02,900 - INFO - Completed 250 scrolls, collected 674 posts so far.
+2025-03-31 21:19:02,900 - INFO - Oldest post timestamp: 2025-01-28
+2025-03-31 21:19:07,758 - WARNING - No new posts in this scroll (4/5 attempts)
+2025-03-31 21:19:07,758 - INFO - Taking a longer break (13.33s) to avoid rate limiting...
+2025-03-31 21:19:21,091 - INFO - Waiting 4.36 seconds before scrolling...
+2025-03-31 21:19:32,868 - INFO - No new posts found after 5 scrolls, stopping.
+2025-03-31 21:19:32,877 - INFO - Saved 674 posts to output/aave_posts_complete.csv
+2025-03-31 21:19:32,878 - INFO - Saved checkpoint with 674 post IDs
+2025-03-31 21:19:32,979 - INFO - Browser closed
+2025-03-31 21:19:33,051 - INFO - Cleaned up temporary directory: /tmp/chrome-data-vj34fyh9
