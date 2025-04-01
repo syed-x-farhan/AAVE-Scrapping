@@ -1434,3 +1434,55 @@
 2025-03-31 21:19:32,878 - INFO - Saved checkpoint with 674 post IDs
 2025-03-31 21:19:32,979 - INFO - Browser closed
 2025-03-31 21:19:33,051 - INFO - Cleaned up temporary directory: /tmp/chrome-data-vj34fyh9
+2025-04-01 19:35:00,375 - INFO - Loaded 674 existing posts from output file
+2025-04-01 19:35:00,375 - INFO - Loaded checkpoint with 674 post IDs, oldest timestamp: 2025-01-28
+2025-04-01 19:35:00,376 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-b5upsb6e
+2025-04-01 19:35:01,510 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/aave/
+2025-04-01 19:35:07,746 - INFO - No cookie consent dialog found
+2025-04-01 19:35:07,755 - INFO - Posts loaded successfully.
+2025-04-01 19:35:07,755 - INFO - Starting data collection with 674 already collected posts...
+2025-04-01 19:35:07,756 - INFO - Resuming from previous run. Oldest timestamp: 2025-01-28
+2025-04-01 19:35:07,756 - INFO - Doing 50 initial scrolls to get back to previous position...
+2025-04-01 19:35:08,631 - INFO - Initial scroll progress: 1/50
+2025-04-01 19:35:14,698 - INFO - Initial scroll progress: 11/50
+2025-04-01 19:35:20,407 - INFO - Initial scroll progress: 21/50
+2025-04-01 19:35:26,632 - INFO - Initial scroll progress: 31/50
+2025-04-01 19:35:32,424 - INFO - Initial scroll progress: 41/50
+2025-04-01 19:35:42,721 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 19:35:42,721 - INFO - Waiting 4.18 seconds before scrolling...
+2025-04-01 19:35:55,305 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 19:35:55,305 - INFO - Waiting 4.38 seconds before scrolling...
+2025-04-01 19:36:03,947 - INFO - Collected post from 2025-03-03 20:34:34 by Unknown
+2025-04-01 19:36:07,153 - INFO - Waiting 3.35 seconds before scrolling...
+2025-04-01 19:36:19,011 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 19:36:19,011 - INFO - Waiting 4.29 seconds before scrolling...
+2025-04-01 19:36:26,308 - INFO - Completed 255 scrolls, collected 675 posts so far.
+2025-04-01 19:36:26,308 - INFO - Oldest post timestamp: 2025-01-28
+2025-04-01 19:36:30,744 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 19:36:30,745 - INFO - Waiting 4.03 seconds before scrolling...
+2025-04-01 19:36:38,488 - INFO - Collected post from 2025-03-03 15:01:45 by Unknown
+2025-04-01 19:36:39,081 - INFO - Collected post from 2025-03-03 14:18:08 by Unknown
+2025-04-01 19:36:39,657 - INFO - Collected post from 2025-03-02 23:39:13 by Unknown
+2025-04-01 19:36:42,806 - INFO - Waiting 3.53 seconds before scrolling...
+2025-04-01 19:36:54,796 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 19:36:54,796 - INFO - Waiting 4.67 seconds before scrolling...
+2025-04-01 19:37:07,413 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 19:37:07,413 - INFO - Waiting 4.29 seconds before scrolling...
+2025-04-01 19:37:15,923 - INFO - Collected post from 2025-02-27 23:14:33 by Unknown
+2025-04-01 19:37:20,219 - INFO - Waiting 3.05 seconds before scrolling...
+2025-04-01 19:37:26,279 - INFO - Completed 260 scrolls, collected 679 posts so far.
+2025-04-01 19:37:26,279 - INFO - Oldest post timestamp: 2025-01-28
+2025-04-01 19:37:31,197 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 19:37:31,197 - INFO - Taking a longer break (12.05s) to avoid rate limiting...
+2025-04-01 19:37:43,245 - INFO - Waiting 3.14 seconds before scrolling...
+2025-04-01 19:37:54,412 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 19:37:54,413 - INFO - Waiting 3.95 seconds before scrolling...
+2025-04-01 19:38:06,284 - WARNING - No new posts in this scroll (3/5 attempts)
+2025-04-01 19:38:06,284 - INFO - Waiting 3.07 seconds before scrolling...
+2025-04-01 19:38:17,254 - WARNING - No new posts in this scroll (4/5 attempts)
+2025-04-01 19:38:17,254 - INFO - Waiting 3.59 seconds before scrolling...
+2025-04-01 19:38:28,745 - INFO - No new posts found after 5 scrolls, stopping.
+2025-04-01 19:38:28,757 - INFO - Saved 679 posts to output/aave_posts_complete.csv
+2025-04-01 19:38:28,757 - INFO - Saved checkpoint with 679 post IDs
+2025-04-01 19:38:28,862 - INFO - Browser closed
+2025-04-01 19:38:28,920 - INFO - Cleaned up temporary directory: /tmp/chrome-data-b5upsb6e
