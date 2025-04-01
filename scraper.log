@@ -1,0 +1,1562 @@
+2025-04-01 20:08:57,794 - WARNING - Error loading existing data: [Errno 2] No such file or directory: 'output'
+2025-04-01 20:08:57,794 - INFO - No existing data found, starting fresh
+2025-04-01 20:08:57,794 - INFO - No checkpoint file found, starting fresh
+2025-04-01 20:08:57,795 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-yda4uevb
+2025-04-01 20:09:10,546 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/uniswap/
+2025-04-01 20:09:17,989 - INFO - No cookie consent dialog found
+2025-04-01 20:09:17,996 - INFO - Posts loaded successfully.
+2025-04-01 20:09:17,996 - INFO - Starting data collection with 0 already collected posts...
+2025-04-01 20:09:18,669 - INFO - Collected post from 2025-04-01 19:01:03 by Unknown
+2025-04-01 20:09:19,868 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:09:21,896 - INFO - Collected post from 2025-04-01 18:43:45 by Unknown
+2025-04-01 20:09:23,065 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:09:25,093 - INFO - Collected post from 2025-04-01 14:49:45 by Unknown
+2025-04-01 20:09:25,700 - INFO - Collected post from 2025-04-01 14:00:00 by Unknown
+2025-04-01 20:09:26,308 - INFO - Collected post from 2025-04-01 13:34:45 by Unknown
+2025-04-01 20:09:27,352 - INFO - Collected post from 2025-04-01 10:34:45 by Unknown
+2025-04-01 20:09:27,852 - INFO - Waiting 3.05 seconds before scrolling...
+2025-04-01 20:09:34,555 - INFO - Collected post from 2025-04-01 05:37:45 by Unknown
+2025-04-01 20:09:35,097 - INFO - Collected post from 2025-04-01 04:49:32 by Unknown
+2025-04-01 20:09:35,642 - INFO - Collected post from 2025-04-01 04:45:22 by Unknown
+2025-04-01 20:09:36,186 - INFO - Collected post from 2025-04-01 04:20:08 by Unknown
+2025-04-01 20:09:37,230 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:09:39,261 - INFO - Collected post from 2025-03-31 23:43:45 by Unknown
+2025-04-01 20:09:40,306 - INFO - Collected post from 2025-03-31 20:34:45 by Unknown
+2025-04-01 20:09:40,842 - INFO - Waiting 3.78 seconds before scrolling...
+2025-04-01 20:09:49,875 - INFO - Collected post from 2025-03-31 18:27:12 by Unknown
+2025-04-01 20:09:50,444 - INFO - Collected post from 2025-03-31 18:24:39 by Unknown
+2025-04-01 20:09:51,518 - INFO - Collected post from 2025-03-31 18:15:51 by Unknown
+2025-04-01 20:09:52,563 - INFO - Waiting 3.61 seconds before scrolling...
+2025-04-01 20:09:59,177 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 20:10:03,590 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:10:05,622 - INFO - Collected post from 2025-03-31 17:01:45 by Unknown
+2025-04-01 20:10:06,159 - INFO - Waiting 4.89 seconds before scrolling...
+2025-04-01 20:10:14,724 - INFO - Collected post from 2025-03-31 14:55:45 by Unknown
+2025-04-01 20:10:15,340 - INFO - Collected post from 2025-03-31 13:58:31 by Unknown
+2025-04-01 20:10:16,468 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:10:18,493 - INFO - Collected post from 2025-03-31 13:22:45 by Unknown
+2025-04-01 20:10:19,654 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:10:21,684 - INFO - Collected post from 2025-03-31 12:31:45 by Unknown
+2025-04-01 20:10:22,287 - INFO - Collected post from 2025-03-31 11:43:45 by Unknown
+2025-04-01 20:10:23,934 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:10:25,968 - INFO - Collected post from 2025-03-31 09:43:45 by Unknown
+2025-04-01 20:10:26,634 - INFO - Collected post from 2025-03-31 08:52:58 by Unknown
+2025-04-01 20:10:27,674 - INFO - Waiting 4.14 seconds before scrolling...
+2025-04-01 20:10:34,823 - INFO - Completed 5 scrolls, collected 23 posts so far.
+2025-04-01 20:10:34,823 - INFO - Oldest post timestamp: 2025-03-31
+2025-04-01 20:10:38,208 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:10:40,233 - INFO - Collected post from 2025-03-31 08:46:25 by Unknown
+2025-04-01 20:10:41,793 - INFO - Waiting 3.64 seconds before scrolling...
+2025-04-01 20:10:51,207 - INFO - Collected post from 2025-03-31 07:50:47 by Unknown
+2025-04-01 20:10:52,290 - INFO - Collected post from 2025-03-31 04:37:45 by Unknown
+2025-04-01 20:10:53,336 - INFO - Waiting 4.20 seconds before scrolling...
+2025-04-01 20:11:01,738 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:11:03,769 - INFO - Collected post from 2025-03-30 00:31:45 by Unknown
+2025-04-01 20:11:04,347 - INFO - Collected post from 2025-03-29 15:45:52 by Unknown
+2025-04-01 20:11:05,464 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:11:07,490 - INFO - Collected post from 2025-03-29 15:16:45 by Unknown
+2025-04-01 20:11:08,086 - INFO - Collected post from 2025-03-29 14:37:45 by Unknown
+2025-04-01 20:11:09,256 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:11:11,284 - INFO - Collected post from 2025-03-29 13:28:45 by Unknown
+2025-04-01 20:11:12,847 - INFO - Waiting 4.04 seconds before scrolling...
+2025-04-01 20:11:23,711 - INFO - Collected post from 2025-03-29 10:28:45 by Unknown
+2025-04-01 20:11:24,760 - INFO - Waiting 4.67 seconds before scrolling...
+2025-04-01 20:11:35,801 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:11:37,832 - INFO - Collected post from 2025-03-29 09:06:25 by Unknown
+2025-04-01 20:11:39,466 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:11:41,529 - INFO - Collected post from 2025-03-29 04:19:45 by Unknown
+2025-04-01 20:11:42,592 - INFO - Waiting 3.13 seconds before scrolling...
+2025-04-01 20:11:48,734 - INFO - Completed 10 scrolls, collected 34 posts so far.
+2025-04-01 20:11:48,734 - INFO - Oldest post timestamp: 2025-03-29
+2025-04-01 20:11:49,392 - INFO - Collected post from 2025-03-29 01:58:45 by Unknown
+2025-04-01 20:11:49,977 - INFO - Collected post from 2025-03-28 22:16:45 by Unknown
+2025-04-01 20:11:51,116 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:11:53,147 - INFO - Collected post from 2025-03-28 18:19:45 by Unknown
+2025-04-01 20:11:54,313 - INFO - Collected post from 2025-03-28 15:04:45 by Unknown
+2025-04-01 20:11:55,421 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:11:57,450 - INFO - Collected post from 2025-03-28 14:46:45 by Unknown
+2025-04-01 20:11:59,062 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:12:01,091 - INFO - Collected post from 2025-03-28 14:43:45 by Unknown
+2025-04-01 20:12:01,627 - INFO - Taking a longer break (15.03s) to avoid rate limiting...
+2025-04-01 20:12:16,657 - INFO - Waiting 4.36 seconds before scrolling...
+2025-04-01 20:12:27,832 - INFO - Collected post from 2025-03-28 12:10:45 by Unknown
+2025-04-01 20:12:28,886 - INFO - Waiting 4.05 seconds before scrolling...
+2025-04-01 20:12:38,743 - INFO - Collected post from 2025-03-28 12:10:45 by Unknown
+2025-04-01 20:12:39,835 - INFO - Collected post from 2025-03-28 10:49:45 by Unknown
+2025-04-01 20:12:40,890 - INFO - Waiting 3.52 seconds before scrolling...
+2025-04-01 20:12:48,614 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:12:50,639 - INFO - Collected post from 2025-03-28 09:04:26 by Unknown
+2025-04-01 20:12:51,770 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:12:53,796 - INFO - Collected post from 2025-03-28 08:55:45 by Unknown
+2025-04-01 20:12:54,380 - INFO - Collected post from 2025-03-28 06:49:06 by Unknown
+2025-04-01 20:12:54,920 - INFO - Collected post from 2025-03-28 06:26:21 by Unknown
+2025-04-01 20:12:55,510 - INFO - Collected post from 2025-03-28 05:10:45 by Unknown
+2025-04-01 20:12:56,595 - INFO - Collected post from 2025-03-28 04:16:45 by Unknown
+2025-04-01 20:12:57,640 - INFO - Waiting 4.84 seconds before scrolling...
+2025-04-01 20:13:08,330 - INFO - Collected post from 2025-03-27 23:47:59 by Unknown
+2025-04-01 20:13:09,411 - INFO - Collected post from 2025-03-27 18:19:45 by Unknown
+2025-04-01 20:13:10,457 - INFO - Waiting 3.01 seconds before scrolling...
+2025-04-01 20:13:16,475 - INFO - Completed 15 scrolls, collected 51 posts so far.
+2025-04-01 20:13:16,475 - INFO - Oldest post timestamp: 2025-03-27
+2025-04-01 20:13:19,812 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:13:21,840 - INFO - Collected post from 2025-03-27 16:10:45 by Unknown
+2025-04-01 20:13:23,452 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:13:25,479 - INFO - Collected post from 2025-03-27 15:43:45 by Unknown
+2025-04-01 20:13:26,015 - INFO - Waiting 3.63 seconds before scrolling...
+2025-04-01 20:13:33,890 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:13:35,917 - INFO - Collected post from 2025-03-27 13:57:53 by Unknown
+2025-04-01 20:13:37,059 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:13:39,085 - INFO - Collected post from 2025-03-27 13:16:45 by Unknown
+2025-04-01 20:13:39,701 - INFO - Collected post from 2025-03-27 13:07:45 by Unknown
+2025-04-01 20:13:40,343 - INFO - Collected post from 2025-03-27 12:31:42 by Unknown
+2025-04-01 20:13:40,919 - INFO - Collected post from 2025-03-27 12:16:45 by Unknown
+2025-04-01 20:13:41,966 - INFO - Waiting 3.10 seconds before scrolling...
+2025-04-01 20:13:50,901 - INFO - Collected post from 2025-03-27 11:25:45 by Unknown
+2025-04-01 20:13:52,520 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:13:54,550 - INFO - Collected post from 2025-03-27 08:59:25 by Unknown
+2025-04-01 20:13:55,597 - INFO - Waiting 4.15 seconds before scrolling...
+2025-04-01 20:14:02,755 - INFO - Saved checkpoint with 60 post IDs
+2025-04-01 20:14:05,623 - INFO - Collected post from 2025-03-27 04:45:02 by Unknown
+2025-04-01 20:14:06,669 - INFO - Collected post from 2025-03-27 02:52:45 by Unknown
+2025-04-01 20:14:07,715 - INFO - Waiting 4.31 seconds before scrolling...
+2025-04-01 20:14:15,686 - INFO - Collected post from 2025-03-27 02:10:45 by Unknown
+2025-04-01 20:14:16,259 - INFO - Collected post from 2025-03-27 02:10:45 by Unknown
+2025-04-01 20:14:17,397 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:14:19,425 - INFO - Collected post from 2025-03-26 21:28:43 by Unknown
+2025-04-01 20:14:20,011 - INFO - Collected post from 2025-03-26 19:14:53 by Unknown
+2025-04-01 20:14:20,586 - INFO - Collected post from 2025-03-26 18:01:45 by Unknown
+2025-04-01 20:14:21,662 - INFO - Collected post from 2025-03-26 17:40:45 by Unknown
+2025-04-01 20:14:22,278 - INFO - Collected post from 2025-03-26 08:40:21 by Unknown
+2025-04-01 20:14:23,318 - INFO - Waiting 4.86 seconds before scrolling...
+2025-04-01 20:14:31,190 - INFO - Completed 20 scrolls, collected 69 posts so far.
+2025-04-01 20:14:31,190 - INFO - Oldest post timestamp: 2025-03-26
+2025-04-01 20:14:34,007 - INFO - Collected post from 2025-03-26 07:20:06 by Unknown
+2025-04-01 20:14:35,603 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:14:37,630 - INFO - Collected post from 2025-03-26 00:37:51 by Unknown
+2025-04-01 20:14:38,166 - INFO - Taking a longer break (17.67s) to avoid rate limiting...
+2025-04-01 20:14:55,837 - INFO - Waiting 4.79 seconds before scrolling...
+2025-04-01 20:15:07,528 - INFO - Collected post from 2025-03-25 20:49:45 by Unknown
+2025-04-01 20:15:08,063 - INFO - Waiting 4.03 seconds before scrolling...
+2025-04-01 20:15:16,322 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:15:18,350 - INFO - Collected post from 2025-03-25 16:04:45 by Unknown
+2025-04-01 20:15:19,487 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:15:21,531 - INFO - Collected post from 2025-03-25 15:16:45 by Unknown
+2025-04-01 20:15:22,646 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:15:24,672 - INFO - Collected post from 2025-03-25 15:07:45 by Unknown
+2025-04-01 20:15:25,810 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:15:27,840 - INFO - Collected post from 2025-03-25 13:43:45 by Unknown
+2025-04-01 20:15:28,971 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:15:31,005 - INFO - Collected post from 2025-03-25 12:58:45 by Unknown
+2025-04-01 20:15:32,568 - INFO - Waiting 4.97 seconds before scrolling...
+2025-04-01 20:15:44,315 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:15:44,315 - INFO - Waiting 3.48 seconds before scrolling...
+2025-04-01 20:15:50,800 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 20:15:55,101 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 20:15:55,101 - INFO - Waiting 3.60 seconds before scrolling...
+2025-04-01 20:16:01,711 - INFO - Completed 25 scrolls, collected 77 posts so far.
+2025-04-01 20:16:01,711 - INFO - Oldest post timestamp: 2025-03-25
+2025-04-01 20:16:02,897 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:16:04,932 - INFO - Collected post from 2025-03-25 09:22:57 by Unknown
+2025-04-01 20:16:05,541 - INFO - Collected post from 2025-03-25 05:30:00 by Unknown
+2025-04-01 20:16:06,664 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:16:08,713 - INFO - Collected post from 2025-03-24 16:43:45 by Unknown
+2025-04-01 20:16:09,303 - INFO - Collected post from 2025-03-24 14:07:45 by Unknown
+2025-04-01 20:16:10,427 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:16:12,465 - INFO - Collected post from 2025-03-24 13:29:00 by Unknown
+2025-04-01 20:16:14,130 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:16:16,159 - INFO - Collected post from 2025-03-24 12:34:45 by Unknown
+2025-04-01 20:16:17,206 - INFO - Waiting 3.86 seconds before scrolling...
+2025-04-01 20:16:28,036 - INFO - Collected post from 2025-03-24 12:07:45 by Unknown
+2025-04-01 20:16:29,082 - INFO - Waiting 3.87 seconds before scrolling...
+2025-04-01 20:16:39,391 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:16:41,416 - INFO - Collected post from 2025-03-24 10:34:45 by Unknown
+2025-04-01 20:16:42,999 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:16:45,025 - INFO - Collected post from 2025-03-24 10:31:45 by Unknown
+2025-04-01 20:16:46,072 - INFO - Waiting 4.93 seconds before scrolling...
+2025-04-01 20:16:55,223 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:16:57,261 - INFO - Collected post from 2025-03-24 10:11:37 by Unknown
+2025-04-01 20:16:58,453 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:17:00,479 - INFO - Collected post from 2025-03-24 09:49:45 by Unknown
+2025-04-01 20:17:01,676 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:17:03,754 - INFO - Collected post from 2025-03-24 09:43:45 by Unknown
+2025-04-01 20:17:04,922 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:17:06,971 - INFO - Collected post from 2025-03-24 09:31:45 by Unknown
+2025-04-01 20:17:08,085 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:17:10,112 - INFO - Collected post from 2025-03-24 07:58:45 by Unknown
+2025-04-01 20:17:11,161 - INFO - Waiting 3.18 seconds before scrolling...
+2025-04-01 20:17:21,845 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:17:23,872 - INFO - Collected post from 2025-03-24 00:58:45 by Unknown
+2025-04-01 20:17:24,399 - INFO - Waiting 4.24 seconds before scrolling...
+2025-04-01 20:17:31,643 - INFO - Completed 30 scrolls, collected 92 posts so far.
+2025-04-01 20:17:31,643 - INFO - Oldest post timestamp: 2025-03-24
+2025-04-01 20:17:35,058 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:17:37,092 - INFO - Collected post from 2025-03-23 23:16:45 by Unknown
+2025-04-01 20:17:38,778 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:17:40,806 - INFO - Collected post from 2025-03-23 19:01:45 by Unknown
+2025-04-01 20:17:41,344 - INFO - Taking a longer break (11.54s) to avoid rate limiting...
+2025-04-01 20:17:52,884 - INFO - Waiting 3.03 seconds before scrolling...
+2025-04-01 20:18:00,096 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:18:02,150 - INFO - Collected post from 2025-03-23 14:38:04 by Unknown
+2025-04-01 20:18:02,737 - INFO - Collected post from 2025-03-23 14:28:46 by Unknown
+2025-04-01 20:18:03,841 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:18:05,873 - INFO - Collected post from 2025-03-23 14:18:01 by Unknown
+2025-04-01 20:18:06,456 - INFO - Collected post from 2025-03-23 12:10:45 by Unknown
+2025-04-01 20:18:07,559 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:18:09,590 - INFO - Collected post from 2025-03-23 11:37:45 by Unknown
+2025-04-01 20:18:11,145 - INFO - Waiting 4.30 seconds before scrolling...
+2025-04-01 20:18:22,761 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:18:22,761 - INFO - Waiting 5.00 seconds before scrolling...
+2025-04-01 20:18:30,769 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 20:18:33,565 - INFO - Collected post from 2025-03-23 10:46:45 by Unknown
+2025-04-01 20:18:34,664 - INFO - Collected post from 2025-03-23 09:28:45 by Unknown
+2025-04-01 20:18:35,200 - INFO - Waiting 3.82 seconds before scrolling...
+2025-04-01 20:18:43,208 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:18:45,240 - INFO - Collected post from 2025-03-22 19:43:45 by Unknown
+2025-04-01 20:18:46,370 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:18:48,395 - INFO - Collected post from 2025-03-22 16:08:41 by Unknown
+2025-04-01 20:18:49,659 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:18:51,685 - INFO - Collected post from 2025-03-22 14:58:11 by Unknown
+2025-04-01 20:18:52,274 - INFO - Collected post from 2025-03-22 14:31:20 by Unknown
+2025-04-01 20:18:52,863 - INFO - Collected post from 2025-03-22 12:17:40 by Unknown
+2025-04-01 20:18:53,908 - INFO - Waiting 4.33 seconds before scrolling...
+2025-04-01 20:19:01,245 - INFO - Completed 35 scrolls, collected 106 posts so far.
+2025-04-01 20:19:01,245 - INFO - Oldest post timestamp: 2025-03-22
+2025-04-01 20:19:04,041 - INFO - Collected post from 2025-03-21 19:07:45 by Unknown
+2025-04-01 20:19:05,596 - INFO - Waiting 4.26 seconds before scrolling...
+2025-04-01 20:19:12,863 - INFO - Saved checkpoint with 107 post IDs
+2025-04-01 20:19:16,214 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:19:18,256 - INFO - Collected post from 2025-03-21 19:04:45 by Unknown
+2025-04-01 20:19:19,341 - INFO - Collected post from 2025-03-21 18:12:19 by Unknown
+2025-04-01 20:19:20,395 - INFO - Waiting 3.09 seconds before scrolling...
+2025-04-01 20:19:27,668 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:19:29,697 - INFO - Collected post from 2025-03-21 15:46:45 by Unknown
+2025-04-01 20:19:30,832 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:19:32,863 - INFO - Collected post from 2025-03-21 15:15:18 by Unknown
+2025-04-01 20:19:34,011 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:19:36,041 - INFO - Collected post from 2025-03-21 14:31:45 by Unknown
+2025-04-01 20:19:36,621 - INFO - Collected post from 2025-03-21 12:09:38 by Unknown
+2025-04-01 20:19:37,772 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:19:39,806 - INFO - Collected post from 2025-03-21 11:36:17 by Unknown
+2025-04-01 20:19:40,855 - INFO - Waiting 4.05 seconds before scrolling...
+2025-04-01 20:19:51,323 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:19:53,356 - INFO - Collected post from 2025-03-21 10:46:45 by Unknown
+2025-04-01 20:19:54,476 - INFO - Collected post from 2025-03-21 09:38:49 by Unknown
+2025-04-01 20:19:55,522 - INFO - Waiting 4.27 seconds before scrolling...
+2025-04-01 20:20:06,161 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:20:08,190 - INFO - Collected post from 2025-03-21 09:06:25 by Unknown
+2025-04-01 20:20:09,281 - INFO - Collected post from 2025-03-21 07:50:28 by Unknown
+2025-04-01 20:20:10,327 - INFO - Waiting 3.05 seconds before scrolling...
+2025-04-01 20:20:16,387 - INFO - Completed 40 scrolls, collected 118 posts so far.
+2025-04-01 20:20:16,388 - INFO - Oldest post timestamp: 2025-03-21
+2025-04-01 20:20:17,622 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:20:19,663 - INFO - Collected post from 2025-03-20 22:34:45 by Unknown
+2025-04-01 20:20:20,760 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:20:22,790 - INFO - Collected post from 2025-03-20 21:52:17 by Unknown
+2025-04-01 20:20:23,374 - INFO - Collected post from 2025-03-20 21:10:45 by Unknown
+2025-04-01 20:20:24,443 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:20:26,487 - INFO - Collected post from 2025-03-20 20:19:45 by Unknown
+2025-04-01 20:20:27,618 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:20:29,644 - INFO - Collected post from 2025-03-20 20:19:45 by Unknown
+2025-04-01 20:20:31,207 - INFO - Taking a longer break (17.80s) to avoid rate limiting...
+2025-04-01 20:20:49,008 - INFO - Waiting 3.67 seconds before scrolling...
+2025-04-01 20:21:00,078 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:21:02,108 - INFO - Collected post from 2025-03-20 17:28:45 by Unknown
+2025-04-01 20:21:02,644 - INFO - Waiting 3.97 seconds before scrolling...
+2025-04-01 20:21:11,911 - INFO - Collected post from 2025-03-20 17:13:52 by Unknown
+2025-04-01 20:21:13,017 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:21:15,046 - INFO - Collected post from 2025-03-20 15:04:45 by Unknown
+2025-04-01 20:21:16,618 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:21:18,653 - INFO - Collected post from 2025-03-20 14:16:45 by Unknown
+2025-04-01 20:21:19,191 - INFO - Waiting 4.38 seconds before scrolling...
+2025-04-01 20:21:27,245 - INFO - Collected post from 2025-03-20 12:16:45 by Unknown
+2025-04-01 20:21:27,840 - INFO - Collected post from 2025-03-20 12:07:45 by Unknown
+2025-04-01 20:21:28,387 - INFO - Collected post from 2025-03-20 11:33:31 by Unknown
+2025-04-01 20:21:28,980 - INFO - Collected post from 2025-03-20 11:07:45 by Unknown
+2025-04-01 20:21:29,557 - INFO - Collected post from 2025-03-20 11:05:50 by Unknown
+2025-04-01 20:21:31,198 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:21:33,236 - INFO - Collected post from 2025-03-20 10:43:41 by Unknown
+2025-04-01 20:21:34,281 - INFO - Waiting 3.74 seconds before scrolling...
+2025-04-01 20:21:45,478 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:21:47,506 - INFO - Collected post from 2025-03-20 10:17:53 by Unknown
+2025-04-01 20:21:48,636 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:21:50,663 - INFO - Collected post from 2025-03-20 09:40:45 by Unknown
+2025-04-01 20:21:51,700 - INFO - Waiting 3.25 seconds before scrolling...
+2025-04-01 20:21:57,958 - INFO - Completed 45 scrolls, collected 135 posts so far.
+2025-04-01 20:21:57,958 - INFO - Oldest post timestamp: 2025-03-20
+2025-04-01 20:22:02,370 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:22:04,401 - INFO - Collected post from 2025-03-20 09:24:13 by Unknown
+2025-04-01 20:22:05,588 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:22:07,613 - INFO - Collected post from 2025-03-20 09:00:25 by Unknown
+2025-04-01 20:22:08,132 - INFO - Waiting 3.44 seconds before scrolling...
+2025-04-01 20:22:15,831 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:22:17,861 - INFO - Collected post from 2025-03-20 08:52:45 by Unknown
+2025-04-01 20:22:18,488 - INFO - Collected post from 2025-03-20 08:37:05 by Unknown
+2025-04-01 20:22:19,700 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:22:21,745 - INFO - Collected post from 2025-03-20 08:34:45 by Unknown
+2025-04-01 20:22:22,987 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:22:25,016 - INFO - Collected post from 2025-03-20 07:49:45 by Unknown
+2025-04-01 20:22:26,231 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:22:28,263 - INFO - Collected post from 2025-03-20 07:10:45 by Unknown
+2025-04-01 20:22:29,309 - INFO - Waiting 3.11 seconds before scrolling...
+2025-04-01 20:22:39,846 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:22:39,846 - INFO - Waiting 4.02 seconds before scrolling...
+2025-04-01 20:22:46,874 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 20:22:49,788 - INFO - Collected post from 2025-03-20 07:02:32 by Unknown
+2025-04-01 20:22:51,552 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:22:53,578 - INFO - Collected post from 2025-03-20 06:19:45 by Unknown
+2025-04-01 20:22:54,114 - INFO - Waiting 4.46 seconds before scrolling...
+2025-04-01 20:23:02,303 - INFO - Collected post from 2025-03-20 05:19:45 by Unknown
+2025-04-01 20:23:02,933 - INFO - Collected post from 2025-03-20 05:19:45 by Unknown
+2025-04-01 20:23:03,524 - INFO - Collected post from 2025-03-20 05:07:45 by Unknown
+2025-04-01 20:23:04,160 - INFO - Collected post from 2025-03-20 03:04:45 by Unknown
+2025-04-01 20:23:05,296 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:23:07,376 - INFO - Collected post from 2025-03-20 01:46:45 by Unknown
+2025-04-01 20:23:08,476 - INFO - Collected post from 2025-03-20 00:58:45 by Unknown
+2025-04-01 20:23:09,018 - INFO - Collected post from 2025-03-20 00:58:45 by Unknown
+2025-04-01 20:23:10,073 - INFO - Waiting 3.66 seconds before scrolling...
+2025-04-01 20:23:16,741 - INFO - Completed 50 scrolls, collected 151 posts so far.
+2025-04-01 20:23:16,741 - INFO - Oldest post timestamp: 2025-03-20
+2025-04-01 20:23:19,476 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:23:21,503 - INFO - Collected post from 2025-03-20 00:04:57 by Unknown
+2025-04-01 20:23:22,094 - INFO - Collected post from 2025-03-20 00:03:57 by Unknown
+2025-04-01 20:23:23,208 - INFO - Collected post from 2025-03-19 23:57:59 by Unknown
+2025-04-01 20:23:23,744 - INFO - Taking a longer break (18.81s) to avoid rate limiting...
+2025-04-01 20:23:42,556 - INFO - Waiting 3.79 seconds before scrolling...
+2025-04-01 20:23:52,690 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:23:54,716 - INFO - Collected post from 2025-03-19 22:46:45 by Unknown
+2025-04-01 20:23:55,790 - INFO - Collected post from 2025-03-19 22:43:45 by Unknown
+2025-04-01 20:23:56,835 - INFO - Waiting 4.21 seconds before scrolling...
+2025-04-01 20:24:05,255 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:24:07,284 - INFO - Collected post from 2025-03-19 19:52:45 by Unknown
+2025-04-01 20:24:07,907 - INFO - Collected post from 2025-03-19 18:01:45 by Unknown
+2025-04-01 20:24:09,021 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:24:11,052 - INFO - Collected post from 2025-03-19 16:03:47 by Unknown
+2025-04-01 20:24:11,677 - INFO - Collected post from 2025-03-19 14:57:26 by Unknown
+2025-04-01 20:24:12,931 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:24:14,973 - INFO - Collected post from 2025-03-19 14:55:45 by Unknown
+2025-04-01 20:24:16,018 - INFO - Waiting 3.61 seconds before scrolling...
+2025-04-01 20:24:22,641 - INFO - Saved checkpoint with 161 post IDs
+2025-04-01 20:24:27,148 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:24:27,148 - INFO - Waiting 3.79 seconds before scrolling...
+2025-04-01 20:24:33,946 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 20:24:38,512 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 20:24:38,513 - INFO - Waiting 3.89 seconds before scrolling...
+2025-04-01 20:24:45,461 - INFO - Completed 55 scrolls, collected 161 posts so far.
+2025-04-01 20:24:45,461 - INFO - Oldest post timestamp: 2025-03-19
+2025-04-01 20:24:46,803 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:24:48,877 - INFO - Collected post from 2025-03-19 09:06:25 by Unknown
+2025-04-01 20:24:50,108 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:24:52,136 - INFO - Collected post from 2025-03-19 08:46:45 by Unknown
+2025-04-01 20:24:52,788 - INFO - Collected post from 2025-03-19 07:40:45 by Unknown
+2025-04-01 20:24:53,339 - INFO - Collected post from 2025-03-19 03:34:45 by Unknown
+2025-04-01 20:24:54,582 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:24:56,609 - INFO - Collected post from 2025-03-19 00:06:51 by Unknown
+2025-04-01 20:24:58,258 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:25:00,290 - INFO - Collected post from 2025-03-19 00:01:45 by Unknown
+2025-04-01 20:25:01,347 - INFO - Waiting 3.53 seconds before scrolling...
+2025-04-01 20:25:10,245 - INFO - Collected post from 2025-03-18 18:52:45 by Unknown
+2025-04-01 20:25:10,826 - INFO - Collected post from 2025-03-18 17:39:10 by Unknown
+2025-04-01 20:25:11,903 - INFO - Collected post from 2025-03-18 17:22:45 by Unknown
+2025-04-01 20:25:12,957 - INFO - Waiting 3.94 seconds before scrolling...
+2025-04-01 20:25:22,165 - INFO - Collected post from 2025-03-18 17:19:45 by Unknown
+2025-04-01 20:25:22,747 - INFO - Collected post from 2025-03-18 17:07:45 by Unknown
+2025-04-01 20:25:24,375 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:25:26,408 - INFO - Collected post from 2025-03-18 15:58:45 by Unknown
+2025-04-01 20:25:27,530 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:25:29,556 - INFO - Collected post from 2025-03-18 14:49:45 by Unknown
+2025-04-01 20:25:30,594 - INFO - Waiting 3.79 seconds before scrolling...
+2025-04-01 20:25:38,590 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:25:40,616 - INFO - Collected post from 2025-03-18 12:43:45 by Unknown
+2025-04-01 20:25:41,213 - INFO - Collected post from 2025-03-18 11:58:45 by Unknown
+2025-04-01 20:25:41,759 - INFO - Collected post from 2025-03-18 09:46:45 by Unknown
+2025-04-01 20:25:42,334 - INFO - Collected post from 2025-03-18 08:55:45 by Unknown
+2025-04-01 20:25:42,907 - INFO - Collected post from 2025-03-18 08:10:45 by Unknown
+2025-04-01 20:25:43,953 - INFO - Waiting 3.29 seconds before scrolling...
+2025-04-01 20:25:54,663 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:25:56,700 - INFO - Collected post from 2025-03-18 02:31:45 by Unknown
+2025-04-01 20:25:57,746 - INFO - Waiting 3.84 seconds before scrolling...
+2025-04-01 20:26:04,599 - INFO - Completed 60 scrolls, collected 180 posts so far.
+2025-04-01 20:26:04,599 - INFO - Oldest post timestamp: 2025-03-18
+2025-04-01 20:26:08,459 - INFO - Collected post from 2025-03-18 01:49:45 by Unknown
+2025-04-01 20:26:09,506 - INFO - Taking a longer break (19.34s) to avoid rate limiting...
+2025-04-01 20:26:28,850 - INFO - Waiting 3.31 seconds before scrolling...
+2025-04-01 20:26:36,376 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:26:38,412 - INFO - Collected post from 2025-03-17 19:16:45 by Unknown
+2025-04-01 20:26:38,995 - INFO - Collected post from 2025-03-17 17:31:45 by Unknown
+2025-04-01 20:26:40,137 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:26:42,176 - INFO - Collected post from 2025-03-17 16:55:45 by Unknown
+2025-04-01 20:26:42,775 - INFO - Collected post from 2025-03-17 15:03:31 by Unknown
+2025-04-01 20:26:43,352 - INFO - Collected post from 2025-03-17 14:49:52 by Unknown
+2025-04-01 20:26:44,909 - INFO - Waiting 4.12 seconds before scrolling...
+2025-04-01 20:26:54,838 - INFO - Collected post from 2025-03-17 13:37:45 by Unknown
+2025-04-01 20:26:56,475 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:26:58,509 - INFO - Collected post from 2025-03-17 13:04:45 by Unknown
+2025-04-01 20:26:59,558 - INFO - Waiting 4.91 seconds before scrolling...
+2025-04-01 20:27:11,295 - INFO - Collected post from 2025-03-17 12:01:45 by Unknown
+2025-04-01 20:27:11,898 - INFO - Collected post from 2025-03-17 07:53:33 by Unknown
+2025-04-01 20:27:12,425 - INFO - Waiting 4.89 seconds before scrolling...
+2025-04-01 20:27:21,516 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:27:23,560 - INFO - Collected post from 2025-03-17 05:46:45 by Unknown
+2025-04-01 20:27:24,140 - INFO - Collected post from 2025-03-17 04:21:45 by Unknown
+2025-04-01 20:27:24,725 - INFO - Collected post from 2025-03-17 03:13:45 by Unknown
+2025-04-01 20:27:25,306 - INFO - Collected post from 2025-03-17 03:13:45 by Unknown
+2025-04-01 20:27:26,410 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:27:28,436 - INFO - Collected post from 2025-03-16 15:31:45 by Unknown
+2025-04-01 20:27:29,484 - INFO - Waiting 3.44 seconds before scrolling...
+2025-04-01 20:27:35,932 - INFO - Completed 65 scrolls, collected 195 posts so far.
+2025-04-01 20:27:35,933 - INFO - Oldest post timestamp: 2025-03-16
+2025-04-01 20:27:40,299 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:27:42,330 - INFO - Collected post from 2025-03-16 09:43:45 by Unknown
+2025-04-01 20:27:42,867 - INFO - Waiting 4.97 seconds before scrolling...
+2025-04-01 20:27:54,679 - INFO - Collected post from 2025-03-16 09:14:14 by Unknown
+2025-04-01 20:27:55,725 - INFO - Waiting 3.71 seconds before scrolling...
+2025-04-01 20:28:03,640 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:28:05,678 - INFO - Collected post from 2025-03-15 10:41:17 by Unknown
+2025-04-01 20:28:06,775 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:28:08,802 - INFO - Collected post from 2025-03-15 08:50:25 by Unknown
+2025-04-01 20:28:09,382 - INFO - Collected post from 2025-03-15 01:37:45 by Unknown
+2025-04-01 20:28:09,925 - INFO - Collected post from 2025-03-14 18:01:45 by Unknown
+2025-04-01 20:28:10,509 - INFO - Collected post from 2025-03-14 17:31:45 by Unknown
+2025-04-01 20:28:11,557 - INFO - Waiting 4.21 seconds before scrolling...
+2025-04-01 20:28:23,283 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:28:25,318 - INFO - Collected post from 2025-03-14 14:31:45 by Unknown
+2025-04-01 20:28:26,369 - INFO - Waiting 4.80 seconds before scrolling...
+2025-04-01 20:28:38,842 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:28:40,872 - INFO - Collected post from 2025-03-14 09:32:25 by Unknown
+2025-04-01 20:28:41,410 - INFO - Waiting 4.26 seconds before scrolling...
+2025-04-01 20:28:48,677 - INFO - Completed 70 scrolls, collected 204 posts so far.
+2025-04-01 20:28:48,677 - INFO - Oldest post timestamp: 2025-03-14
+2025-04-01 20:28:49,353 - INFO - Collected post from 2025-03-13 16:53:47 by Unknown
+2025-04-01 20:28:49,971 - INFO - Collected post from 2025-03-13 15:41:59 by Unknown
+2025-04-01 20:28:50,583 - INFO - Collected post from 2025-03-13 13:06:44 by Unknown
+2025-04-01 20:28:51,175 - INFO - Collected post from 2025-03-13 10:52:45 by Unknown
+2025-04-01 20:28:52,312 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:28:54,342 - INFO - Collected post from 2025-03-13 10:09:48 by Unknown
+2025-04-01 20:28:56,049 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:28:58,077 - INFO - Collected post from 2025-03-13 09:17:25 by Unknown
+2025-04-01 20:28:58,683 - INFO - Collected post from 2025-03-13 08:16:45 by Unknown
+2025-04-01 20:28:59,720 - INFO - Taking a longer break (10.22s) to avoid rate limiting...
+2025-04-01 20:29:09,943 - INFO - Waiting 3.53 seconds before scrolling...
+2025-04-01 20:29:19,309 - INFO - Collected post from 2025-03-13 08:01:45 by Unknown
+2025-04-01 20:29:20,948 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:29:22,976 - INFO - Collected post from 2025-03-13 07:52:45 by Unknown
+2025-04-01 20:29:24,024 - INFO - Waiting 4.96 seconds before scrolling...
+2025-04-01 20:29:31,995 - INFO - Saved checkpoint with 213 post IDs
+2025-04-01 20:29:35,889 - INFO - Collected post from 2025-03-13 07:15:11 by Unknown
+2025-04-01 20:29:36,417 - INFO - Waiting 4.24 seconds before scrolling...
+2025-04-01 20:29:44,331 - INFO - Collected post from 2025-03-13 04:47:51 by Unknown
+2025-04-01 20:29:44,925 - INFO - Collected post from 2025-03-13 01:44:05 by Unknown
+2025-04-01 20:29:45,504 - INFO - Collected post from 2025-03-13 01:24:51 by Unknown
+2025-04-01 20:29:46,630 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:29:48,673 - INFO - Collected post from 2025-03-12 22:46:45 by Unknown
+2025-04-01 20:29:49,816 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:29:51,843 - INFO - Collected post from 2025-03-12 20:25:41 by Unknown
+2025-04-01 20:29:52,928 - INFO - Collected post from 2025-03-12 19:41:05 by Unknown
+2025-04-01 20:29:53,975 - INFO - Waiting 4.80 seconds before scrolling...
+2025-04-01 20:30:05,139 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:30:07,170 - INFO - Collected post from 2025-03-12 18:16:54 by Unknown
+2025-04-01 20:30:08,882 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:30:10,912 - INFO - Collected post from 2025-03-12 17:28:45 by Unknown
+2025-04-01 20:30:11,451 - INFO - Waiting 4.52 seconds before scrolling...
+2025-04-01 20:30:18,985 - INFO - Completed 75 scrolls, collected 222 posts so far.
+2025-04-01 20:30:18,985 - INFO - Oldest post timestamp: 2025-03-12
+2025-04-01 20:30:22,841 - INFO - Collected post from 2025-03-12 16:40:45 by Unknown
+2025-04-01 20:30:23,888 - INFO - Waiting 3.76 seconds before scrolling...
+2025-04-01 20:30:31,314 - INFO - Collected post from 2025-03-12 11:13:45 by Unknown
+2025-04-01 20:30:31,906 - INFO - Collected post from 2025-03-12 11:07:45 by Unknown
+2025-04-01 20:30:33,067 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:30:35,105 - INFO - Collected post from 2025-03-12 09:05:26 by Unknown
+2025-04-01 20:30:36,247 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:30:38,290 - INFO - Collected post from 2025-03-12 08:01:45 by Unknown
+2025-04-01 20:30:38,878 - INFO - Collected post from 2025-03-12 07:43:45 by Unknown
+2025-04-01 20:30:40,551 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:30:42,579 - INFO - Collected post from 2025-03-12 06:05:51 by Unknown
+2025-04-01 20:30:43,117 - INFO - Waiting 3.91 seconds before scrolling...
+2025-04-01 20:30:53,881 - INFO - Collected post from 2025-03-12 02:13:45 by Unknown
+2025-04-01 20:30:54,934 - INFO - Waiting 3.86 seconds before scrolling...
+2025-04-01 20:31:06,209 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:31:08,241 - INFO - Collected post from 2025-03-11 20:47:11 by Unknown
+2025-04-01 20:31:09,288 - INFO - Waiting 3.72 seconds before scrolling...
+2025-04-01 20:31:17,261 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:31:19,292 - INFO - Collected post from 2025-03-11 14:13:45 by Unknown
+2025-04-01 20:31:19,882 - INFO - Collected post from 2025-03-11 11:50:35 by Unknown
+2025-04-01 20:31:20,466 - INFO - Collected post from 2025-03-11 11:10:45 by Unknown
+2025-04-01 20:31:21,054 - INFO - Collected post from 2025-03-11 08:40:45 by Unknown
+2025-04-01 20:31:22,188 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:31:24,214 - INFO - Collected post from 2025-03-10 19:28:45 by Unknown
+2025-04-01 20:31:25,262 - INFO - Waiting 4.44 seconds before scrolling...
+2025-04-01 20:31:32,706 - INFO - Completed 80 scrolls, collected 236 posts so far.
+2025-04-01 20:31:32,706 - INFO - Oldest post timestamp: 2025-03-10
+2025-04-01 20:31:36,513 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:31:36,513 - INFO - Taking a longer break (16.15s) to avoid rate limiting...
+2025-04-01 20:31:52,666 - INFO - Waiting 4.30 seconds before scrolling...
+2025-04-01 20:31:59,973 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 20:32:03,843 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 20:32:03,843 - INFO - Waiting 4.01 seconds before scrolling...
+2025-04-01 20:32:12,116 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:32:14,158 - INFO - Collected post from 2025-03-10 17:40:45 by Unknown
+2025-04-01 20:32:14,705 - INFO - Collected post from 2025-03-10 10:23:14 by Unknown
+2025-04-01 20:32:15,307 - INFO - Collected post from 2025-03-10 09:25:45 by Unknown
+2025-04-01 20:32:16,484 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:32:18,522 - INFO - Collected post from 2025-03-10 07:52:45 by Unknown
+2025-04-01 20:32:19,645 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:32:21,674 - INFO - Collected post from 2025-03-10 07:51:27 by Unknown
+2025-04-01 20:32:22,727 - INFO - Waiting 4.68 seconds before scrolling...
+2025-04-01 20:32:34,926 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:32:36,955 - INFO - Collected post from 2025-03-10 05:19:45 by Unknown
+2025-04-01 20:32:37,492 - INFO - Waiting 3.12 seconds before scrolling...
+2025-04-01 20:32:48,164 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:32:50,191 - INFO - Collected post from 2025-03-09 22:22:45 by Unknown
+2025-04-01 20:32:51,245 - INFO - Waiting 4.85 seconds before scrolling...
+2025-04-01 20:32:59,102 - INFO - Completed 85 scrolls, collected 243 posts so far.
+2025-04-01 20:32:59,102 - INFO - Oldest post timestamp: 2025-03-09
+2025-04-01 20:33:00,402 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:33:02,473 - INFO - Collected post from 2025-03-09 08:46:25 by Unknown
+2025-04-01 20:33:03,021 - INFO - Collected post from 2025-03-08 19:54:40 by Unknown
+2025-04-01 20:33:03,621 - INFO - Collected post from 2025-03-08 18:13:45 by Unknown
+2025-04-01 20:33:04,194 - INFO - Collected post from 2025-03-08 14:37:45 by Unknown
+2025-04-01 20:33:05,353 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:33:07,398 - INFO - Collected post from 2025-03-08 13:52:45 by Unknown
+2025-04-01 20:33:08,513 - INFO - Collected post from 2025-03-08 12:10:45 by Unknown
+2025-04-01 20:33:09,049 - INFO - Waiting 3.97 seconds before scrolling...
+2025-04-01 20:33:19,393 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:33:21,421 - INFO - Collected post from 2025-03-08 08:54:25 by Unknown
+2025-04-01 20:33:23,018 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:33:25,044 - INFO - Collected post from 2025-03-08 06:43:45 by Unknown
+2025-04-01 20:33:26,090 - INFO - Waiting 4.10 seconds before scrolling...
+2025-04-01 20:33:37,506 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:33:39,532 - INFO - Collected post from 2025-03-08 05:30:02 by Unknown
+2025-04-01 20:33:40,069 - INFO - Waiting 3.44 seconds before scrolling...
+2025-04-01 20:33:47,652 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:33:49,689 - INFO - Collected post from 2025-03-07 18:14:01 by Unknown
+2025-04-01 20:33:50,779 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:33:52,810 - INFO - Collected post from 2025-03-07 16:28:45 by Unknown
+2025-04-01 20:33:53,405 - INFO - Collected post from 2025-03-07 15:01:45 by Unknown
+2025-04-01 20:33:53,981 - INFO - Collected post from 2025-03-07 12:18:00 by Unknown
+2025-04-01 20:33:54,578 - INFO - Collected post from 2025-03-07 11:27:49 by Unknown
+2025-04-01 20:33:55,626 - INFO - Waiting 3.43 seconds before scrolling...
+2025-04-01 20:34:05,345 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:34:07,404 - INFO - Collected post from 2025-03-07 11:25:03 by Unknown
+2025-04-01 20:34:08,518 - INFO - Collected post from 2025-03-07 11:24:31 by Unknown
+2025-04-01 20:34:09,566 - INFO - Waiting 4.17 seconds before scrolling...
+2025-04-01 20:34:16,747 - INFO - Completed 90 scrolls, collected 259 posts so far.
+2025-04-01 20:34:16,747 - INFO - Oldest post timestamp: 2025-03-07
+2025-04-01 20:34:19,601 - INFO - Collected post from 2025-03-07 11:09:18 by Unknown
+2025-04-01 20:34:20,690 - INFO - Collected post from 2025-03-07 09:29:46 by Unknown
+2025-04-01 20:34:21,737 - INFO - Taking a longer break (15.06s) to avoid rate limiting...
+2025-04-01 20:34:36,801 - INFO - Waiting 3.72 seconds before scrolling...
+2025-04-01 20:34:43,531 - INFO - Saved checkpoint with 261 post IDs
+2025-04-01 20:34:44,211 - INFO - Collected post from 2025-03-07 04:01:45 by Unknown
+2025-04-01 20:34:44,811 - INFO - Collected post from 2025-03-07 03:13:45 by Unknown
+2025-04-01 20:34:45,408 - INFO - Collected post from 2025-03-07 03:13:45 by Unknown
+2025-04-01 20:34:46,005 - INFO - Collected post from 2025-03-07 02:13:45 by Unknown
+2025-04-01 20:34:46,660 - INFO - Collected post from 2025-03-06 23:49:45 by Unknown
+2025-04-01 20:34:48,252 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:34:50,279 - INFO - Collected post from 2025-03-06 23:37:45 by Unknown
+2025-04-01 20:34:51,393 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:34:53,422 - INFO - Collected post from 2025-03-06 22:36:37 by Unknown
+2025-04-01 20:34:54,462 - INFO - Waiting 4.82 seconds before scrolling...
+2025-04-01 20:35:05,628 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:35:07,655 - INFO - Collected post from 2025-03-06 20:40:45 by Unknown
+2025-04-01 20:35:08,780 - INFO - Collected post from 2025-03-06 20:26:09 by Unknown
+2025-04-01 20:35:09,319 - INFO - Waiting 3.92 seconds before scrolling...
+2025-04-01 20:35:19,041 - INFO - Collected post from 2025-03-06 18:16:45 by Unknown
+2025-04-01 20:35:20,087 - INFO - Waiting 3.10 seconds before scrolling...
+2025-04-01 20:35:26,848 - INFO - Collected post from 2025-03-06 17:19:45 by Unknown
+2025-04-01 20:35:27,949 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:35:29,988 - INFO - Collected post from 2025-03-06 16:22:45 by Unknown
+2025-04-01 20:35:31,112 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:35:33,141 - INFO - Collected post from 2025-03-06 15:34:45 by Unknown
+2025-04-01 20:35:33,721 - INFO - Collected post from 2025-03-06 15:13:45 by Unknown
+2025-04-01 20:35:34,836 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:35:36,862 - INFO - Collected post from 2025-03-06 15:01:45 by Unknown
+2025-04-01 20:35:37,980 - INFO - Collected post from 2025-03-06 14:28:45 by Unknown
+2025-04-01 20:35:38,517 - INFO - Waiting 3.73 seconds before scrolling...
+2025-04-01 20:35:45,256 - INFO - Completed 95 scrolls, collected 277 posts so far.
+2025-04-01 20:35:45,257 - INFO - Oldest post timestamp: 2025-03-06
+2025-04-01 20:35:49,574 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:35:49,574 - INFO - Waiting 3.41 seconds before scrolling...
+2025-04-01 20:35:58,271 - INFO - Collected post from 2025-03-06 13:44:02 by Unknown
+2025-04-01 20:35:58,866 - INFO - Collected post from 2025-03-06 12:35:45 by Unknown
+2025-04-01 20:36:00,512 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:36:02,539 - INFO - Collected post from 2025-03-06 11:44:02 by Unknown
+2025-04-01 20:36:03,075 - INFO - Waiting 4.20 seconds before scrolling...
+2025-04-01 20:36:10,964 - INFO - Collected post from 2025-03-06 10:52:45 by Unknown
+2025-04-01 20:36:11,507 - INFO - Collected post from 2025-03-06 10:19:20 by Unknown
+2025-04-01 20:36:12,084 - INFO - Collected post from 2025-03-06 09:52:33 by Unknown
+2025-04-01 20:36:13,204 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:36:15,242 - INFO - Collected post from 2025-03-06 08:10:47 by Unknown
+2025-04-01 20:36:15,815 - INFO - Collected post from 2025-03-06 07:34:45 by Unknown
+2025-04-01 20:36:17,422 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:36:19,451 - INFO - Collected post from 2025-03-06 04:40:45 by Unknown
+2025-04-01 20:36:20,053 - INFO - Collected post from 2025-03-05 22:55:45 by Unknown
+2025-04-01 20:36:21,100 - INFO - Waiting 4.41 seconds before scrolling...
+2025-04-01 20:36:30,784 - INFO - Collected post from 2025-03-05 22:16:45 by Unknown
+2025-04-01 20:36:31,330 - INFO - Collected post from 2025-03-05 21:16:45 by Unknown
+2025-04-01 20:36:32,432 - INFO - Collected post from 2025-03-05 17:46:45 by Unknown
+2025-04-01 20:36:33,479 - INFO - Waiting 3.60 seconds before scrolling...
+2025-04-01 20:36:42,357 - INFO - Collected post from 2025-03-05 16:46:45 by Unknown
+2025-04-01 20:36:42,933 - INFO - Collected post from 2025-03-05 14:40:45 by Unknown
+2025-04-01 20:36:44,575 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:36:46,600 - INFO - Collected post from 2025-03-05 14:40:14 by Unknown
+2025-04-01 20:36:47,136 - INFO - Waiting 4.37 seconds before scrolling...
+2025-04-01 20:36:54,516 - INFO - Completed 100 scrolls, collected 293 posts so far.
+2025-04-01 20:36:54,516 - INFO - Oldest post timestamp: 2025-03-05
+2025-04-01 20:36:55,192 - INFO - Collected post from 2025-03-05 08:30:05 by Unknown
+2025-04-01 20:36:55,742 - INFO - Collected post from 2025-03-05 08:11:33 by Unknown
+2025-04-01 20:36:56,315 - INFO - Collected post from 2025-03-05 08:04:54 by Unknown
+2025-04-01 20:36:56,882 - INFO - Collected post from 2025-03-05 07:14:51 by Unknown
+2025-04-01 20:36:57,460 - INFO - Collected post from 2025-03-05 07:04:12 by Unknown
+2025-04-01 20:36:59,068 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:37:01,098 - INFO - Collected post from 2025-03-05 01:19:45 by Unknown
+2025-04-01 20:37:02,154 - INFO - Taking a longer break (17.25s) to avoid rate limiting...
+2025-04-01 20:37:19,407 - INFO - Waiting 4.19 seconds before scrolling...
+2025-04-01 20:37:28,864 - INFO - Collected post from 2025-03-05 00:41:08 by Unknown
+2025-04-01 20:37:30,001 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:37:32,030 - INFO - Collected post from 2025-03-05 00:04:45 by Unknown
+2025-04-01 20:37:33,665 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:37:35,819 - INFO - Collected post from 2025-03-04 21:52:45 by Unknown
+2025-04-01 20:37:36,866 - INFO - Waiting 4.30 seconds before scrolling...
+2025-04-01 20:37:47,522 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:37:49,552 - INFO - Collected post from 2025-03-04 21:13:45 by Unknown
+2025-04-01 20:37:51,211 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:37:53,237 - INFO - Collected post from 2025-03-04 20:22:45 by Unknown
+2025-04-01 20:37:53,773 - INFO - Waiting 3.60 seconds before scrolling...
+2025-04-01 20:38:01,052 - INFO - Collected post from 2025-03-04 14:58:45 by Unknown
+2025-04-01 20:38:01,633 - INFO - Collected post from 2025-03-04 12:10:45 by Unknown
+2025-04-01 20:38:02,739 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:38:04,777 - INFO - Collected post from 2025-03-04 11:43:45 by Unknown
+2025-04-01 20:38:05,898 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:38:07,925 - INFO - Collected post from 2025-03-04 09:55:45 by Unknown
+2025-04-01 20:38:08,512 - INFO - Collected post from 2025-03-04 04:25:09 by Unknown
+2025-04-01 20:38:09,643 - INFO - Collected post from 2025-03-04 03:28:45 by Unknown
+2025-04-01 20:38:10,179 - INFO - Waiting 4.85 seconds before scrolling...
+2025-04-01 20:38:20,917 - INFO - Collected post from 2025-03-04 02:52:45 by Unknown
+2025-04-01 20:38:22,475 - INFO - Waiting 3.76 seconds before scrolling...
+2025-04-01 20:38:29,246 - INFO - Completed 105 scrolls, collected 311 posts so far.
+2025-04-01 20:38:29,246 - INFO - Oldest post timestamp: 2025-03-04
+2025-04-01 20:38:31,566 - INFO - Collected post from 2025-03-04 02:52:45 by Unknown
+2025-04-01 20:38:32,657 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:38:34,776 - INFO - Collected post from 2025-03-04 01:55:45 by Unknown
+2025-04-01 20:38:35,823 - INFO - Collected post from 2025-03-03 23:49:45 by Unknown
+2025-04-01 20:38:36,880 - INFO - Waiting 4.82 seconds before scrolling...
+2025-04-01 20:38:45,953 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:38:47,981 - INFO - Collected post from 2025-03-03 16:58:45 by Unknown
+2025-04-01 20:38:49,142 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:38:51,182 - INFO - Collected post from 2025-03-03 16:57:22 by Unknown
+2025-04-01 20:38:51,726 - INFO - Collected post from 2025-03-03 16:40:45 by Unknown
+2025-04-01 20:38:52,314 - INFO - Collected post from 2025-03-03 16:38:43 by Unknown
+2025-04-01 20:38:52,940 - INFO - Collected post from 2025-03-03 16:25:45 by Unknown
+2025-04-01 20:38:54,498 - INFO - Waiting 3.15 seconds before scrolling...
+2025-04-01 20:39:03,541 - INFO - Collected post from 2025-03-03 16:04:45 by Unknown
+2025-04-01 20:39:05,184 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:39:07,219 - INFO - Collected post from 2025-03-03 14:16:45 by Unknown
+2025-04-01 20:39:08,268 - INFO - Waiting 3.71 seconds before scrolling...
+2025-04-01 20:39:19,486 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:39:21,518 - INFO - Collected post from 2025-03-03 13:19:45 by Unknown
+2025-04-01 20:39:22,056 - INFO - Waiting 3.69 seconds before scrolling...
+2025-04-01 20:39:29,446 - INFO - Collected post from 2025-03-03 02:28:45 by Unknown
+2025-04-01 20:39:30,036 - INFO - Collected post from 2025-03-03 02:25:45 by Unknown
+2025-04-01 20:39:31,244 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:39:33,276 - INFO - Collected post from 2025-03-02 21:49:45 by Unknown
+2025-04-01 20:39:34,464 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:39:36,510 - INFO - Collected post from 2025-03-02 18:37:45 by Unknown
+2025-04-01 20:39:37,116 - INFO - Collected post from 2025-03-02 18:05:16 by Unknown
+2025-04-01 20:39:38,214 - INFO - Collected post from 2025-03-02 17:28:45 by Unknown
+2025-04-01 20:39:38,804 - INFO - Collected post from 2025-03-02 17:00:45 by Unknown
+2025-04-01 20:39:39,866 - INFO - Waiting 4.85 seconds before scrolling...
+2025-04-01 20:39:47,723 - INFO - Completed 110 scrolls, collected 329 posts so far.
+2025-04-01 20:39:47,723 - INFO - Oldest post timestamp: 2025-03-02
+2025-04-01 20:39:47,724 - INFO - Saved checkpoint with 329 post IDs
+2025-04-01 20:39:50,612 - INFO - Collected post from 2025-03-02 16:56:33 by Unknown
+2025-04-01 20:39:52,158 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:39:54,223 - INFO - Collected post from 2025-03-02 16:37:45 by Unknown
+2025-04-01 20:39:55,271 - INFO - Taking a longer break (11.09s) to avoid rate limiting...
+2025-04-01 20:40:06,361 - INFO - Waiting 4.24 seconds before scrolling...
+2025-04-01 20:40:17,970 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:40:19,996 - INFO - Collected post from 2025-03-02 14:22:35 by Unknown
+2025-04-01 20:40:21,136 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:40:23,162 - INFO - Collected post from 2025-03-02 12:23:23 by Unknown
+2025-04-01 20:40:24,201 - INFO - Waiting 4.75 seconds before scrolling...
+2025-04-01 20:40:33,173 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:40:35,200 - INFO - Collected post from 2025-03-02 08:57:25 by Unknown
+2025-04-01 20:40:36,295 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:40:38,326 - INFO - Collected post from 2025-03-02 08:45:48 by Unknown
+2025-04-01 20:40:38,910 - INFO - Collected post from 2025-03-02 07:37:19 by Unknown
+2025-04-01 20:40:40,014 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:40:42,042 - INFO - Collected post from 2025-03-02 00:37:45 by Unknown
+2025-04-01 20:40:42,623 - INFO - Collected post from 2025-03-01 19:25:45 by Unknown
+2025-04-01 20:40:44,196 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:40:46,227 - INFO - Collected post from 2025-03-01 17:40:19 by Unknown
+2025-04-01 20:40:47,274 - INFO - Waiting 3.47 seconds before scrolling...
+2025-04-01 20:40:58,131 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:41:00,160 - INFO - Collected post from 2025-03-01 17:18:33 by Unknown
+2025-04-01 20:41:01,206 - INFO - Waiting 3.90 seconds before scrolling...
+2025-04-01 20:41:12,489 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:41:14,517 - INFO - Collected post from 2025-03-01 12:25:45 by Unknown
+2025-04-01 20:41:15,564 - INFO - Waiting 3.85 seconds before scrolling...
+2025-04-01 20:41:22,419 - INFO - Completed 115 scrolls, collected 341 posts so far.
+2025-04-01 20:41:22,419 - INFO - Oldest post timestamp: 2025-03-01
+2025-04-01 20:41:23,636 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:41:25,663 - INFO - Collected post from 2025-03-01 08:52:25 by Unknown
+2025-04-01 20:41:26,240 - INFO - Collected post from 2025-03-01 05:37:16 by Unknown
+2025-04-01 20:41:26,813 - INFO - Collected post from 2025-03-01 04:46:45 by Unknown
+2025-04-01 20:41:27,397 - INFO - Collected post from 2025-03-01 04:34:45 by Unknown
+2025-04-01 20:41:27,952 - INFO - Collected post from 2025-03-01 04:10:45 by Unknown
+2025-04-01 20:41:29,032 - INFO - Collected post from 2025-03-01 03:49:45 by Unknown
+2025-04-01 20:41:30,079 - INFO - Waiting 4.37 seconds before scrolling...
+2025-04-01 20:41:40,228 - INFO - Collected post from 2025-03-01 01:04:45 by Unknown
+2025-04-01 20:41:41,853 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:41:43,880 - INFO - Collected post from 2025-02-28 23:31:45 by Unknown
+2025-04-01 20:41:44,416 - INFO - Waiting 4.87 seconds before scrolling...
+2025-04-01 20:41:56,140 - INFO - Collected post from 2025-02-28 22:10:45 by Unknown
+2025-04-01 20:41:57,196 - INFO - Saving intermediate results with 350 posts...
+2025-04-01 20:41:57,203 - INFO - Saved 350 posts to output/aave_posts_intermediate_350.csv
+2025-04-01 20:41:57,203 - INFO - Waiting 3.85 seconds before scrolling...
+2025-04-01 20:42:04,722 - INFO - Collected post from 2025-02-28 18:43:45 by Unknown
+2025-04-01 20:42:05,298 - INFO - Collected post from 2025-02-28 17:44:17 by Unknown
+2025-04-01 20:42:05,881 - INFO - Collected post from 2025-02-28 17:43:45 by Unknown
+2025-04-01 20:42:06,478 - INFO - Collected post from 2025-02-28 16:14:56 by Unknown
+2025-04-01 20:42:07,026 - INFO - Collected post from 2025-02-28 15:28:45 by Unknown
+2025-04-01 20:42:08,072 - INFO - Collected post from 2025-02-28 14:34:45 by Unknown
+2025-04-01 20:42:09,118 - INFO - Waiting 3.03 seconds before scrolling...
+2025-04-01 20:42:18,334 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:42:20,363 - INFO - Collected post from 2025-02-28 14:16:45 by Unknown
+2025-04-01 20:42:21,910 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:42:23,945 - INFO - Collected post from 2025-02-28 13:43:45 by Unknown
+2025-04-01 20:42:24,991 - INFO - Waiting 3.54 seconds before scrolling...
+2025-04-01 20:42:31,543 - INFO - Completed 120 scrolls, collected 358 posts so far.
+2025-04-01 20:42:31,544 - INFO - Oldest post timestamp: 2025-02-28
+2025-04-01 20:42:35,242 - INFO - Collected post from 2025-02-28 13:25:00 by Unknown
+2025-04-01 20:42:36,292 - INFO - Taking a longer break (10.75s) to avoid rate limiting...
+2025-04-01 20:42:47,038 - INFO - Waiting 4.62 seconds before scrolling...
+2025-04-01 20:42:55,333 - INFO - Collected post from 2025-02-28 13:10:45 by Unknown
+2025-04-01 20:42:55,917 - INFO - Collected post from 2025-02-28 12:16:45 by Unknown
+2025-04-01 20:42:57,001 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:42:59,028 - INFO - Collected post from 2025-02-28 12:09:53 by Unknown
+2025-04-01 20:42:59,606 - INFO - Collected post from 2025-02-28 11:38:32 by Unknown
+2025-04-01 20:43:00,187 - INFO - Collected post from 2025-02-28 11:23:11 by Unknown
+2025-04-01 20:43:01,820 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:43:03,850 - INFO - Collected post from 2025-02-28 10:34:45 by Unknown
+2025-04-01 20:43:04,911 - INFO - Waiting 3.23 seconds before scrolling...
+2025-04-01 20:43:13,891 - INFO - Collected post from 2025-02-28 10:00:42 by Unknown
+2025-04-01 20:43:14,990 - INFO - Collected post from 2025-02-28 09:47:16 by Unknown
+2025-04-01 20:43:15,528 - INFO - Waiting 4.43 seconds before scrolling...
+2025-04-01 20:43:27,309 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:43:29,335 - INFO - Collected post from 2025-02-28 08:58:45 by Unknown
+2025-04-01 20:43:30,385 - INFO - Waiting 4.15 seconds before scrolling...
+2025-04-01 20:43:38,200 - INFO - Collected post from 2025-02-28 06:43:45 by Unknown
+2025-04-01 20:43:38,787 - INFO - Collected post from 2025-02-28 02:22:45 by Unknown
+2025-04-01 20:43:39,365 - INFO - Collected post from 2025-02-28 01:22:45 by Unknown
+2025-04-01 20:43:39,934 - INFO - Collected post from 2025-02-28 01:22:45 by Unknown
+2025-04-01 20:43:40,484 - INFO - Collected post from 2025-02-27 22:16:18 by Unknown
+2025-04-01 20:43:41,556 - INFO - Collected post from 2025-02-27 22:13:45 by Unknown
+2025-04-01 20:43:42,603 - INFO - Waiting 3.09 seconds before scrolling...
+2025-04-01 20:43:48,702 - INFO - Completed 125 scrolls, collected 374 posts so far.
+2025-04-01 20:43:48,703 - INFO - Oldest post timestamp: 2025-02-27
+2025-04-01 20:43:52,017 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:43:54,048 - INFO - Collected post from 2025-02-27 21:37:45 by Unknown
+2025-04-01 20:43:55,133 - INFO - Collected post from 2025-02-27 20:26:11 by Unknown
+2025-04-01 20:43:55,788 - INFO - Collected post from 2025-02-27 20:19:45 by Unknown
+2025-04-01 20:43:56,892 - INFO - Waiting 4.92 seconds before scrolling...
+2025-04-01 20:44:07,080 - INFO - Collected post from 2025-02-27 20:16:47 by Unknown
+2025-04-01 20:44:07,654 - INFO - Collected post from 2025-02-27 18:51:20 by Unknown
+2025-04-01 20:44:08,703 - INFO - Collected post from 2025-02-27 18:40:45 by Unknown
+2025-04-01 20:44:09,751 - INFO - Waiting 4.19 seconds before scrolling...
+2025-04-01 20:44:18,172 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:44:20,206 - INFO - Collected post from 2025-02-27 15:25:05 by Unknown
+2025-04-01 20:44:21,279 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:44:23,310 - INFO - Collected post from 2025-02-27 15:13:45 by Unknown
+2025-04-01 20:44:23,898 - INFO - Collected post from 2025-02-27 14:49:45 by Unknown
+2025-04-01 20:44:25,009 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:44:27,040 - INFO - Collected post from 2025-02-27 13:01:45 by Unknown
+2025-04-01 20:44:28,181 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:44:30,214 - INFO - Collected post from 2025-02-27 12:28:45 by Unknown
+2025-04-01 20:44:31,770 - INFO - Waiting 3.50 seconds before scrolling...
+2025-04-01 20:44:42,100 - INFO - Collected post from 2025-02-27 12:22:45 by Unknown
+2025-04-01 20:44:42,637 - INFO - Waiting 3.09 seconds before scrolling...
+2025-04-01 20:44:48,741 - INFO - Saved checkpoint with 386 post IDs
+2025-04-01 20:44:52,065 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:44:54,100 - INFO - Collected post from 2025-02-27 11:43:45 by Unknown
+2025-04-01 20:44:55,150 - INFO - Collected post from 2025-02-27 10:52:45 by Unknown
+2025-04-01 20:44:55,687 - INFO - Waiting 4.89 seconds before scrolling...
+2025-04-01 20:45:03,584 - INFO - Completed 130 scrolls, collected 388 posts so far.
+2025-04-01 20:45:03,584 - INFO - Oldest post timestamp: 2025-02-27
+2025-04-01 20:45:04,249 - INFO - Collected post from 2025-02-27 00:55:45 by Unknown
+2025-04-01 20:45:04,797 - INFO - Collected post from 2025-02-27 00:32:57 by Unknown
+2025-04-01 20:45:05,381 - INFO - Collected post from 2025-02-27 00:01:45 by Unknown
+2025-04-01 20:45:06,498 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:45:08,529 - INFO - Collected post from 2025-02-26 23:07:45 by Unknown
+2025-04-01 20:45:09,104 - INFO - Collected post from 2025-02-26 22:01:45 by Unknown
+2025-04-01 20:45:10,206 - INFO - Collected post from 2025-02-26 20:52:45 by Unknown
+2025-04-01 20:45:10,771 - INFO - Collected post from 2025-02-26 20:10:45 by Unknown
+2025-04-01 20:45:11,298 - INFO - Taking a longer break (14.11s) to avoid rate limiting...
+2025-04-01 20:45:25,405 - INFO - Waiting 4.56 seconds before scrolling...
+2025-04-01 20:45:35,783 - INFO - Collected post from 2025-02-26 19:55:45 by Unknown
+2025-04-01 20:45:37,354 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:45:39,395 - INFO - Collected post from 2025-02-26 18:42:20 by Unknown
+2025-04-01 20:45:39,932 - INFO - Waiting 4.12 seconds before scrolling...
+2025-04-01 20:45:51,433 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:45:53,462 - INFO - Collected post from 2025-02-26 17:55:45 by Unknown
+2025-04-01 20:45:53,999 - INFO - Waiting 4.30 seconds before scrolling...
+2025-04-01 20:46:01,965 - INFO - Collected post from 2025-02-26 14:34:45 by Unknown
+2025-04-01 20:46:02,550 - INFO - Collected post from 2025-02-26 14:13:45 by Unknown
+2025-04-01 20:46:03,130 - INFO - Collected post from 2025-02-26 14:07:45 by Unknown
+2025-04-01 20:46:04,263 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:06,298 - INFO - Collected post from 2025-02-26 13:50:31 by Unknown
+2025-04-01 20:46:07,438 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:09,479 - INFO - Collected post from 2025-02-26 12:49:45 by Unknown
+2025-04-01 20:46:10,562 - INFO - Collected post from 2025-02-26 12:28:45 by Unknown
+2025-04-01 20:46:11,610 - INFO - Waiting 3.72 seconds before scrolling...
+2025-04-01 20:46:21,127 - INFO - Collected post from 2025-02-26 12:19:45 by Unknown
+2025-04-01 20:46:22,758 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:24,790 - INFO - Collected post from 2025-02-26 12:14:14 by Unknown
+2025-04-01 20:46:25,837 - INFO - Waiting 4.69 seconds before scrolling...
+2025-04-01 20:46:33,537 - INFO - Completed 135 scrolls, collected 406 posts so far.
+2025-04-01 20:46:33,537 - INFO - Oldest post timestamp: 2025-02-26
+2025-04-01 20:46:36,885 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:38,916 - INFO - Collected post from 2025-02-26 11:46:20 by Unknown
+2025-04-01 20:46:39,963 - INFO - Waiting 3.34 seconds before scrolling...
+2025-04-01 20:46:47,527 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:49,554 - INFO - Collected post from 2025-02-26 10:56:43 by Unknown
+2025-04-01 20:46:50,696 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:52,726 - INFO - Collected post from 2025-02-26 10:52:45 by Unknown
+2025-04-01 20:46:53,832 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:55,865 - INFO - Collected post from 2025-02-26 10:40:45 by Unknown
+2025-04-01 20:46:56,474 - INFO - Collected post from 2025-02-26 09:49:45 by Unknown
+2025-04-01 20:46:57,614 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:46:59,643 - INFO - Collected post from 2025-02-26 09:46:50 by Unknown
+2025-04-01 20:47:00,691 - INFO - Waiting 4.92 seconds before scrolling...
+2025-04-01 20:47:12,962 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:47:15,110 - INFO - Collected post from 2025-02-26 09:25:40 by Unknown
+2025-04-01 20:47:16,195 - INFO - Waiting 3.25 seconds before scrolling...
+2025-04-01 20:47:26,292 - INFO - Collected post from 2025-02-26 09:07:45 by Unknown
+2025-04-01 20:47:27,338 - INFO - Waiting 3.62 seconds before scrolling...
+2025-04-01 20:47:34,637 - INFO - Collected post from 2025-02-26 08:01:45 by Unknown
+2025-04-01 20:47:35,774 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:47:37,808 - INFO - Collected post from 2025-02-26 07:49:45 by Unknown
+2025-04-01 20:47:38,394 - INFO - Collected post from 2025-02-26 07:13:45 by Unknown
+2025-04-01 20:47:39,539 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:47:41,569 - INFO - Collected post from 2025-02-26 06:52:45 by Unknown
+2025-04-01 20:47:42,153 - INFO - Collected post from 2025-02-26 06:01:45 by Unknown
+2025-04-01 20:47:43,789 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:47:45,820 - INFO - Collected post from 2025-02-26 05:16:45 by Unknown
+2025-04-01 20:47:46,874 - INFO - Waiting 3.85 seconds before scrolling...
+2025-04-01 20:47:53,735 - INFO - Completed 140 scrolls, collected 420 posts so far.
+2025-04-01 20:47:53,735 - INFO - Oldest post timestamp: 2025-02-26
+2025-04-01 20:47:56,045 - INFO - Collected post from 2025-02-26 05:00:06 by Unknown
+2025-04-01 20:47:56,621 - INFO - Collected post from 2025-02-26 04:59:43 by Unknown
+2025-04-01 20:47:57,771 - INFO - Collected post from 2025-02-26 03:01:45 by Unknown
+2025-04-01 20:47:58,817 - INFO - Taking a longer break (16.51s) to avoid rate limiting...
+2025-04-01 20:48:15,331 - INFO - Waiting 3.46 seconds before scrolling...
+2025-04-01 20:48:24,173 - INFO - Collected post from 2025-02-26 02:08:31 by Unknown
+2025-04-01 20:48:25,339 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:48:27,370 - INFO - Collected post from 2025-02-26 01:55:45 by Unknown
+2025-04-01 20:48:28,476 - INFO - Collected post from 2025-02-26 01:46:55 by Unknown
+2025-04-01 20:48:29,530 - INFO - Waiting 4.62 seconds before scrolling...
+2025-04-01 20:48:38,446 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:48:40,471 - INFO - Collected post from 2025-02-26 00:49:45 by Unknown
+2025-04-01 20:48:41,086 - INFO - Collected post from 2025-02-26 00:49:45 by Unknown
+2025-04-01 20:48:41,682 - INFO - Collected post from 2025-02-26 00:43:45 by Unknown
+2025-04-01 20:48:42,278 - INFO - Collected post from 2025-02-25 23:44:44 by Unknown
+2025-04-01 20:48:42,919 - INFO - Collected post from 2025-02-25 23:16:45 by Unknown
+2025-04-01 20:48:44,474 - INFO - Waiting 4.99 seconds before scrolling...
+2025-04-01 20:48:55,442 - INFO - Collected post from 2025-02-25 22:55:45 by Unknown
+2025-04-01 20:48:57,049 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:48:59,075 - INFO - Collected post from 2025-02-25 22:36:39 by Unknown
+2025-04-01 20:49:00,121 - INFO - Waiting 3.46 seconds before scrolling...
+2025-04-01 20:49:10,546 - INFO - Collected post from 2025-02-25 20:43:45 by Unknown
+2025-04-01 20:49:11,602 - INFO - Waiting 4.56 seconds before scrolling...
+2025-04-01 20:49:19,172 - INFO - Completed 145 scrolls, collected 434 posts so far.
+2025-04-01 20:49:19,172 - INFO - Oldest post timestamp: 2025-02-25
+2025-04-01 20:49:19,818 - INFO - Collected post from 2025-02-25 19:28:45 by Unknown
+2025-04-01 20:49:20,390 - INFO - Collected post from 2025-02-25 19:25:16 by Unknown
+2025-04-01 20:49:20,971 - INFO - Collected post from 2025-02-25 19:19:45 by Unknown
+2025-04-01 20:49:21,515 - INFO - Collected post from 2025-02-25 19:13:45 by Unknown
+2025-04-01 20:49:22,605 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:49:24,635 - INFO - Collected post from 2025-02-25 18:59:55 by Unknown
+2025-04-01 20:49:25,679 - INFO - Collected post from 2025-02-25 18:58:45 by Unknown
+2025-04-01 20:49:26,215 - INFO - Waiting 4.60 seconds before scrolling...
+2025-04-01 20:49:36,638 - INFO - Collected post from 2025-02-25 18:55:45 by Unknown
+2025-04-01 20:49:37,684 - INFO - Collected post from 2025-02-25 18:40:45 by Unknown
+2025-04-01 20:49:38,731 - INFO - Waiting 3.10 seconds before scrolling...
+2025-04-01 20:49:47,636 - INFO - Collected post from 2025-02-25 18:40:45 by Unknown
+2025-04-01 20:49:48,708 - INFO - Collected post from 2025-02-25 18:40:45 by Unknown
+2025-04-01 20:49:49,754 - INFO - Waiting 3.81 seconds before scrolling...
+2025-04-01 20:49:56,577 - INFO - Saved checkpoint with 444 post IDs
+2025-04-01 20:49:57,233 - INFO - Collected post from 2025-02-25 18:40:45 by Unknown
+2025-04-01 20:49:57,772 - INFO - Collected post from 2025-02-25 18:40:16 by Unknown
+2025-04-01 20:49:58,345 - INFO - Collected post from 2025-02-25 18:36:14 by Unknown
+2025-04-01 20:49:58,944 - INFO - Collected post from 2025-02-25 18:28:45 by Unknown
+2025-04-01 20:49:59,527 - INFO - Collected post from 2025-02-25 18:22:45 by Unknown
+2025-04-01 20:50:01,149 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:50:03,177 - INFO - Collected post from 2025-02-25 18:22:45 by Unknown
+2025-04-01 20:50:04,233 - INFO - Saving intermediate results with 450 posts...
+2025-04-01 20:50:04,240 - INFO - Saved 450 posts to output/aave_posts_intermediate_450.csv
+2025-04-01 20:50:04,240 - INFO - Waiting 3.82 seconds before scrolling...
+2025-04-01 20:50:13,879 - INFO - Collected post from 2025-02-25 18:20:49 by Unknown
+2025-04-01 20:50:15,535 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:50:17,562 - INFO - Collected post from 2025-02-25 17:01:45 by Unknown
+2025-04-01 20:50:18,607 - INFO - Waiting 3.04 seconds before scrolling...
+2025-04-01 20:50:24,660 - INFO - Completed 150 scrolls, collected 452 posts so far.
+2025-04-01 20:50:24,660 - INFO - Oldest post timestamp: 2025-02-25
+2025-04-01 20:50:29,087 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:50:31,112 - INFO - Collected post from 2025-02-25 15:43:45 by Unknown
+2025-04-01 20:50:32,300 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:50:34,326 - INFO - Collected post from 2025-02-25 12:34:45 by Unknown
+2025-04-01 20:50:35,363 - INFO - Taking a longer break (16.99s) to avoid rate limiting...
+2025-04-01 20:50:52,356 - INFO - Waiting 3.90 seconds before scrolling...
+2025-04-01 20:51:00,509 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:51:02,535 - INFO - Collected post from 2025-02-25 09:39:26 by Unknown
+2025-04-01 20:51:03,145 - INFO - Collected post from 2025-02-25 00:58:45 by Unknown
+2025-04-01 20:51:04,300 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:51:06,346 - INFO - Collected post from 2025-02-24 23:25:45 by Unknown
+2025-04-01 20:51:06,950 - INFO - Collected post from 2025-02-24 21:22:45 by Unknown
+2025-04-01 20:51:07,539 - INFO - Collected post from 2025-02-24 20:01:42 by Unknown
+2025-04-01 20:51:08,633 - INFO - Collected post from 2025-02-24 15:16:45 by Unknown
+2025-04-01 20:51:09,689 - INFO - Waiting 3.24 seconds before scrolling...
+2025-04-01 20:51:18,736 - INFO - Collected post from 2025-02-24 15:01:45 by Unknown
+2025-04-01 20:51:19,848 - INFO - Collected post from 2025-02-24 14:19:45 by Unknown
+2025-04-01 20:51:20,384 - INFO - Waiting 4.52 seconds before scrolling...
+2025-04-01 20:51:30,710 - INFO - Collected post from 2025-02-24 13:28:45 by Unknown
+2025-04-01 20:51:32,342 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:51:34,368 - INFO - Collected post from 2025-02-24 12:52:45 by Unknown
+2025-04-01 20:51:35,415 - INFO - Waiting 3.16 seconds before scrolling...
+2025-04-01 20:51:42,203 - INFO - Collected post from 2025-02-24 09:04:45 by Unknown
+2025-04-01 20:51:43,333 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:51:45,379 - INFO - Collected post from 2025-02-23 15:44:16 by Unknown
+2025-04-01 20:51:45,978 - INFO - Collected post from 2025-02-23 13:10:29 by Unknown
+2025-04-01 20:51:46,560 - INFO - Collected post from 2025-02-23 11:23:32 by Unknown
+2025-04-01 20:51:47,135 - INFO - Collected post from 2025-02-23 04:48:24 by Unknown
+2025-04-01 20:51:48,791 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:51:50,819 - INFO - Collected post from 2025-02-22 23:31:45 by Unknown
+2025-04-01 20:51:51,865 - INFO - Waiting 4.99 seconds before scrolling...
+2025-04-01 20:51:59,861 - INFO - Completed 155 scrolls, collected 470 posts so far.
+2025-04-01 20:51:59,861 - INFO - Oldest post timestamp: 2025-02-22
+2025-04-01 20:52:04,285 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:52:06,314 - INFO - Collected post from 2025-02-22 23:07:04 by Unknown
+2025-04-01 20:52:06,841 - INFO - Waiting 4.69 seconds before scrolling...
+2025-04-01 20:52:18,947 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:52:20,972 - INFO - Collected post from 2025-02-22 20:31:45 by Unknown
+2025-04-01 20:52:21,586 - INFO - Collected post from 2025-02-22 16:52:45 by Unknown
+2025-04-01 20:52:22,137 - INFO - Waiting 4.10 seconds before scrolling...
+2025-04-01 20:52:30,423 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:52:32,490 - INFO - Collected post from 2025-02-22 12:10:45 by Unknown
+2025-04-01 20:52:33,091 - INFO - Collected post from 2025-02-22 11:03:08 by Unknown
+2025-04-01 20:52:33,708 - INFO - Collected post from 2025-02-22 08:13:33 by Unknown
+2025-04-01 20:52:34,251 - INFO - Collected post from 2025-02-22 03:22:45 by Unknown
+2025-04-01 20:52:35,355 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:52:37,381 - INFO - Collected post from 2025-02-22 01:04:45 by Unknown
+2025-04-01 20:52:38,433 - INFO - Waiting 4.67 seconds before scrolling...
+2025-04-01 20:52:49,915 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:52:49,915 - INFO - Waiting 3.92 seconds before scrolling...
+2025-04-01 20:53:00,188 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:53:02,223 - INFO - Collected post from 2025-02-21 20:07:45 by Unknown
+2025-04-01 20:53:03,306 - INFO - Collected post from 2025-02-21 18:58:26 by Unknown
+2025-04-01 20:53:03,848 - INFO - Collected post from 2025-02-21 18:54:26 by Unknown
+2025-04-01 20:53:04,894 - INFO - Waiting 4.94 seconds before scrolling...
+2025-04-01 20:53:12,842 - INFO - Completed 160 scrolls, collected 481 posts so far.
+2025-04-01 20:53:12,842 - INFO - Oldest post timestamp: 2025-02-21
+2025-04-01 20:53:13,509 - INFO - Collected post from 2025-02-21 13:16:45 by Unknown
+2025-04-01 20:53:14,096 - INFO - Collected post from 2025-02-21 11:55:41 by Unknown
+2025-04-01 20:53:14,640 - INFO - Collected post from 2025-02-21 09:21:19 by Unknown
+2025-04-01 20:53:15,369 - INFO - Collected post from 2025-02-21 09:17:45 by Unknown
+2025-04-01 20:53:16,579 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:53:18,604 - INFO - Collected post from 2025-02-21 08:55:45 by Unknown
+2025-04-01 20:53:19,702 - INFO - Collected post from 2025-02-21 07:40:45 by Unknown
+2025-04-01 20:53:20,309 - INFO - Collected post from 2025-02-21 02:19:45 by Unknown
+2025-04-01 20:53:21,346 - INFO - Taking a longer break (16.50s) to avoid rate limiting...
+2025-04-01 20:53:37,847 - INFO - Waiting 4.29 seconds before scrolling...
+2025-04-01 20:53:49,699 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:53:51,725 - INFO - Collected post from 2025-02-21 00:19:45 by Unknown
+2025-04-01 20:53:52,922 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:53:54,949 - INFO - Collected post from 2025-02-20 20:07:45 by Unknown
+2025-04-01 20:53:55,986 - INFO - Waiting 3.36 seconds before scrolling...
+2025-04-01 20:54:06,283 - INFO - Collected post from 2025-02-20 19:46:18 by Unknown
+2025-04-01 20:54:06,816 - INFO - Waiting 3.02 seconds before scrolling...
+2025-04-01 20:54:14,040 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:54:16,070 - INFO - Collected post from 2025-02-20 18:07:45 by Unknown
+2025-04-01 20:54:17,224 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:54:19,265 - INFO - Collected post from 2025-02-20 17:37:45 by Unknown
+2025-04-01 20:54:20,387 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:54:22,445 - INFO - Collected post from 2025-02-20 17:01:45 by Unknown
+2025-04-01 20:54:23,548 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:54:25,581 - INFO - Collected post from 2025-02-20 15:25:45 by Unknown
+2025-04-01 20:54:26,178 - INFO - Collected post from 2025-02-20 15:07:45 by Unknown
+2025-04-01 20:54:27,787 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:54:29,814 - INFO - Collected post from 2025-02-20 14:39:33 by Unknown
+2025-04-01 20:54:30,863 - INFO - Waiting 5.00 seconds before scrolling...
+2025-04-01 20:54:43,243 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:54:43,243 - INFO - Waiting 4.76 seconds before scrolling...
+2025-04-01 20:54:51,011 - INFO - Completed 165 scrolls, collected 497 posts so far.
+2025-04-01 20:54:51,011 - INFO - Oldest post timestamp: 2025-02-20
+2025-04-01 20:54:54,350 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:54:56,392 - INFO - Collected post from 2025-02-20 14:10:45 by Unknown
+2025-04-01 20:54:57,498 - INFO - Collected post from 2025-02-20 13:46:45 by Unknown
+2025-04-01 20:54:58,543 - INFO - Waiting 4.96 seconds before scrolling...
+2025-04-01 20:55:06,510 - INFO - Saved checkpoint with 499 post IDs
+2025-04-01 20:55:07,114 - INFO - Collected post from 2025-02-20 04:04:33 by Unknown
+2025-04-01 20:55:07,696 - INFO - Collected post from 2025-02-20 02:25:45 by Unknown
+2025-04-01 20:55:08,822 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:55:10,847 - INFO - Collected post from 2025-02-20 01:49:45 by Unknown
+2025-04-01 20:55:11,432 - INFO - Collected post from 2025-02-19 21:58:45 by Unknown
+2025-04-01 20:55:12,572 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:55:14,604 - INFO - Collected post from 2025-02-19 21:37:45 by Unknown
+2025-04-01 20:55:16,269 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:55:18,297 - INFO - Collected post from 2025-02-19 20:51:11 by Unknown
+2025-04-01 20:55:18,839 - INFO - Waiting 4.70 seconds before scrolling...
+2025-04-01 20:55:30,958 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:55:32,986 - INFO - Collected post from 2025-02-19 18:43:45 by Unknown
+2025-04-01 20:55:34,032 - INFO - Waiting 4.42 seconds before scrolling...
+2025-04-01 20:55:44,805 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:55:46,839 - INFO - Collected post from 2025-02-19 18:01:45 by Unknown
+2025-04-01 20:55:48,484 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:55:50,522 - INFO - Collected post from 2025-02-19 16:43:45 by Unknown
+2025-04-01 20:55:51,063 - INFO - Waiting 4.53 seconds before scrolling...
+2025-04-01 20:55:59,209 - INFO - Collected post from 2025-02-19 15:40:45 by Unknown
+2025-04-01 20:55:59,791 - INFO - Collected post from 2025-02-19 05:17:55 by Unknown
+2025-04-01 20:56:00,927 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:56:02,961 - INFO - Collected post from 2025-02-18 16:25:45 by Unknown
+2025-04-01 20:56:03,556 - INFO - Collected post from 2025-02-18 15:07:45 by Unknown
+2025-04-01 20:56:04,105 - INFO - Collected post from 2025-02-18 14:37:45 by Unknown
+2025-04-01 20:56:05,680 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:56:07,712 - INFO - Collected post from 2025-02-18 13:22:45 by Unknown
+2025-04-01 20:56:08,250 - INFO - Waiting 3.61 seconds before scrolling...
+2025-04-01 20:56:14,871 - INFO - Completed 170 scrolls, collected 514 posts so far.
+2025-04-01 20:56:14,871 - INFO - Oldest post timestamp: 2025-02-18
+2025-04-01 20:56:18,698 - INFO - Collected post from 2025-02-18 04:19:45 by Unknown
+2025-04-01 20:56:19,237 - INFO - Taking a longer break (14.70s) to avoid rate limiting...
+2025-04-01 20:56:33,938 - INFO - Waiting 4.93 seconds before scrolling...
+2025-04-01 20:56:44,677 - INFO - Collected post from 2025-02-18 02:55:45 by Unknown
+2025-04-01 20:56:45,795 - INFO - Collected post from 2025-02-17 20:37:45 by Unknown
+2025-04-01 20:56:46,842 - INFO - Waiting 4.56 seconds before scrolling...
+2025-04-01 20:56:55,593 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:56:57,627 - INFO - Collected post from 2025-02-17 11:22:45 by Unknown
+2025-04-01 20:56:58,727 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:57:00,755 - INFO - Collected post from 2025-02-17 11:19:45 by Unknown
+2025-04-01 20:57:01,858 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:57:03,892 - INFO - Collected post from 2025-02-16 20:34:45 by Unknown
+2025-04-01 20:57:04,507 - INFO - Collected post from 2025-02-16 18:22:45 by Unknown
+2025-04-01 20:57:05,104 - INFO - Collected post from 2025-02-16 14:43:11 by Unknown
+2025-04-01 20:57:06,661 - INFO - Waiting 4.34 seconds before scrolling...
+2025-04-01 20:57:17,401 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:57:19,432 - INFO - Collected post from 2025-02-16 10:49:45 by Unknown
+2025-04-01 20:57:20,989 - INFO - Waiting 4.44 seconds before scrolling...
+2025-04-01 20:57:32,813 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 20:57:32,813 - INFO - Waiting 3.77 seconds before scrolling...
+2025-04-01 20:57:39,591 - INFO - Completed 175 scrolls, collected 523 posts so far.
+2025-04-01 20:57:39,591 - INFO - Oldest post timestamp: 2025-02-16
+2025-04-01 20:57:40,816 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:57:42,850 - INFO - Collected post from 2025-02-16 05:27:33 by Unknown
+2025-04-01 20:57:43,395 - INFO - Collected post from 2025-02-15 19:10:19 by Unknown
+2025-04-01 20:57:43,984 - INFO - Collected post from 2025-02-15 15:09:50 by Unknown
+2025-04-01 20:57:45,152 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:57:47,187 - INFO - Collected post from 2025-02-15 13:52:45 by Unknown
+2025-04-01 20:57:48,355 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:57:50,405 - INFO - Collected post from 2025-02-15 13:30:51 by Unknown
+2025-04-01 20:57:51,458 - INFO - Waiting 3.06 seconds before scrolling...
+2025-04-01 20:58:02,025 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:58:04,057 - INFO - Collected post from 2025-02-15 06:25:45 by Unknown
+2025-04-01 20:58:04,596 - INFO - Waiting 4.06 seconds before scrolling...
+2025-04-01 20:58:15,605 - INFO - Collected post from 2025-02-15 05:52:35 by Unknown
+2025-04-01 20:58:16,142 - INFO - Waiting 3.40 seconds before scrolling...
+2025-04-01 20:58:23,714 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:58:25,748 - INFO - Collected post from 2025-02-15 04:13:45 by Unknown
+2025-04-01 20:58:26,303 - INFO - Collected post from 2025-02-15 03:47:36 by Unknown
+2025-04-01 20:58:26,864 - INFO - Collected post from 2025-02-15 00:28:45 by Unknown
+2025-04-01 20:58:27,412 - INFO - Collected post from 2025-02-14 19:31:45 by Unknown
+2025-04-01 20:58:28,567 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:58:30,599 - INFO - Collected post from 2025-02-14 19:07:45 by Unknown
+2025-04-01 20:58:32,157 - INFO - Waiting 3.13 seconds before scrolling...
+2025-04-01 20:58:42,668 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:58:44,727 - INFO - Collected post from 2025-02-14 17:01:45 by Unknown
+2025-04-01 20:58:45,264 - INFO - Waiting 3.16 seconds before scrolling...
+2025-04-01 20:58:51,432 - INFO - Completed 180 scrolls, collected 536 posts so far.
+2025-04-01 20:58:51,432 - INFO - Oldest post timestamp: 2025-02-14
+2025-04-01 20:58:55,309 - INFO - Collected post from 2025-02-14 15:43:45 by Unknown
+2025-04-01 20:58:55,916 - INFO - Collected post from 2025-02-14 14:25:45 by Unknown
+2025-04-01 20:58:56,955 - INFO - Taking a longer break (16.59s) to avoid rate limiting...
+2025-04-01 20:59:13,546 - INFO - Waiting 4.48 seconds before scrolling...
+2025-04-01 20:59:22,248 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:59:24,278 - INFO - Collected post from 2025-02-14 09:11:09 by Unknown
+2025-04-01 20:59:24,869 - INFO - Collected post from 2025-02-14 08:34:08 by Unknown
+2025-04-01 20:59:25,442 - INFO - Collected post from 2025-02-14 08:20:44 by Unknown
+2025-04-01 20:59:26,013 - INFO - Collected post from 2025-02-14 07:36:21 by Unknown
+2025-04-01 20:59:26,596 - INFO - Collected post from 2025-02-13 22:10:45 by Unknown
+2025-04-01 20:59:27,647 - INFO - Waiting 4.80 seconds before scrolling...
+2025-04-01 20:59:39,848 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:59:41,878 - INFO - Collected post from 2025-02-13 20:46:45 by Unknown
+2025-04-01 20:59:42,924 - INFO - Waiting 4.63 seconds before scrolling...
+2025-04-01 20:59:54,401 - INFO - Collected post from 2025-02-13 17:26:09 by Unknown
+2025-04-01 20:59:55,533 - INFO - Successfully clicked 'Read all' button
+2025-04-01 20:59:57,558 - INFO - Collected post from 2025-02-13 17:10:45 by Unknown
+2025-04-01 20:59:58,086 - INFO - Waiting 4.41 seconds before scrolling...
+2025-04-01 21:00:06,177 - INFO - Collected post from 2025-02-13 15:37:45 by Unknown
+2025-04-01 21:00:06,761 - INFO - Collected post from 2025-02-13 13:13:45 by Unknown
+2025-04-01 21:00:07,365 - INFO - Collected post from 2025-02-13 10:43:45 by Unknown
+2025-04-01 21:00:07,912 - INFO - Collected post from 2025-02-13 10:14:33 by Unknown
+2025-04-01 21:00:09,003 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:00:11,031 - INFO - Collected post from 2025-02-13 09:43:52 by Unknown
+2025-04-01 21:00:12,631 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:00:14,657 - INFO - Collected post from 2025-02-13 09:06:53 by Unknown
+2025-04-01 21:00:15,194 - INFO - Waiting 3.56 seconds before scrolling...
+2025-04-01 21:00:21,766 - INFO - Completed 185 scrolls, collected 552 posts so far.
+2025-04-01 21:00:21,766 - INFO - Oldest post timestamp: 2025-02-13
+2025-04-01 21:00:21,766 - INFO - Saved checkpoint with 552 post IDs
+2025-04-01 21:00:25,639 - INFO - Collected post from 2025-02-13 09:06:41 by Unknown
+2025-04-01 21:00:26,685 - INFO - Waiting 4.38 seconds before scrolling...
+2025-04-01 21:00:36,303 - INFO - Collected post from 2025-02-13 05:27:10 by Unknown
+2025-04-01 21:00:37,450 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:00:39,482 - INFO - Collected post from 2025-02-12 22:52:45 by Unknown
+2025-04-01 21:00:40,528 - INFO - Waiting 3.68 seconds before scrolling...
+2025-04-01 21:00:48,380 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:00:50,419 - INFO - Collected post from 2025-02-12 19:10:45 by Unknown
+2025-04-01 21:00:51,527 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:00:53,553 - INFO - Collected post from 2025-02-12 19:10:45 by Unknown
+2025-04-01 21:00:54,691 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:00:56,717 - INFO - Collected post from 2025-02-12 18:58:45 by Unknown
+2025-04-01 21:00:57,857 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:00:59,896 - INFO - Collected post from 2025-02-12 18:19:45 by Unknown
+2025-04-01 21:01:00,484 - INFO - Collected post from 2025-02-12 17:49:45 by Unknown
+2025-04-01 21:01:02,041 - INFO - Waiting 3.88 seconds before scrolling...
+2025-04-01 21:01:12,800 - INFO - Collected post from 2025-02-12 17:41:41 by Unknown
+2025-04-01 21:01:13,846 - INFO - Waiting 3.74 seconds before scrolling...
+2025-04-01 21:01:23,963 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:01:26,008 - INFO - Collected post from 2025-02-12 16:28:45 by Unknown
+2025-04-01 21:01:27,573 - INFO - Waiting 3.18 seconds before scrolling...
+2025-04-01 21:01:33,758 - INFO - Completed 190 scrolls, collected 562 posts so far.
+2025-04-01 21:01:33,758 - INFO - Oldest post timestamp: 2025-02-12
+2025-04-01 21:01:34,947 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:01:36,987 - INFO - Collected post from 2025-02-12 12:43:45 by Unknown
+2025-04-01 21:01:37,561 - INFO - Collected post from 2025-02-12 11:31:45 by Unknown
+2025-04-01 21:01:38,111 - INFO - Collected post from 2025-02-12 10:27:08 by Unknown
+2025-04-01 21:01:38,740 - INFO - Collected post from 2025-02-12 09:31:45 by Unknown
+2025-04-01 21:01:39,871 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:01:41,900 - INFO - Collected post from 2025-02-12 09:28:45 by Unknown
+2025-04-01 21:01:43,457 - INFO - Taking a longer break (16.87s) to avoid rate limiting...
+2025-04-01 21:02:00,327 - INFO - Waiting 3.73 seconds before scrolling...
+2025-04-01 21:02:10,901 - INFO - Collected post from 2025-02-12 09:01:45 by Unknown
+2025-04-01 21:02:11,957 - INFO - Waiting 4.45 seconds before scrolling...
+2025-04-01 21:02:21,653 - INFO - Collected post from 2025-02-12 09:01:45 by Unknown
+2025-04-01 21:02:22,227 - INFO - Collected post from 2025-02-12 08:03:22 by Unknown
+2025-04-01 21:02:23,303 - INFO - Collected post from 2025-02-12 07:25:45 by Unknown
+2025-04-01 21:02:24,370 - INFO - Waiting 4.05 seconds before scrolling...
+2025-04-01 21:02:32,028 - INFO - Collected post from 2025-02-12 03:40:45 by Unknown
+2025-04-01 21:02:32,569 - INFO - Collected post from 2025-02-12 03:16:45 by Unknown
+2025-04-01 21:02:33,152 - INFO - Collected post from 2025-02-12 02:20:07 by Unknown
+2025-04-01 21:02:33,719 - INFO - Collected post from 2025-02-11 21:52:45 by Unknown
+2025-04-01 21:02:34,295 - INFO - Collected post from 2025-02-11 20:55:45 by Unknown
+2025-04-01 21:02:35,408 - INFO - Collected post from 2025-02-11 20:28:45 by Unknown
+2025-04-01 21:02:35,944 - INFO - Waiting 3.23 seconds before scrolling...
+2025-04-01 21:02:44,984 - INFO - Collected post from 2025-02-11 20:01:45 by Unknown
+2025-04-01 21:02:46,060 - INFO - Collected post from 2025-02-11 19:22:45 by Unknown
+2025-04-01 21:02:46,653 - INFO - Collected post from 2025-02-11 18:46:45 by Unknown
+2025-04-01 21:02:47,699 - INFO - Waiting 4.28 seconds before scrolling...
+2025-04-01 21:02:54,987 - INFO - Completed 195 scrolls, collected 580 posts so far.
+2025-04-01 21:02:54,988 - INFO - Oldest post timestamp: 2025-02-11
+2025-04-01 21:02:58,417 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:03:00,445 - INFO - Collected post from 2025-02-11 18:43:45 by Unknown
+2025-04-01 21:03:02,191 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:03:04,218 - INFO - Collected post from 2025-02-11 18:37:45 by Unknown
+2025-04-01 21:03:04,754 - INFO - Waiting 3.97 seconds before scrolling...
+2025-04-01 21:03:12,943 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:03:14,970 - INFO - Collected post from 2025-02-11 17:22:45 by Unknown
+2025-04-01 21:03:16,288 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:03:18,320 - INFO - Collected post from 2025-02-11 17:16:45 by Unknown
+2025-04-01 21:03:18,956 - INFO - Collected post from 2025-02-11 16:52:45 by Unknown
+2025-04-01 21:03:20,114 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:03:22,173 - INFO - Collected post from 2025-02-11 16:25:45 by Unknown
+2025-04-01 21:03:23,360 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:03:25,392 - INFO - Collected post from 2025-02-11 16:22:54 by Unknown
+2025-04-01 21:03:26,441 - INFO - Waiting 4.36 seconds before scrolling...
+2025-04-01 21:03:38,205 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 21:03:38,205 - INFO - Waiting 3.71 seconds before scrolling...
+2025-04-01 21:03:44,926 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:03:49,377 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 21:03:49,377 - INFO - Waiting 3.30 seconds before scrolling...
+2025-04-01 21:03:56,840 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:03:58,872 - INFO - Collected post from 2025-02-11 15:09:25 by Unknown
+2025-04-01 21:03:59,975 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:04:02,007 - INFO - Collected post from 2025-02-11 14:53:04 by Unknown
+2025-04-01 21:04:02,589 - INFO - Collected post from 2025-02-11 14:40:45 by Unknown
+2025-04-01 21:04:03,161 - INFO - Collected post from 2025-02-11 14:40:45 by Unknown
+2025-04-01 21:04:03,736 - INFO - Collected post from 2025-02-11 14:37:45 by Unknown
+2025-04-01 21:04:04,784 - INFO - Waiting 4.29 seconds before scrolling...
+2025-04-01 21:04:12,084 - INFO - Completed 200 scrolls, collected 592 posts so far.
+2025-04-01 21:04:12,084 - INFO - Oldest post timestamp: 2025-02-11
+2025-04-01 21:04:16,382 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 21:04:16,382 - INFO - Taking a longer break (16.50s) to avoid rate limiting...
+2025-04-01 21:04:32,878 - INFO - Waiting 3.63 seconds before scrolling...
+2025-04-01 21:04:39,521 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:04:42,835 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:04:44,875 - INFO - Collected post from 2025-02-11 14:25:45 by Unknown
+2025-04-01 21:04:46,513 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:04:48,544 - INFO - Collected post from 2025-02-11 14:25:45 by Unknown
+2025-04-01 21:04:49,081 - INFO - Waiting 4.81 seconds before scrolling...
+2025-04-01 21:04:57,552 - INFO - Collected post from 2025-02-11 14:04:45 by Unknown
+2025-04-01 21:04:58,098 - INFO - Collected post from 2025-02-11 14:03:00 by Unknown
+2025-04-01 21:04:59,170 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:01,200 - INFO - Collected post from 2025-02-11 09:49:01 by Unknown
+2025-04-01 21:05:02,304 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:04,351 - INFO - Collected post from 2025-02-11 09:04:45 by Unknown
+2025-04-01 21:05:05,455 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:07,486 - INFO - Collected post from 2025-02-11 06:34:00 by Unknown
+2025-04-01 21:05:09,065 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:11,092 - INFO - Collected post from 2025-02-11 06:30:30 by Unknown
+2025-04-01 21:05:11,628 - INFO - Saving intermediate results with 600 posts...
+2025-04-01 21:05:11,637 - INFO - Saved 600 posts to output/aave_posts_intermediate_600.csv
+2025-04-01 21:05:11,637 - INFO - Waiting 4.78 seconds before scrolling...
+2025-04-01 21:05:23,856 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:25,881 - INFO - Collected post from 2025-02-11 06:27:23 by Unknown
+2025-04-01 21:05:26,418 - INFO - Waiting 3.44 seconds before scrolling...
+2025-04-01 21:05:32,931 - INFO - Saved checkpoint with 601 post IDs
+2025-04-01 21:05:37,375 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:39,415 - INFO - Collected post from 2025-02-11 04:19:45 by Unknown
+2025-04-01 21:05:39,951 - INFO - Waiting 3.77 seconds before scrolling...
+2025-04-01 21:05:46,731 - INFO - Completed 205 scrolls, collected 602 posts so far.
+2025-04-01 21:05:46,731 - INFO - Oldest post timestamp: 2025-02-11
+2025-04-01 21:05:47,983 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:50,019 - INFO - Collected post from 2025-02-10 20:19:45 by Unknown
+2025-04-01 21:05:51,168 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:53,206 - INFO - Collected post from 2025-02-10 16:40:41 by Unknown
+2025-04-01 21:05:54,348 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:05:56,389 - INFO - Collected post from 2025-02-10 14:25:45 by Unknown
+2025-04-01 21:05:56,944 - INFO - Collected post from 2025-02-10 13:32:56 by Unknown
+2025-04-01 21:05:58,090 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:06:00,128 - INFO - Collected post from 2025-02-10 13:06:29 by Unknown
+2025-04-01 21:06:01,179 - INFO - Waiting 3.10 seconds before scrolling...
+2025-04-01 21:06:11,126 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 21:06:11,126 - INFO - Waiting 4.74 seconds before scrolling...
+2025-04-01 21:06:21,752 - INFO - Collected post from 2025-02-10 12:18:22 by Unknown
+2025-04-01 21:06:22,834 - INFO - Collected post from 2025-02-10 11:49:14 by Unknown
+2025-04-01 21:06:23,880 - INFO - Waiting 3.00 seconds before scrolling...
+2025-04-01 21:06:31,101 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:06:33,133 - INFO - Collected post from 2025-02-10 09:41:43 by Unknown
+2025-04-01 21:06:33,712 - INFO - Collected post from 2025-02-10 09:24:59 by Unknown
+2025-04-01 21:06:34,833 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:06:36,862 - INFO - Collected post from 2025-02-10 07:53:12 by Unknown
+2025-04-01 21:06:37,952 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:06:39,978 - INFO - Collected post from 2025-02-10 07:27:10 by Unknown
+2025-04-01 21:06:40,552 - INFO - Collected post from 2025-02-10 07:20:31 by Unknown
+2025-04-01 21:06:41,598 - INFO - Waiting 3.97 seconds before scrolling...
+2025-04-01 21:06:51,887 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:06:53,917 - INFO - Collected post from 2025-02-10 07:18:17 by Unknown
+2025-04-01 21:06:55,094 - INFO - Collected post from 2025-02-10 04:43:28 by Unknown
+2025-04-01 21:06:56,149 - INFO - Waiting 4.96 seconds before scrolling...
+2025-04-01 21:07:04,119 - INFO - Completed 210 scrolls, collected 616 posts so far.
+2025-04-01 21:07:04,119 - INFO - Oldest post timestamp: 2025-02-10
+2025-04-01 21:07:06,384 - INFO - Collected post from 2025-02-10 04:37:17 by Unknown
+2025-04-01 21:07:06,968 - INFO - Collected post from 2025-02-10 04:27:19 by Unknown
+2025-04-01 21:07:08,059 - INFO - Collected post from 2025-02-10 04:08:01 by Unknown
+2025-04-01 21:07:09,117 - INFO - Taking a longer break (15.56s) to avoid rate limiting...
+2025-04-01 21:07:24,680 - INFO - Waiting 4.66 seconds before scrolling...
+2025-04-01 21:07:33,535 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:07:35,561 - INFO - Collected post from 2025-02-09 19:36:28 by Unknown
+2025-04-01 21:07:36,690 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:07:38,716 - INFO - Collected post from 2025-02-09 18:58:45 by Unknown
+2025-04-01 21:07:39,848 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:07:41,872 - INFO - Collected post from 2025-02-09 18:48:30 by Unknown
+2025-04-01 21:07:42,450 - INFO - Collected post from 2025-02-09 18:05:23 by Unknown
+2025-04-01 21:07:43,596 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:07:45,621 - INFO - Collected post from 2025-02-09 14:22:45 by Unknown
+2025-04-01 21:07:46,738 - INFO - Collected post from 2025-02-09 13:23:03 by Unknown
+2025-04-01 21:07:47,784 - INFO - Waiting 4.73 seconds before scrolling...
+2025-04-01 21:07:58,332 - INFO - Collected post from 2025-02-09 06:25:45 by Unknown
+2025-04-01 21:07:59,450 - INFO - Collected post from 2025-02-09 02:19:45 by Unknown
+2025-04-01 21:08:00,505 - INFO - Waiting 4.27 seconds before scrolling...
+2025-04-01 21:08:10,050 - INFO - Collected post from 2025-02-09 02:07:45 by Unknown
+2025-04-01 21:08:10,668 - INFO - Collected post from 2025-02-09 01:37:45 by Unknown
+2025-04-01 21:08:11,778 - INFO - Collected post from 2025-02-08 18:55:45 by Unknown
+2025-04-01 21:08:12,400 - INFO - Collected post from 2025-02-08 18:13:45 by Unknown
+2025-04-01 21:08:12,928 - INFO - Waiting 4.24 seconds before scrolling...
+2025-04-01 21:08:20,799 - INFO - Collected post from 2025-02-08 14:22:45 by Unknown
+2025-04-01 21:08:21,876 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:08:23,908 - INFO - Collected post from 2025-02-08 13:46:45 by Unknown
+2025-04-01 21:08:25,084 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:08:27,114 - INFO - Collected post from 2025-02-08 13:31:45 by Unknown
+2025-04-01 21:08:27,815 - INFO - Collected post from 2025-02-08 07:22:45 by Unknown
+2025-04-01 21:08:28,395 - INFO - Collected post from 2025-02-08 07:22:45 by Unknown
+2025-04-01 21:08:29,471 - INFO - Collected post from 2025-02-08 07:07:45 by Unknown
+2025-04-01 21:08:30,061 - INFO - Waiting 3.52 seconds before scrolling...
+2025-04-01 21:08:36,592 - INFO - Completed 215 scrolls, collected 637 posts so far.
+2025-04-01 21:08:36,592 - INFO - Oldest post timestamp: 2025-02-08
+2025-04-01 21:08:39,395 - INFO - Collected post from 2025-02-08 06:22:45 by Unknown
+2025-04-01 21:08:40,952 - INFO - Waiting 4.80 seconds before scrolling...
+2025-04-01 21:08:51,577 - INFO - Collected post from 2025-02-08 04:49:45 by Unknown
+2025-04-01 21:08:52,674 - INFO - Collected post from 2025-02-07 21:28:39 by Unknown
+2025-04-01 21:08:53,247 - INFO - Collected post from 2025-02-07 20:57:16 by Unknown
+2025-04-01 21:08:54,289 - INFO - Waiting 4.79 seconds before scrolling...
+2025-04-01 21:09:03,217 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:09:05,247 - INFO - Collected post from 2025-02-07 18:27:56 by Unknown
+2025-04-01 21:09:05,795 - INFO - Collected post from 2025-02-07 18:13:45 by Unknown
+2025-04-01 21:09:06,339 - INFO - Collected post from 2025-02-07 17:28:10 by Unknown
+2025-04-01 21:09:07,383 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:09:09,416 - INFO - Collected post from 2025-02-07 14:21:20 by Unknown
+2025-04-01 21:09:10,466 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:09:12,508 - INFO - Collected post from 2025-02-07 13:34:45 by Unknown
+2025-04-01 21:09:13,555 - INFO - Waiting 4.92 seconds before scrolling...
+2025-04-01 21:09:25,233 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 21:09:25,233 - INFO - Waiting 3.34 seconds before scrolling...
+2025-04-01 21:09:35,746 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 21:09:35,747 - INFO - Waiting 4.99 seconds before scrolling...
+2025-04-01 21:09:43,743 - INFO - Completed 220 scrolls, collected 646 posts so far.
+2025-04-01 21:09:43,743 - INFO - Oldest post timestamp: 2025-02-07
+2025-04-01 21:09:44,936 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:09:46,961 - INFO - Collected post from 2025-02-07 12:07:48 by Unknown
+2025-04-01 21:09:47,541 - INFO - Collected post from 2025-02-07 11:17:45 by Unknown
+2025-04-01 21:09:48,114 - INFO - Collected post from 2025-02-07 11:11:21 by Unknown
+2025-04-01 21:09:48,705 - INFO - Collected post from 2025-02-07 11:10:17 by Unknown
+2025-04-01 21:09:49,804 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:09:51,840 - INFO - Collected post from 2025-02-07 11:09:42 by Unknown
+2025-04-01 21:09:53,396 - INFO - Taking a longer break (16.67s) to avoid rate limiting...
+2025-04-01 21:10:10,065 - INFO - Waiting 4.10 seconds before scrolling...
+2025-04-01 21:10:21,537 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:10:23,567 - INFO - Collected post from 2025-02-07 11:02:26 by Unknown
+2025-04-01 21:10:24,613 - INFO - Waiting 3.61 seconds before scrolling...
+2025-04-01 21:10:34,001 - INFO - Collected post from 2025-02-07 11:01:45 by Unknown
+2025-04-01 21:10:35,617 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:10:37,645 - INFO - Collected post from 2025-02-07 10:45:41 by Unknown
+2025-04-01 21:10:38,748 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:10:40,803 - INFO - Collected post from 2025-02-07 10:40:20 by Unknown
+2025-04-01 21:10:41,898 - INFO - Waiting 3.73 seconds before scrolling...
+2025-04-01 21:10:48,633 - INFO - Saved checkpoint with 655 post IDs
+2025-04-01 21:10:49,287 - INFO - Collected post from 2025-02-07 10:25:45 by Unknown
+2025-04-01 21:10:50,396 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:10:52,422 - INFO - Collected post from 2025-02-07 08:59:49 by Unknown
+2025-04-01 21:10:53,575 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:10:55,603 - INFO - Collected post from 2025-02-07 07:47:44 by Unknown
+2025-04-01 21:10:56,189 - INFO - Collected post from 2025-02-07 05:23:26 by Unknown
+2025-04-01 21:10:57,366 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:10:59,395 - INFO - Collected post from 2025-02-06 17:58:45 by Unknown
+2025-04-01 21:11:00,498 - INFO - Collected post from 2025-02-06 16:34:45 by Unknown
+2025-04-01 21:11:01,025 - INFO - Waiting 3.21 seconds before scrolling...
+2025-04-01 21:11:10,101 - INFO - Collected post from 2025-02-06 16:31:45 by Unknown
+2025-04-01 21:11:11,782 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:11:13,818 - INFO - Collected post from 2025-02-06 16:07:45 by Unknown
+2025-04-01 21:11:14,362 - INFO - Waiting 3.83 seconds before scrolling...
+2025-04-01 21:11:21,196 - INFO - Completed 225 scrolls, collected 663 posts so far.
+2025-04-01 21:11:21,196 - INFO - Oldest post timestamp: 2025-02-06
+2025-04-01 21:11:25,588 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:11:27,619 - INFO - Collected post from 2025-02-06 15:31:55 by Unknown
+2025-04-01 21:11:28,155 - INFO - Waiting 4.25 seconds before scrolling...
+2025-04-01 21:11:36,571 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:11:38,600 - INFO - Collected post from 2025-02-06 11:34:45 by Unknown
+2025-04-01 21:11:39,751 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:11:41,841 - INFO - Collected post from 2025-02-06 11:10:40 by Unknown
+2025-04-01 21:11:42,885 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:11:44,918 - INFO - Collected post from 2025-02-06 10:31:42 by Unknown
+2025-04-01 21:11:45,527 - INFO - Collected post from 2025-02-06 10:13:45 by Unknown
+2025-04-01 21:11:46,100 - INFO - Collected post from 2025-02-06 08:14:13 by Unknown
+2025-04-01 21:11:47,263 - INFO - Collected post from 2025-02-06 07:45:53 by Unknown
+2025-04-01 21:11:47,830 - INFO - Waiting 4.22 seconds before scrolling...
+2025-04-01 21:11:58,867 - INFO - Collected post from 2025-02-06 06:25:45 by Unknown
+2025-04-01 21:11:59,376 - INFO - Waiting 4.23 seconds before scrolling...
+2025-04-01 21:12:09,794 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:12:11,838 - INFO - Collected post from 2025-02-06 04:01:53 by Unknown
+2025-04-01 21:12:13,417 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:12:15,456 - INFO - Collected post from 2025-02-05 20:31:45 by Unknown
+2025-04-01 21:12:15,956 - INFO - Waiting 4.39 seconds before scrolling...
+2025-04-01 21:12:25,488 - INFO - Collected post from 2025-02-05 15:34:45 by Unknown
+2025-04-01 21:12:26,034 - INFO - Collected post from 2025-02-05 15:25:43 by Unknown
+2025-04-01 21:12:27,077 - INFO - Collected post from 2025-02-05 15:04:45 by Unknown
+2025-04-01 21:12:28,132 - INFO - Waiting 3.25 seconds before scrolling...
+2025-04-01 21:12:34,393 - INFO - Completed 230 scrolls, collected 676 posts so far.
+2025-04-01 21:12:34,394 - INFO - Oldest post timestamp: 2025-02-05
+2025-04-01 21:12:36,610 - INFO - Collected post from 2025-02-05 14:57:41 by Unknown
+2025-04-01 21:12:37,720 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:12:39,769 - INFO - Collected post from 2025-02-05 14:04:45 by Unknown
+2025-04-01 21:12:40,873 - INFO - Collected post from 2025-02-05 13:52:45 by Unknown
+2025-04-01 21:12:41,439 - INFO - Taking a longer break (12.46s) to avoid rate limiting...
+2025-04-01 21:12:53,895 - INFO - Waiting 3.59 seconds before scrolling...
+2025-04-01 21:13:03,246 - INFO - Collected post from 2025-02-05 13:10:45 by Unknown
+2025-04-01 21:13:04,927 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:13:06,954 - INFO - Collected post from 2025-02-05 12:43:45 by Unknown
+2025-04-01 21:13:07,565 - INFO - Collected post from 2025-02-05 12:31:45 by Unknown
+2025-04-01 21:13:08,093 - INFO - Waiting 3.32 seconds before scrolling...
+2025-04-01 21:13:15,623 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:13:17,648 - INFO - Collected post from 2025-02-05 12:16:45 by Unknown
+2025-04-01 21:13:18,772 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:13:20,803 - INFO - Collected post from 2025-02-05 12:09:56 by Unknown
+2025-04-01 21:13:21,920 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:13:23,964 - INFO - Collected post from 2025-02-05 11:26:24 by Unknown
+2025-04-01 21:13:24,578 - INFO - Collected post from 2025-02-05 11:01:45 by Unknown
+2025-04-01 21:13:25,188 - INFO - Collected post from 2025-02-05 08:05:32 by Unknown
+2025-04-01 21:13:26,216 - INFO - Waiting 3.74 seconds before scrolling...
+2025-04-01 21:13:36,354 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:13:38,396 - INFO - Collected post from 2025-02-05 07:31:11 by Unknown
+2025-04-01 21:13:39,451 - INFO - Collected post from 2025-02-05 06:58:45 by Unknown
+2025-04-01 21:13:40,506 - INFO - Waiting 4.01 seconds before scrolling...
+2025-04-01 21:13:50,379 - INFO - Collected post from 2025-02-05 00:37:45 by Unknown
+2025-04-01 21:13:51,989 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:13:54,030 - INFO - Collected post from 2025-02-04 23:04:45 by Unknown
+2025-04-01 21:13:54,570 - INFO - Waiting 4.12 seconds before scrolling...
+2025-04-01 21:14:01,698 - INFO - Completed 235 scrolls, collected 691 posts so far.
+2025-04-01 21:14:01,698 - INFO - Oldest post timestamp: 2025-02-04
+2025-04-01 21:14:02,891 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:04,933 - INFO - Collected post from 2025-02-04 20:25:45 by Unknown
+2025-04-01 21:14:06,043 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:08,069 - INFO - Collected post from 2025-02-04 19:40:45 by Unknown
+2025-04-01 21:14:09,112 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:11,145 - INFO - Collected post from 2025-02-04 19:34:45 by Unknown
+2025-04-01 21:14:12,190 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:14,219 - INFO - Collected post from 2025-02-04 16:07:45 by Unknown
+2025-04-01 21:14:14,768 - INFO - Collected post from 2025-02-04 14:46:45 by Unknown
+2025-04-01 21:14:16,324 - INFO - Waiting 3.09 seconds before scrolling...
+2025-04-01 21:14:24,708 - INFO - Collected post from 2025-02-04 14:46:45 by Unknown
+2025-04-01 21:14:25,862 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:27,901 - INFO - Collected post from 2025-02-04 14:43:45 by Unknown
+2025-04-01 21:14:28,996 - INFO - Collected post from 2025-02-04 12:47:03 by Unknown
+2025-04-01 21:14:30,043 - INFO - Waiting 4.20 seconds before scrolling...
+2025-04-01 21:14:40,585 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:42,624 - INFO - Collected post from 2025-02-04 09:22:45 by Unknown
+2025-04-01 21:14:43,709 - INFO - Collected post from 2025-02-04 09:21:18 by Unknown
+2025-04-01 21:14:44,890 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:46,921 - INFO - Collected post from 2025-02-04 08:39:04 by Unknown
+2025-04-01 21:14:47,963 - INFO - Waiting 3.31 seconds before scrolling...
+2025-04-01 21:14:55,444 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:14:57,470 - INFO - Collected post from 2025-02-04 05:10:45 by Unknown
+2025-04-01 21:14:58,621 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:15:00,978 - INFO - Collected post from 2025-02-04 03:01:02 by Unknown
+2025-04-01 21:15:01,522 - INFO - Collected post from 2025-02-04 02:43:45 by Unknown
+2025-04-01 21:15:02,143 - INFO - Collected post from 2025-02-04 02:19:45 by Unknown
+2025-04-01 21:15:03,237 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:15:05,268 - INFO - Collected post from 2025-02-03 22:34:45 by Unknown
+2025-04-01 21:15:06,407 - INFO - Collected post from 2025-02-03 22:28:45 by Unknown
+2025-04-01 21:15:06,942 - INFO - Waiting 3.81 seconds before scrolling...
+2025-04-01 21:15:17,344 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:15:19,381 - INFO - Collected post from 2025-02-03 21:43:45 by Unknown
+2025-04-01 21:15:21,071 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:15:23,101 - INFO - Collected post from 2025-02-03 20:04:45 by Unknown
+2025-04-01 21:15:23,643 - INFO - Waiting 3.75 seconds before scrolling...
+2025-04-01 21:15:30,402 - INFO - Completed 240 scrolls, collected 710 posts so far.
+2025-04-01 21:15:30,402 - INFO - Oldest post timestamp: 2025-02-03
+2025-04-01 21:15:34,783 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:15:36,811 - INFO - Collected post from 2025-02-03 19:47:25 by Unknown
+2025-04-01 21:15:37,858 - INFO - Taking a longer break (14.01s) to avoid rate limiting...
+2025-04-01 21:15:51,870 - INFO - Waiting 4.98 seconds before scrolling...
+2025-04-01 21:15:59,860 - INFO - Saved checkpoint with 711 post IDs
+2025-04-01 21:16:00,557 - INFO - Collected post from 2025-02-03 17:25:45 by Unknown
+2025-04-01 21:16:01,159 - INFO - Collected post from 2025-02-03 17:07:42 by Unknown
+2025-04-01 21:16:02,303 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:16:04,338 - INFO - Collected post from 2025-02-03 14:39:28 by Unknown
+2025-04-01 21:16:05,464 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:16:07,494 - INFO - Collected post from 2025-02-03 13:31:45 by Unknown
+2025-04-01 21:16:08,595 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:16:10,647 - INFO - Collected post from 2025-02-03 12:40:45 by Unknown
+2025-04-01 21:16:11,739 - INFO - Collected post from 2025-02-03 12:25:38 by Unknown
+2025-04-01 21:16:12,785 - INFO - Waiting 4.85 seconds before scrolling...
+2025-04-01 21:16:23,508 - INFO - Collected post from 2025-02-03 10:28:45 by Unknown
+2025-04-01 21:16:24,620 - INFO - Collected post from 2025-02-03 09:29:49 by Unknown
+2025-04-01 21:16:25,156 - INFO - Waiting 3.49 seconds before scrolling...
+2025-04-01 21:16:35,772 - INFO - Collected post from 2025-02-03 09:18:08 by Unknown
+2025-04-01 21:16:36,821 - INFO - Waiting 4.27 seconds before scrolling...
+2025-04-01 21:16:44,791 - INFO - Collected post from 2025-02-03 08:51:53 by Unknown
+2025-04-01 21:16:45,983 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:16:48,014 - INFO - Collected post from 2025-02-03 07:55:45 by Unknown
+2025-04-01 21:16:48,646 - INFO - Collected post from 2025-02-03 06:58:45 by Unknown
+2025-04-01 21:16:49,269 - INFO - Collected post from 2025-02-03 06:08:21 by Unknown
+2025-04-01 21:16:50,620 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:16:52,686 - INFO - Collected post from 2025-02-03 06:01:45 by Unknown
+2025-04-01 21:16:53,846 - INFO - Collected post from 2025-02-03 05:49:25 by Unknown
+2025-04-01 21:16:54,364 - INFO - Waiting 3.47 seconds before scrolling...
+2025-04-01 21:17:00,847 - INFO - Completed 245 scrolls, collected 726 posts so far.
+2025-04-01 21:17:00,848 - INFO - Oldest post timestamp: 2025-02-03
+2025-04-01 21:17:03,192 - INFO - Collected post from 2025-02-03 03:58:45 by Unknown
+2025-04-01 21:17:03,791 - INFO - Collected post from 2025-02-02 23:22:45 by Unknown
+2025-04-01 21:17:04,880 - INFO - Collected post from 2025-02-02 19:29:09 by Unknown
+2025-04-01 21:17:05,926 - INFO - Waiting 3.18 seconds before scrolling...
+2025-04-01 21:17:15,069 - INFO - Collected post from 2025-02-02 19:19:45 by Unknown
+2025-04-01 21:17:16,117 - INFO - Collected post from 2025-02-02 17:22:45 by Unknown
+2025-04-01 21:17:17,275 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:17:19,300 - INFO - Collected post from 2025-02-02 16:19:45 by Unknown
+2025-04-01 21:17:20,337 - INFO - Waiting 4.23 seconds before scrolling...
+2025-04-01 21:17:28,188 - INFO - Collected post from 2025-02-02 14:50:02 by Unknown
+2025-04-01 21:17:29,315 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:17:31,343 - INFO - Collected post from 2025-02-02 14:44:01 by Unknown
+2025-04-01 21:17:31,935 - INFO - Collected post from 2025-02-02 13:55:45 by Unknown
+2025-04-01 21:17:32,478 - INFO - Collected post from 2025-02-02 12:32:46 by Unknown
+2025-04-01 21:17:33,087 - INFO - Collected post from 2025-02-02 10:16:45 by Unknown
+2025-04-01 21:17:34,180 - INFO - Collected post from 2025-02-02 10:07:34 by Unknown
+2025-04-01 21:17:34,716 - INFO - Waiting 4.45 seconds before scrolling...
+2025-04-01 21:17:44,962 - INFO - Collected post from 2025-02-02 08:46:45 by Unknown
+2025-04-01 21:17:46,037 - INFO - Collected post from 2025-02-02 08:46:26 by Unknown
+2025-04-01 21:17:47,157 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:17:49,182 - INFO - Collected post from 2025-02-02 08:00:43 by Unknown
+2025-04-01 21:17:50,220 - INFO - Waiting 4.96 seconds before scrolling...
+2025-04-01 21:18:02,567 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:18:04,594 - INFO - Collected post from 2025-02-02 05:43:45 by Unknown
+2025-04-01 21:18:05,649 - INFO - Waiting 4.35 seconds before scrolling...
+2025-04-01 21:18:13,008 - INFO - Completed 250 scrolls, collected 742 posts so far.
+2025-04-01 21:18:13,008 - INFO - Oldest post timestamp: 2025-02-02
+2025-04-01 21:18:13,659 - INFO - Collected post from 2025-02-01 18:36:38 by Unknown
+2025-04-01 21:18:14,787 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:18:16,824 - INFO - Collected post from 2025-02-01 18:10:45 by Unknown
+2025-04-01 21:18:17,954 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:18:19,989 - INFO - Collected post from 2025-02-01 17:17:17 by Unknown
+2025-04-01 21:18:20,530 - INFO - Collected post from 2025-02-01 16:13:45 by Unknown
+2025-04-01 21:18:21,660 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:18:23,691 - INFO - Collected post from 2025-02-01 14:43:45 by Unknown
+2025-04-01 21:18:24,808 - INFO - Collected post from 2025-02-01 14:33:27 by Unknown
+2025-04-01 21:18:25,854 - INFO - Taking a longer break (16.76s) to avoid rate limiting...
+2025-04-01 21:18:42,612 - INFO - Waiting 4.02 seconds before scrolling...
+2025-04-01 21:18:52,437 - INFO - Collected post from 2025-02-01 14:25:45 by Unknown
+2025-04-01 21:18:53,532 - INFO - Collected post from 2025-02-01 14:25:45 by Unknown
+2025-04-01 21:18:54,589 - INFO - Saving intermediate results with 750 posts...
+2025-04-01 21:18:54,600 - INFO - Saved 750 posts to output/aave_posts_intermediate_750.csv
+2025-04-01 21:18:54,600 - INFO - Waiting 4.97 seconds before scrolling...
+2025-04-01 21:19:02,582 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:19:05,975 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:19:08,008 - INFO - Collected post from 2025-02-01 14:16:59 by Unknown
+2025-04-01 21:19:09,054 - INFO - Waiting 4.75 seconds before scrolling...
+2025-04-01 21:19:17,414 - INFO - Collected post from 2025-02-01 12:37:45 by Unknown
+2025-04-01 21:19:17,989 - INFO - Collected post from 2025-02-01 12:35:02 by Unknown
+2025-04-01 21:19:18,553 - INFO - Collected post from 2025-02-01 12:25:45 by Unknown
+2025-04-01 21:19:19,145 - INFO - Collected post from 2025-02-01 11:30:48 by Unknown
+2025-04-01 21:19:19,692 - INFO - Collected post from 2025-02-01 11:15:44 by Unknown
+2025-04-01 21:19:21,310 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:19:23,538 - INFO - Collected post from 2025-02-01 11:04:45 by Unknown
+2025-04-01 21:19:24,113 - INFO - Waiting 4.71 seconds before scrolling...
+2025-04-01 21:19:35,674 - INFO - Collected post from 2025-02-01 09:07:22 by Unknown
+2025-04-01 21:19:36,266 - INFO - Waiting 3.70 seconds before scrolling...
+2025-04-01 21:19:42,972 - INFO - Completed 255 scrolls, collected 758 posts so far.
+2025-04-01 21:19:42,972 - INFO - Oldest post timestamp: 2025-02-01
+2025-04-01 21:19:47,315 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:19:49,341 - INFO - Collected post from 2025-02-01 08:37:45 by Unknown
+2025-04-01 21:19:50,386 - INFO - Waiting 4.13 seconds before scrolling...
+2025-04-01 21:19:58,729 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:20:00,758 - INFO - Collected post from 2025-02-01 07:37:45 by Unknown
+2025-04-01 21:20:01,324 - INFO - Collected post from 2025-02-01 03:15:52 by Unknown
+2025-04-01 21:20:01,908 - INFO - Collected post from 2025-01-31 22:40:45 by Unknown
+2025-04-01 21:20:03,031 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:20:05,067 - INFO - Collected post from 2025-01-31 22:24:03 by Unknown
+2025-04-01 21:20:06,155 - INFO - Successfully clicked 'Read all' button
+2025-04-01 21:20:08,209 - INFO - Collected post from 2025-01-31 20:47:25 by Unknown
+2025-04-01 21:20:09,229 - INFO - Waiting 4.23 seconds before scrolling...
+2025-04-01 21:20:20,134 - INFO - Collected post from 2025-01-31 20:16:45 by Unknown
+2025-04-01 21:20:20,652 - INFO - Waiting 4.32 seconds before scrolling...
+2025-04-01 21:20:27,979 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:20:30,758 - INFO - Collected post from 2025-01-31 18:52:50 by Unknown
+2025-04-01 21:20:31,821 - INFO - Collected post from 2025-01-31 18:44:11 by Unknown
+2025-04-01 21:20:32,321 - INFO - Waiting 4.54 seconds before scrolling...
+2025-04-01 21:20:39,864 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:20:44,104 - WARNING - No new posts in this scroll (1/5 attempts)
+2025-04-01 21:20:44,104 - INFO - Waiting 4.90 seconds before scrolling...
+2025-04-01 21:20:52,012 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:20:52,018 - INFO - Completed 260 scrolls, collected 767 posts so far.
+2025-04-01 21:20:52,018 - INFO - Oldest post timestamp: 2025-01-31
+2025-04-01 21:20:56,271 - WARNING - No new posts in this scroll (2/5 attempts)
+2025-04-01 21:20:56,272 - INFO - Taking a longer break (18.72s) to avoid rate limiting...
+2025-04-01 21:21:14,995 - INFO - Waiting 4.19 seconds before scrolling...
+2025-04-01 21:21:22,191 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:21:22,198 - INFO - Saved checkpoint with 767 post IDs
+2025-04-01 21:21:26,450 - WARNING - No new posts in this scroll (3/5 attempts)
+2025-04-01 21:21:26,450 - INFO - Waiting 4.47 seconds before scrolling...
+2025-04-01 21:21:33,925 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:21:38,183 - WARNING - No new posts in this scroll (4/5 attempts)
+2025-04-01 21:21:38,183 - INFO - Waiting 4.28 seconds before scrolling...
+2025-04-01 21:21:45,472 - WARNING - Page height didn't change after scroll, trying a different approach...
+2025-04-01 21:21:49,731 - INFO - No new posts found after 5 scrolls, stopping.
+2025-04-01 21:21:49,742 - INFO - Saved 767 posts to output/aave_posts_complete.csv
+2025-04-01 21:21:49,743 - INFO - Saved checkpoint with 767 post IDs
+2025-04-01 21:21:49,939 - INFO - Browser closed
+2025-04-01 21:21:50,102 - INFO - Cleaned up temporary directory: /tmp/chrome-data-yda4uevb
