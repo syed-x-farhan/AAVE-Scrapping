@@ -1,8 +1,6 @@
 name: Run Web Scraper
 
 on:
-  schedule:
-    - cron: "0 21 * * *"  # Runs at 2 AM Pakistan Time (9 PM UTC)
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
