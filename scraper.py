@@ -245,9 +245,12 @@ def load_existing_data():
 def process_post(driver, wrapper, collected_post_ids, read_all_selector):
     """Process a single post wrapper element with stale-safe operations"""
     try:
-        # Scroll element into view to ensure it's properly loaded - use a less aggressive scroll
-        driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'auto'});", wrapper)
-        time.sleep(0.5)  # Increased pause after scrolling to element
+        # More gentle scrolling to avoid triggering too many loads at once
+        driver.execute_script(
+            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", 
+            wrapper
+        )
+        time.sleep(random.uniform(0.8, 1.5))  # Longer pause
         
         post_id = safe_get_attribute(wrapper, "data-post-id")
         if not post_id:
@@ -266,47 +269,94 @@ def process_post(driver, wrapper, collected_post_ids, read_all_selector):
             formatted_timestamp = "Unknown"
             timestamp_ms = None
 
-        # Try to click "Read all" button if it exists within this post
-        try:
-            read_all_buttons = wrapper.find_elements(By.CSS_SELECTOR, read_all_selector)
-
-            if read_all_buttons:
-                for button in read_all_buttons:
-                    try:
-                        # Ensure button is clickable with a shorter wait
-                        WebDriverWait(driver, 3).until(
-                            EC.element_to_be_clickable((By.CSS_SELECTOR, read_all_selector))
-                        )
-                        if click_read_all_button(driver, button):
-                            # Successfully clicked, give time for content to expand
-                            time.sleep(1)
-                    except Exception as e:
-                        logger.debug(f"Error with Read all button: {str(e)}")
-        except Exception as e:
-            logger.debug(f"Error handling Read all button: {str(e)}")
-
-        # Now get the content after potentially expanding it
-        content_text = "No content"
-        try:
-            content_element = WebDriverWait(driver, 3).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "div.post-text-wrapper.community"))
-            )
-            content_text = safe_get_text(content_element, "No content")
-        except (TimeoutException, NoSuchElementException, StaleElementReferenceException):
+        # Try multiple selectors for "Read all" buttons - sites sometimes change their structure
+        read_all_selectors = [
+            read_all_selector,
+            "span.read-more",
+            "button[class*='read']",
+            "div[class*='expand']",
+            "a[class*='more']"
+        ]
+        
+        for selector in read_all_selectors:
             try:
-                # Second attempt with direct find
-                content_element = wrapper.find_element(By.CSS_SELECTOR, "div.post-text-wrapper.community")
-                content_text = safe_get_text(content_element, "No content")
-            except (NoSuchElementException, StaleElementReferenceException):
-                content_text = "Could not find content"
+                read_all_buttons = wrapper.find_elements(By.CSS_SELECTOR, selector)
+                
+                if read_all_buttons:
+                    for button in read_all_buttons:
+                        if "read" in safe_get_text(button, "").lower() or "more" in safe_get_text(button, "").lower():
+                            # Multiple click attempts with different methods
+                            for attempt in range(3):
+                                try:
+                                    if attempt == 0:
+                                        # Try normal click
+                                        button.click()
+                                    elif attempt == 1:
+                                        # Try JavaScript click
+                                        driver.execute_script("arguments[0].click();", button)
+                                    else:
+                                        # Try action chains
+                                        actions = webdriver.ActionChains(driver)
+                                        actions.move_to_element(button).click().perform()
+                                        
+                                    logger.info(f"Successfully clicked 'Read all' button with method {attempt+1}")
+                                    time.sleep(random.uniform(1.0, 2.0))  # Longer wait for expansion
+                                    break
+                                except Exception as e:
+                                    logger.debug(f"Click attempt {attempt+1} failed: {str(e)}")
+            except Exception as e:
+                logger.debug(f"Error with selector {selector}: {str(e)}")
 
-        # Try to get the author name
+        # Try multiple content selectors to be more resilient to site changes
+        content_selectors = [
+            "div.post-text-wrapper.community",
+            "div.post-text-wrapper",
+            "div.post-text",
+            "div[class*='post-content']",
+            "div[class*='message']",
+            "div[class*='text-content']"
+        ]
+        
+        content_text = "No content"
+        for selector in content_selectors:
+            try:
+                content_elements = wrapper.find_elements(By.CSS_SELECTOR, selector)
+                if content_elements:
+                    for element in content_elements:
+                        text = safe_get_text(element, "")
+                        if text and len(text) > len(content_text):
+                            content_text = text
+            except (NoSuchElementException, StaleElementReferenceException):
+                continue
+                
+        if content_text == "No content":
+            # Last resort - try to get any text content from the post
+            try:
+                all_text = safe_get_text(wrapper, "No content")
+                if len(all_text) > 10:  # If it has substantial text
+                    content_text = all_text
+            except:
+                pass
+
+        # Try multiple author selectors
+        author_selectors = [
+            "span.community-author",
+            "a.community-author",
+            "div[class*='author']",
+            "span[class*='username']",
+            "a[class*='user']"
+        ]
+        
         author_name = "Unknown"
-        try:
-            author_element = wrapper.find_element(By.CSS_SELECTOR, "span.community-author")
-            author_name = safe_get_text(author_element, "Unknown")
-        except (NoSuchElementException, StaleElementReferenceException):
-            author_name = "Unknown"
+        for selector in author_selectors:
+            try:
+                author_elements = wrapper.find_elements(By.CSS_SELECTOR, selector)
+                if author_elements:
+                    author_name = safe_get_text(author_elements[0], "Unknown")
+                    if author_name != "Unknown":
+                        break
+            except:
+                continue
 
         post_data = {
             "post_id": post_id,
@@ -321,13 +371,12 @@ def process_post(driver, wrapper, collected_post_ids, read_all_selector):
         return post_id, post_data
         
     except StaleElementReferenceException:
-        # If the wrapper itself is stale
         logger.debug("Post element became stale during processing")
         return None, None
     except Exception as e:
         logger.warning(f"Error processing post: {str(e)}")
         return None, None
-        
+
 def scrape_coinmarketcap():
     """Main function to scrape CoinMarketCap community posts"""
     # Define target date (January 1, 2022) as timestamp
@@ -358,6 +407,12 @@ def scrape_coinmarketcap():
     
     # Track if we were interrupted in the previous run
     interrupted = len(collected_post_ids) > 0
+    
+    # Increased tolerance for no new posts
+    no_posts_max_attempts = 10  # Increased from 5
+    
+    # This will track consecutive scrolls with the same number of posts
+    same_post_count_scrolls = 0
     
     try:
         # Initialize WebDriver
@@ -427,42 +482,79 @@ def scrape_coinmarketcap():
                 save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count)
                 last_checkpoint_time = current_time
                 
+            # First wait to ensure the page is fully loaded before getting posts
+            time.sleep(random.uniform(3.0, 5.0))
+                
             try:
-                # Wait for posts to load after scrolling
-                post_wrappers = WebDriverWait(driver, 20).until(
+                # More robust wait for posts - increased timeout and more explicit condition
+                post_wrappers = WebDriverWait(driver, 30).until(
                     EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div.post-wrapper.community"))
                 )
             except TimeoutException:
-                logger.warning("Timeout waiting for posts. Attempting to continue...")
-                # Try a different scroll approach
-                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(random.uniform(3.0, 5.0))
+                logger.warning("Timeout waiting for posts. Attempting to recover...")
+                
+                # Try multiple recovery methods
+                # 1. Check for "No results found" messages
+                try:
+                    no_results = driver.find_elements(By.XPATH, "//*[contains(text(), 'No results') or contains(text(), 'Nothing found')]")
+                    if no_results:
+                        logger.info("Found 'No results' message on page, but this might be incorrect. Trying to refresh...")
+                        driver.refresh()
+                        time.sleep(random.uniform(8.0, 12.0))
+                        continue
+                except:
+                    pass
+                    
+                # 2. Try a more aggressive scroll approach
+                for _ in range(3):
+                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                    time.sleep(random.uniform(2.0, 3.0))
+                
+                # 3. Try a middle-of-page scroll to trigger lazy loading
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
+                time.sleep(random.uniform(5.0, 7.0))
                 continue
     
             # Get the current height for comparison after scrolling
             last_height = driver.execute_script("return document.body.scrollHeight")
             
-            # Use our safe find elements function
-            post_wrappers = safe_find_elements(driver, By.CSS_SELECTOR, "div.post-wrapper.community")
+            # Use our safe find elements function with longer timeout
+            post_wrappers = safe_find_elements(driver, By.CSS_SELECTOR, "div.post-wrapper.community", wait_time=15)
     
             if not post_wrappers:
                 no_new_posts_count += 1
-                if no_new_posts_count >= 5:
-                    logger.info("No posts found after multiple attempts, stopping.")
-                    break
+                if no_new_posts_count >= no_posts_max_attempts:
+                    logger.info(f"No posts found after {no_posts_max_attempts} attempts, but this could be incorrect.")
+                    # Instead of stopping, try refreshing the page
+                    driver.refresh()
+                    time.sleep(random.uniform(8.0, 12.0))
+                    no_new_posts_count = 0  # Reset counter
+                    continue
                 logger.warning(f"No posts found on attempt {no_new_posts_count}, trying again...")
-                time.sleep(random.uniform(3.0, 5.0))
+                time.sleep(random.uniform(5.0, 8.0))  # Increased wait time
                 continue
     
             prev_posts_count = len(collected_post_ids)
             reached_target_date = False
             
             # Process posts in smaller batches to reduce stale element issues
-            batch_size = 5
+            batch_size = 3  # Reduced batch size
             for i in range(0, len(post_wrappers), batch_size):
                 batch = post_wrappers[i:i+batch_size]
                 
                 for wrapper in batch:
+                    # Improved scroll behavior - only scroll the element partly into view
+                    # to avoid triggering too many loads at once
+                    try:
+                        driver.execute_script(
+                            "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", 
+                            wrapper
+                        )
+                        # Random wait between processing elements to appear more human-like
+                        time.sleep(random.uniform(0.8, 1.5))  # Increased individual post processing time
+                    except:
+                        logger.debug("Error scrolling to element, continuing")
+                    
                     post_id, post_data = process_post(driver, wrapper, collected_post_ids, read_all_selector)
                     
                     if post_id and post_data:
@@ -479,8 +571,8 @@ def scrape_coinmarketcap():
                             reached_target_date = True
                             break
                             
-                # Take a short break between batches
-                time.sleep(0.5)
+                # Take a longer break between batches
+                time.sleep(random.uniform(1.0, 2.0))  # Increased inter-batch wait
                 
                 if reached_target_date:
                     break
@@ -489,71 +581,232 @@ def scrape_coinmarketcap():
                 logger.info("Breaking main loop after reaching target date")
                 break
     
-            # Reset counter if we found new posts
+            # Improved detection of "stuck" scraping
             if len(collected_post_ids) > prev_posts_count:
                 no_new_posts_count = 0
+                same_post_count_scrolls = 0
             else:
                 no_new_posts_count += 1
-                if no_new_posts_count >= 5:
-                    logger.info(f"No new posts found after {no_new_posts_count} scrolls, stopping.")
+                same_post_count_scrolls += 1
+                
+                # More aggressive recovery if we're stuck for a while
+                if same_post_count_scrolls >= 3:
+                    logger.warning(f"No new posts for {same_post_count_scrolls} scrolls. Attempting recovery...")
+                    
+                    # Try multiple recovery methods
+                    # 1. More aggressive scroll pattern
+                    for _ in range(3):
+                        scroll_dist = random.randint(300, 1200)
+                        driver.execute_script(f"window.scrollBy(0, {scroll_dist});")
+                        time.sleep(random.uniform(1.0, 2.0))
+                    
+                    # 2. Attempt to find and click "Load more" or "Show more" buttons
+                    for button_text in ["Load", "more", "Show", "View"]:
+                        try:
+                            buttons = driver.find_elements(By.XPATH, f"//button[contains(text(), '{button_text}')]")
+                            if buttons:
+                                for button in buttons:
+                                    try:
+                                        # Scroll to button
+                                        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", button)
+                                        time.sleep(1)
+                                        # Try to click
+                                        driver.execute_script("arguments[0].click();", button)
+                                        logger.info(f"Clicked a '{button_text}' button")
+                                        time.sleep(random.uniform(3.0, 5.0))
+                                        break
+                                    except Exception as e:
+                                        logger.debug(f"Failed to click button: {str(e)}")
+                        except Exception:
+                            pass
+                    
+                    # 3. If we've been stuck for a long time, refresh the page
+                    if same_post_count_scrolls >= 5:
+                        logger.info("Page might be stuck, refreshing...")
+                        driver.refresh()
+                        time.sleep(random.uniform(8.0, 12.0))  # Longer wait after refresh
+                        same_post_count_scrolls = 0  # Reset counter
+                        
+                        # Re-handle cookie consent if needed
+                        try:
+                            WebDriverWait(driver, 5).until(
+                                EC.element_to_be_clickable((By.CSS_SELECTOR, "button[id*='cookie'], button[id*='consent']"))
+                            ).click()
+                        except:
+                            pass
+                            
+                # Only stop if we've exhausted all recovery options and still no new posts
+                if no_new_posts_count >= no_posts_max_attempts and same_post_count_scrolls >= 8:
+                    logger.info(f"No new posts found after extensive recovery attempts, stopping.")
                     break
-                logger.warning(f"No new posts in this scroll ({no_new_posts_count}/5 attempts)")
+                
+                logger.warning(f"No new posts in this scroll ({no_new_posts_count}/{no_posts_max_attempts} attempts)")
     
-            # Save intermediate results every 50 posts
-            if len(posts_data) % 50 == 0 and len(posts_data) > 0:
+            # Add random mouse movements to appear more human-like
+            if scroll_count % 5 == 0:
+                try:
+                    # Move mouse to random position on screen
+                    action = webdriver.ActionChains(driver)
+                    x, y = random.randint(100, 800), random.randint(100, 600)
+                    action.move_by_offset(x, y).perform()
+                    logger.debug("Performed random mouse movement")
+                except Exception:
+                    pass  # Ignore if this fails in headless mode
+    
+            # Save intermediate results every 25 posts (increased frequency)
+            if len(posts_data) % 25 == 0 and len(posts_data) > 0:
                 logger.info(f"Saving intermediate results with {len(posts_data)} posts...")
                 save_data(posts_data, f"aave_posts_intermediate_{len(posts_data)}.csv", intermediate=True)
     
-            # Anti-ban measures
-            if scroll_count % 10 == 0 and scroll_count > 0:
-                pause_time = random.uniform(10.0, 20.0)
+            # Anti-ban measures - more varied pauses
+            if scroll_count % 8 == 0 and scroll_count > 0:
+                pause_time = random.uniform(15.0, 30.0)  # Increased maximum pause time
                 logger.info(f"Taking a longer break ({pause_time:.2f}s) to avoid rate limiting...")
                 time.sleep(pause_time)
     
-            # Random wait time before next scroll - longer wait to reduce stale elements
-            wait_time = random.uniform(3.0, 5.0)
+            # More varied wait times before next scroll
+            if scroll_count % 3 == 0:
+                wait_time = random.uniform(5.0, 8.0)  # Longer wait every 3rd scroll
+            else:
+                wait_time = random.uniform(3.0, 5.0)  # Normal wait
+                
             logger.info(f"Waiting {wait_time:.2f} seconds before scrolling...")
             time.sleep(wait_time)
     
-            # Try multiple scroll methods to be more effective
-            if scroll_count % 3 == 0:
-                # Method 1: Scroll to bottom with smoother behavior
+            # More varied scroll methods
+            scroll_method = random.randint(1, 4)
+            
+            if scroll_method == 1:
+                # Full scroll to bottom
                 driver.execute_script("window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});")
-            else:
-                # Method 2: Scroll by a random amount with smoother behavior
-                scroll_amount = random.randint(600, 1200)  # Reduced scroll distance
+            elif scroll_method == 2:
+                # Partial scroll - random distance
+                scroll_amount = random.randint(500, 1500)
                 driver.execute_script(f"window.scrollBy({{top: {scroll_amount}, behavior: 'smooth'}});")
+            elif scroll_method == 3:
+                # Multiple small scrolls to simulate human behavior
+                for _ in range(3):
+                   small_scroll = random.randint(200, 400)
+                   driver.execute_script(f"window.scrollBy(0, {small_scroll});")
+                   time.sleep(random.uniform(0.5, 1.2))
+            else:
+                # Scroll to 70-90% of page height - often triggers lazy loading better
+                scroll_percent = random.uniform(0.7, 0.9)
+                driver.execute_script(f"window.scrollTo(0, document.body.scrollHeight * {scroll_percent});")
             
             scroll_count += 1
             
             # Wait longer after scrolling to allow page to stabilize
-            time.sleep(3)
+            time.sleep(random.uniform(4.0, 6.0))  # Increased post-scroll wait time
     
             # Check if scroll was effective
             new_height = driver.execute_script("return document.body.scrollHeight")
             if new_height == last_height:
                 logger.warning("Page height didn't change after scroll, trying a different approach...")
+                
                 # Try clicking a "Load more" button if it exists
                 try:
-                    load_more_buttons = driver.find_elements(By.XPATH, "//button[contains(text(), 'Load') or contains(text(), 'more') or contains(text(), 'Show')]")
-                    if load_more_buttons:
-                        for button in load_more_buttons:
-                            try:
-                                driver.execute_script("arguments[0].click();", button)
-                                logger.info("Clicked a 'Load more' button")
-                                time.sleep(3)
-                                break
-                            except Exception as e:
-                                logger.warning(f"Failed to click 'Load more' button: {str(e)}")
+                    # Look for a wider variety of load more button patterns
+                    load_more_selectors = [
+                        "//button[contains(text(), 'Load') or contains(text(), 'more') or contains(text(), 'Show')]",
+                        "//a[contains(text(), 'Load') or contains(text(), 'more') or contains(text(), 'Show')]",
+                        "//div[contains(@class, 'load') or contains(@class, 'more')]",
+                        "//span[contains(text(), 'Load') or contains(text(), 'more')]"
+                    ]
+                    
+                    clicked = False
+                    for selector in load_more_selectors:
+                        if clicked:
+                            break
+                            
+                        buttons = driver.find_elements(By.XPATH, selector)
+                        if buttons:
+                            for button in buttons:
+                                try:
+                                    # First make sure it's visible
+                                    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", button)
+                                    time.sleep(1.5)
+                                    
+                                    # Try different click methods
+                                    try:
+                                        # Regular click
+                                        button.click()
+                                    except:
+                                        # JavaScript click as fallback
+                                        driver.execute_script("arguments[0].click();", button)
+                                        
+                                    logger.info(f"Clicked a button matching '{selector}'")
+                                    time.sleep(random.uniform(3.0, 5.0))
+                                    clicked = True
+                                    break
+                                except Exception as e:
+                                    logger.debug(f"Failed to click button: {str(e)}")
+                                    
+                    if not clicked:
+                        # Try a more aggressive approach - search for clickable elements at the bottom of the page
+                        try:
+                            # Scroll to bottom
+                            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                            time.sleep(2)
+                            
+                            # Get elements near the bottom
+                            bottom_elements = driver.execute_script("""
+                                const bottom = document.body.scrollHeight - 300;
+                                return Array.from(document.querySelectorAll('button, a')).filter(el => {
+                                    const rect = el.getBoundingClientRect();
+                                    const elemTop = rect.top + window.scrollY;
+                                    return elemTop > bottom;
+                                });
+                            """)
+                            
+                            if bottom_elements:
+                                for elem in bottom_elements[:3]:  # Try the first few elements
+                                    try:
+                                        driver.execute_script("arguments[0].click();", elem)
+                                        logger.info("Clicked an element at the bottom of the page")
+                                        time.sleep(3)
+                                        break
+                                    except:
+                                        pass
+                        except Exception as e:
+                            logger.debug(f"Bottom element click approach failed: {str(e)}")
                 except Exception as e:
                     logger.warning(f"Error finding 'Load more' button: {str(e)}")
                     
-                # If still no change, try refreshing the page occasionally
+                # If still no change, try a variety of tactics
                 if scroll_count % 15 == 0 and new_height == last_height:
-                    logger.info("Page might be stuck, refreshing...")
-                    driver.refresh()
-                    time.sleep(5)  # Wait for page to reload
-                    # Re-handle cookie consent if needed
+                    recovery_method = random.randint(1, 3)
+                    
+                    if recovery_method == 1:
+                        # Refresh the page
+                        logger.info("Page might be stuck, refreshing...")
+                        driver.refresh()
+                        time.sleep(random.uniform(8.0, 12.0))  # Wait for page to reload
+                    elif recovery_method == 2:
+                        # Try going back and forth in history
+                        logger.info("Trying back-and-forth navigation...")
+                        current_url = driver.current_url
+                        driver.execute_script("window.history.go(-1)")
+                        time.sleep(3)
+                        driver.execute_script("window.history.go(1)")
+                        time.sleep(3)
+                        # Make sure we're back at the right URL
+                        if driver.current_url != current_url:
+                            driver.get(current_url)
+                            time.sleep(5)
+                    else:
+                        # Try adding a URL parameter to refresh content
+                        logger.info("Adding URL parameter to refresh content...")
+                        current_url = driver.current_url
+                        random_param = f"?refresh={int(time.time())}"
+                        if "?" in current_url:
+                            modified_url = current_url + "&" + random_param
+                        else:
+                            modified_url = current_url + random_param
+                        driver.get(modified_url)
+                        time.sleep(5)
+                    
+                    # Re-handle cookie consent if needed after any of these recovery methods
                     try:
                         WebDriverWait(driver, 5).until(
                             EC.element_to_be_clickable((By.CSS_SELECTOR, "button[id*='cookie'], button[id*='consent']"))
