@@ -24,3 +24,82 @@
 2025-04-13 10:52:30,133 - INFO - Browser closed
 2025-04-13 10:52:30,147 - INFO - Cleaned up temporary directory: /tmp/chrome-data-xic251yh
 2025-04-13 10:52:30,147 - INFO - Scraping of new posts completed successfully
+2025-04-13 10:55:04,232 - INFO - Newest timestamp in existing data: 2025-04-01 19:01:03
+2025-04-13 10:55:04,236 - INFO - Loaded 767 existing posts from output file
+2025-04-13 10:55:04,236 - INFO - Scraping posts newer than 2025-04-01 19:01:03.572000
+2025-04-13 10:55:04,236 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-p9hdvafr
+2025-04-13 10:55:15,603 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/uniswap/
+2025-04-13 10:55:23,544 - INFO - No cookie consent dialog found
+2025-04-13 10:55:23,552 - INFO - Posts loaded successfully.
+2025-04-13 10:55:23,582 - INFO - Found 5 posts on current view
+2025-04-13 10:55:24,178 - INFO - Collected post from 2025-04-13 08:40:45 by Unknown
+2025-04-13 10:55:24,178 - INFO - Found new post from 2025-04-13 08:40:45 by Unknown
+2025-04-13 10:55:24,782 - INFO - Collected post from 2025-04-13 04:53:41 by Unknown
+2025-04-13 10:55:24,782 - INFO - Found new post from 2025-04-13 04:53:41 by Unknown
+2025-04-13 10:55:25,479 - INFO - Collected post from 2025-04-12 17:55:23 by Unknown
+2025-04-13 10:55:25,479 - INFO - Found new post from 2025-04-12 17:55:23 by Unknown
+2025-04-13 10:55:26,595 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:55:28,623 - INFO - Collected post from 2025-04-12 08:53:26 by Unknown
+2025-04-13 10:55:28,623 - INFO - Found new post from 2025-04-12 08:53:26 by Unknown
+2025-04-13 10:55:29,782 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:55:31,809 - INFO - Collected post from 2025-04-12 07:37:51 by Unknown
+2025-04-13 10:55:31,809 - INFO - Found new post from 2025-04-12 07:37:51 by Unknown
+2025-04-13 10:55:32,310 - INFO - Found 5 new posts in this batch
+2025-04-13 10:55:35,367 - INFO - Found 11 posts on current view
+2025-04-13 10:55:37,030 - INFO - Collected post from 2025-04-12 05:22:55 by Unknown
+2025-04-13 10:55:37,030 - INFO - Found new post from 2025-04-12 05:22:55 by Unknown
+2025-04-13 10:55:37,607 - INFO - Collected post from 2025-04-11 19:40:45 by Unknown
+2025-04-13 10:55:37,607 - INFO - Found new post from 2025-04-11 19:40:45 by Unknown
+2025-04-13 10:55:38,214 - INFO - Collected post from 2025-04-11 16:13:45 by Unknown
+2025-04-13 10:55:38,214 - INFO - Found new post from 2025-04-11 16:13:45 by Unknown
+2025-04-13 10:55:39,304 - INFO - Collected post from 2025-04-11 15:22:36 by Unknown
+2025-04-13 10:55:39,304 - INFO - Found new post from 2025-04-11 15:22:36 by Unknown
+2025-04-13 10:55:40,351 - INFO - Found 4 new posts in this batch
+2025-04-13 10:55:43,409 - INFO - Found 11 posts on current view
+2025-04-13 10:55:46,217 - INFO - Collected post from 2025-04-11 15:19:45 by Unknown
+2025-04-13 10:55:46,217 - INFO - Found new post from 2025-04-11 15:19:45 by Unknown
+2025-04-13 10:55:47,310 - INFO - Collected post from 2025-04-11 15:10:45 by Unknown
+2025-04-13 10:55:47,310 - INFO - Found new post from 2025-04-11 15:10:45 by Unknown
+2025-04-13 10:55:48,356 - INFO - Found 2 new posts in this batch
+2025-04-13 10:55:51,409 - INFO - Found 10 posts on current view
+2025-04-13 10:55:54,737 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:55:56,765 - INFO - Collected post from 2025-04-11 11:46:45 by Unknown
+2025-04-13 10:55:56,766 - INFO - Found new post from 2025-04-11 11:46:45 by Unknown
+2025-04-13 10:55:58,499 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:56:00,533 - INFO - Collected post from 2025-04-11 10:37:45 by Unknown
+2025-04-13 10:56:00,533 - INFO - Found new post from 2025-04-11 10:37:45 by Unknown
+2025-04-13 10:56:01,069 - INFO - Found 2 new posts in this batch
+2025-04-13 10:56:04,121 - INFO - Found 10 posts on current view
+2025-04-13 10:56:07,467 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:56:09,493 - INFO - Collected post from 2025-04-11 10:25:48 by Unknown
+2025-04-13 10:56:09,493 - INFO - Found new post from 2025-04-11 10:25:48 by Unknown
+2025-04-13 10:56:11,176 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:56:13,203 - INFO - Collected post from 2025-04-11 09:28:45 by Unknown
+2025-04-13 10:56:13,204 - INFO - Found new post from 2025-04-11 09:28:45 by Unknown
+2025-04-13 10:56:13,740 - INFO - Found 2 new posts in this batch
+2025-04-13 10:56:16,788 - INFO - Found 9 posts on current view
+2025-04-13 10:56:20,672 - INFO - Collected post from 2025-04-11 05:43:45 by Unknown
+2025-04-13 10:56:20,672 - INFO - Found new post from 2025-04-11 05:43:45 by Unknown
+2025-04-13 10:56:21,199 - INFO - Found 1 new posts in this batch
+2025-04-13 10:56:24,258 - INFO - Found 11 posts on current view
+2025-04-13 10:56:28,531 - INFO - Found 0 new posts in this batch
+2025-04-13 10:56:31,584 - INFO - Found 10 posts on current view
+2025-04-13 10:56:35,426 - INFO - Found 0 new posts in this batch
+2025-04-13 10:56:38,481 - INFO - Found 10 posts on current view
+2025-04-13 10:56:41,878 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:56:43,923 - INFO - Collected post from 2025-04-11 05:07:11 by Unknown
+2025-04-13 10:56:43,924 - INFO - Found new post from 2025-04-11 05:07:11 by Unknown
+2025-04-13 10:56:44,970 - INFO - Found 1 new posts in this batch
+2025-04-13 10:56:48,023 - INFO - Found 10 posts on current view
+2025-04-13 10:56:51,876 - INFO - Found 0 new posts in this batch
+2025-04-13 10:56:54,924 - INFO - Found 9 posts on current view
+2025-04-13 10:56:58,769 - INFO - Found 0 new posts in this batch
+2025-04-13 10:57:01,823 - INFO - Found 10 posts on current view
+2025-04-13 10:57:05,623 - INFO - Found 0 new posts in this batch
+2025-04-13 10:57:05,623 - INFO - No new posts found after multiple attempts, stopping.
+2025-04-13 10:57:05,623 - INFO - Added 17 new posts to existing 767 posts
+2025-04-13 10:57:05,626 - INFO - Created backup of existing data at output/backup_20250413_105705_aave_posts.csv
+2025-04-13 10:57:05,636 - INFO - Saved 784 posts to output/aave_posts_complete.csv
+2025-04-13 10:57:05,788 - INFO - Browser closed
+2025-04-13 10:57:05,831 - INFO - Cleaned up temporary directory: /tmp/chrome-data-p9hdvafr
+2025-04-13 10:57:05,831 - INFO - Scraping of new posts completed successfully
