@@ -1,0 +1,44 @@
+2025-04-13 10:09:05,829 - INFO - Newest timestamp in existing data: 2025-03-30 10:38:18
+2025-04-13 10:09:05,834 - INFO - Loaded 542 existing posts from output file
+2025-04-13 10:09:05,834 - INFO - Scraping posts newer than 2025-03-30 10:38:18.320000
+2025-04-13 10:09:05,834 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-mdcvccph
+2025-04-13 10:09:08,060 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/convex-finance/
+2025-04-13 10:09:14,195 - INFO - No cookie consent dialog found
+2025-04-13 10:09:14,203 - INFO - Posts loaded successfully.
+2025-04-13 10:09:14,244 - INFO - Found 7 posts on current view
+2025-04-13 10:09:14,803 - INFO - Collected post from 2025-04-13 03:10:55 by Unknown
+2025-04-13 10:09:14,803 - INFO - Found new post from 2025-04-13 03:10:55 by Unknown
+2025-04-13 10:09:15,380 - INFO - Collected post from 2025-04-12 10:46:38 by Unknown
+2025-04-13 10:09:15,381 - INFO - Found new post from 2025-04-12 10:46:38 by Unknown
+2025-04-13 10:09:15,977 - INFO - Collected post from 2025-04-11 11:00:06 by Unknown
+2025-04-13 10:09:15,977 - INFO - Found new post from 2025-04-11 11:00:06 by Unknown
+2025-04-13 10:09:16,618 - INFO - Collected post from 2025-04-11 03:46:45 by Unknown
+2025-04-13 10:09:16,618 - INFO - Found new post from 2025-04-11 03:46:45 by Unknown
+2025-04-13 10:09:17,221 - INFO - Collected post from 2025-04-11 01:49:45 by Unknown
+2025-04-13 10:09:17,221 - INFO - Found new post from 2025-04-11 01:49:45 by Unknown
+2025-04-13 10:09:18,314 - INFO - Collected post from 2025-04-08 21:17:16 by Unknown
+2025-04-13 10:09:18,314 - INFO - Found new post from 2025-04-08 21:17:16 by Unknown
+2025-04-13 10:09:18,966 - INFO - Collected post from 2025-04-08 18:24:03 by Unknown
+2025-04-13 10:09:18,966 - INFO - Found new post from 2025-04-08 18:24:03 by Unknown
+2025-04-13 10:09:19,467 - INFO - Found 7 new posts in this batch
+2025-04-13 10:09:22,520 - INFO - Found 10 posts on current view
+2025-04-13 10:09:23,648 - INFO - Collected post from 2025-04-08 10:19:20 by Unknown
+2025-04-13 10:09:23,648 - INFO - Found new post from 2025-04-08 10:19:20 by Unknown
+2025-04-13 10:09:24,231 - INFO - Collected post from 2025-04-04 01:40:45 by Unknown
+2025-04-13 10:09:24,231 - INFO - Found new post from 2025-04-04 01:40:45 by Unknown
+2025-04-13 10:09:26,838 - INFO - Found 2 new posts in this batch
+2025-04-13 10:09:29,899 - INFO - Found 12 posts on current view
+2025-04-13 10:09:34,658 - INFO - Found 0 new posts in this batch
+2025-04-13 10:09:37,711 - INFO - Found 10 posts on current view
+2025-04-13 10:09:42,046 - INFO - Found 0 new posts in this batch
+2025-04-13 10:09:45,105 - INFO - Found 11 posts on current view
+2025-04-13 10:09:48,844 - INFO - Collected post from 2025-03-20 20:22:45 by Unknown
+2025-04-13 10:09:48,845 - INFO - Found overlap with existing data at post from 2025-03-20 20:22:45
+2025-04-13 10:09:48,845 - INFO - Found 0 new posts in this batch
+2025-04-13 10:09:48,845 - INFO - Found overlap with existing data, no more new posts to scrape
+2025-04-13 10:09:48,845 - INFO - Added 9 new posts to existing 542 posts
+2025-04-13 10:09:48,847 - INFO - Created backup of existing data at output/backup_20250413_100948_aave_posts.csv
+2025-04-13 10:09:48,851 - INFO - Saved 551 posts to output/aave_posts_complete.csv
+2025-04-13 10:09:48,956 - INFO - Browser closed
+2025-04-13 10:09:48,979 - INFO - Cleaned up temporary directory: /tmp/chrome-data-mdcvccph
+2025-04-13 10:09:48,979 - INFO - Scraping of new posts completed successfully
