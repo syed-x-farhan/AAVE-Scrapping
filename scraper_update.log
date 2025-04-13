@@ -1,0 +1,69 @@
+2025-04-13 10:03:07,915 - INFO - Newest timestamp in existing data: 2025-04-02 12:08:36
+2025-04-13 10:03:07,917 - INFO - Loaded 239 existing posts from output file
+2025-04-13 10:03:07,917 - INFO - Scraping posts newer than 2025-04-02 12:08:36.343000
+2025-04-13 10:03:07,918 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-nlu8klui
+2025-04-13 10:03:08,847 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/curve-dao-token/
+2025-04-13 10:03:15,305 - INFO - No cookie consent dialog found
+2025-04-13 10:03:15,313 - INFO - Posts loaded successfully.
+2025-04-13 10:03:15,351 - INFO - Found 6 posts on current view
+2025-04-13 10:03:15,913 - INFO - Collected post from 2025-04-13 07:55:06 by Unknown
+2025-04-13 10:03:15,914 - INFO - Found new post from 2025-04-13 07:55:06 by Unknown
+2025-04-13 10:03:16,502 - INFO - Collected post from 2025-04-13 06:28:07 by Unknown
+2025-04-13 10:03:16,503 - INFO - Found new post from 2025-04-13 06:28:07 by Unknown
+2025-04-13 10:03:17,122 - INFO - Collected post from 2025-04-13 05:31:39 by Unknown
+2025-04-13 10:03:17,122 - INFO - Found new post from 2025-04-13 05:31:39 by Unknown
+2025-04-13 10:03:17,725 - INFO - Collected post from 2025-04-12 18:10:45 by Unknown
+2025-04-13 10:03:17,725 - INFO - Found new post from 2025-04-12 18:10:45 by Unknown
+2025-04-13 10:03:18,268 - INFO - Collected post from 2025-04-12 18:01:45 by Unknown
+2025-04-13 10:03:18,268 - INFO - Found new post from 2025-04-12 18:01:45 by Unknown
+2025-04-13 10:03:19,399 - INFO - Collected post from 2025-04-12 14:54:53 by Unknown
+2025-04-13 10:03:19,399 - INFO - Found new post from 2025-04-12 14:54:53 by Unknown
+2025-04-13 10:03:19,899 - INFO - Found 6 new posts in this batch
+2025-04-13 10:03:22,953 - INFO - Found 10 posts on current view
+2025-04-13 10:03:24,108 - INFO - Collected post from 2025-04-12 11:46:45 by Unknown
+2025-04-13 10:03:24,108 - INFO - Found new post from 2025-04-12 11:46:45 by Unknown
+2025-04-13 10:03:24,652 - INFO - Collected post from 2025-04-12 09:37:30 by Unknown
+2025-04-13 10:03:24,652 - INFO - Found new post from 2025-04-12 09:37:30 by Unknown
+2025-04-13 10:03:25,193 - INFO - Collected post from 2025-04-12 09:13:05 by Unknown
+2025-04-13 10:03:25,193 - INFO - Found new post from 2025-04-12 09:13:05 by Unknown
+2025-04-13 10:03:25,767 - INFO - Collected post from 2025-04-12 05:28:10 by Unknown
+2025-04-13 10:03:25,767 - INFO - Found new post from 2025-04-12 05:28:10 by Unknown
+2025-04-13 10:03:27,421 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:03:29,449 - INFO - Collected post from 2025-04-12 02:25:37 by Unknown
+2025-04-13 10:03:29,449 - INFO - Found new post from 2025-04-12 02:25:37 by Unknown
+2025-04-13 10:03:29,991 - INFO - Found 5 new posts in this batch
+2025-04-13 10:03:33,043 - INFO - Found 10 posts on current view
+2025-04-13 10:03:36,799 - INFO - Collected post from 2025-04-11 20:38:26 by Unknown
+2025-04-13 10:03:36,799 - INFO - Found new post from 2025-04-11 20:38:26 by Unknown
+2025-04-13 10:03:37,336 - INFO - Found 1 new posts in this batch
+2025-04-13 10:03:40,394 - INFO - Found 11 posts on current view
+2025-04-13 10:03:44,766 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:03:46,828 - INFO - Collected post from 2025-04-11 17:38:51 by Unknown
+2025-04-13 10:03:46,828 - INFO - Found new post from 2025-04-11 17:38:51 by Unknown
+2025-04-13 10:03:47,884 - INFO - Found 1 new posts in this batch
+2025-04-13 10:03:50,936 - INFO - Found 10 posts on current view
+2025-04-13 10:03:53,161 - INFO - Collected post from 2025-04-11 16:49:52 by Unknown
+2025-04-13 10:03:53,162 - INFO - Found new post from 2025-04-11 16:49:52 by Unknown
+2025-04-13 10:03:53,748 - INFO - Collected post from 2025-04-11 16:49:41 by Unknown
+2025-04-13 10:03:53,748 - INFO - Found new post from 2025-04-11 16:49:41 by Unknown
+2025-04-13 10:03:54,849 - INFO - Collected post from 2025-04-11 16:34:45 by Unknown
+2025-04-13 10:03:54,849 - INFO - Found new post from 2025-04-11 16:34:45 by Unknown
+2025-04-13 10:03:55,385 - INFO - Found 3 new posts in this batch
+2025-04-13 10:03:58,443 - INFO - Found 11 posts on current view
+2025-04-13 10:04:02,782 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:04:04,809 - INFO - Collected post from 2025-04-11 15:54:54 by Unknown
+2025-04-13 10:04:04,809 - INFO - Found new post from 2025-04-11 15:54:54 by Unknown
+2025-04-13 10:04:05,855 - INFO - Found 1 new posts in this batch
+2025-04-13 10:04:08,914 - INFO - Found 10 posts on current view
+2025-04-13 10:04:12,599 - INFO - Found 0 new posts in this batch
+2025-04-13 10:04:15,652 - INFO - Found 10 posts on current view
+2025-04-13 10:04:19,906 - INFO - Found 0 new posts in this batch
+2025-04-13 10:04:22,964 - INFO - Found 11 posts on current view
+2025-04-13 10:04:27,227 - INFO - Found 0 new posts in this batch
+2025-04-13 10:04:27,227 - INFO - No new posts found after multiple attempts, stopping.
+2025-04-13 10:04:27,227 - INFO - Added 17 new posts to existing 239 posts
+2025-04-13 10:04:27,229 - INFO - Created backup of existing data at output/backup_20250413_100427_aave_posts.csv
+2025-04-13 10:04:27,232 - INFO - Saved 256 posts to output/aave_posts_complete.csv
+2025-04-13 10:04:27,353 - INFO - Browser closed
+2025-04-13 10:04:27,392 - INFO - Cleaned up temporary directory: /tmp/chrome-data-nlu8klui
+2025-04-13 10:04:27,392 - INFO - Scraping of new posts completed successfully
