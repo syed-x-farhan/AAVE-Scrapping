@@ -11,3 +11,16 @@
 2025-04-13 10:24:00,354 - INFO - Browser closed
 2025-04-13 10:24:00,367 - INFO - Cleaned up temporary directory: /tmp/chrome-data-uapm9bna
 2025-04-13 10:24:00,367 - INFO - Scraping of new posts completed successfully
+2025-04-13 10:51:53,230 - INFO - Newest timestamp in existing data: 2025-04-01 19:01:03
+2025-04-13 10:51:53,233 - INFO - Loaded 767 existing posts from output file
+2025-04-13 10:51:53,233 - INFO - Scraping posts newer than 2025-04-01 19:01:03.572000
+2025-04-13 10:51:53,234 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-xic251yh
+2025-04-13 10:51:54,546 - INFO - Opening URL: s://coinmarketcap.com/community/search/latest/uniswap/
+2025-04-13 10:51:59,885 - INFO - No cookie consent dialog found
+2025-04-13 10:52:30,047 - ERROR - Timed out waiting for posts to load. Exiting.
+2025-04-13 10:52:30,132 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1d2fda9450>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6104725055e5cd04af66d06ce834977c
+2025-04-13 10:52:30,132 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1d2fda9810>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6104725055e5cd04af66d06ce834977c
+2025-04-13 10:52:30,133 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1d2fd52060>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6104725055e5cd04af66d06ce834977c
+2025-04-13 10:52:30,133 - INFO - Browser closed
+2025-04-13 10:52:30,147 - INFO - Cleaned up temporary directory: /tmp/chrome-data-xic251yh
+2025-04-13 10:52:30,147 - INFO - Scraping of new posts completed successfully
