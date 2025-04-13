@@ -1487,3 +1487,25 @@
 2025-04-01 19:38:28,862 - INFO - Browser closed
 2025-04-01 19:38:28,920 - INFO - Cleaned up temporary directory: /tmp/chrome-data-b5upsb6e
 2025-04-13 09:22:10,243 - CRITICAL - Unexpected error: name 'timedelta' is not defined
+2025-04-13 09:24:24,800 - INFO - Loaded 679 existing posts from output file
+2025-04-13 09:24:24,800 - INFO - Loaded checkpoint with 679 post IDs, oldest timestamp: 2025-01-28
+2025-04-13 09:24:24,800 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-slzgw5f1
+2025-04-13 09:24:26,540 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/aave/
+2025-04-13 09:24:32,818 - INFO - No cookie consent dialog found
+2025-04-13 09:24:32,825 - INFO - Posts loaded successfully.
+2025-04-13 09:24:32,826 - INFO - Starting data collection with 679 already collected posts...
+2025-04-13 09:24:32,826 - INFO - Resuming from previous run. Oldest timestamp: 2025-01-28
+2025-04-13 09:24:32,826 - INFO - Doing 50 initial scrolls to get back to previous position...
+2025-04-13 09:24:33,685 - INFO - Initial scroll progress: 1/50
+2025-04-13 09:24:39,810 - INFO - Initial scroll progress: 11/50
+2025-04-13 09:24:45,597 - INFO - Initial scroll progress: 21/50
+2025-04-13 09:24:51,308 - INFO - Initial scroll progress: 31/50
+2025-04-13 09:24:57,041 - INFO - Initial scroll progress: 41/50
+2025-04-13 09:25:04,803 - INFO - Successfully clicked 'Read all' button
+2025-04-13 09:25:06,839 - INFO - Collected post from 2025-03-07 14:37:54 by Unknown
+2025-04-13 09:25:06,839 - INFO - Reached target date (January 1, 2022), stopping. Post timestamp: 2025-03-07
+2025-04-13 09:25:07,339 - INFO - Breaking main loop after reaching target date
+2025-04-13 09:25:07,354 - INFO - Saved 680 posts to output/aave_posts_complete.csv
+2025-04-13 09:25:07,355 - INFO - Saved checkpoint with 680 post IDs
+2025-04-13 09:25:07,461 - INFO - Browser closed
+2025-04-13 09:25:07,514 - INFO - Cleaned up temporary directory: /tmp/chrome-data-slzgw5f1
