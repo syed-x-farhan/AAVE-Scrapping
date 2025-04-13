@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime
 import logging
 import os
 import sys
@@ -23,7 +23,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("scraper_update.log"),
+        logging.FileHandler("scraper.log"),
         logging.StreamHandler()
     ]
 )
@@ -149,33 +149,98 @@ def click_read_all_button(driver, button, max_retries=3):
                 logger.warning(f"Failed to click 'Read all' button after {max_retries} attempts: {str(e)}")
     return False
 
+def save_data(posts_data, filename, intermediate=False):
+    """Save the collected data to a CSV file"""
+    if not posts_data:
+        logger.warning("No posts to save")
+        return
+        
+    df = pd.DataFrame(posts_data)
+    
+    # Sort by timestamp so oldest posts are last
+    try:
+        df['timestamp_ms'] = pd.to_numeric(df['timestamp_ms'], errors='coerce')
+        df = df.sort_values(by='timestamp_ms', ascending=False)
+    except Exception as e:
+        logger.warning(f"Error sorting data: {str(e)}")
+    
+    # Create output directory if it doesn't exist
+    os.makedirs("output", exist_ok=True)
+    
+    # Save to CSV
+    if intermediate:
+        outfile = f"output/aave_posts_intermediate_{len(posts_data)}.csv"
+    else:
+        outfile = "output/aave_posts_complete.csv"
+        
+    df.to_csv(outfile, index=False)
+    logger.info(f"Saved {len(posts_data)} posts to {outfile}")
+
+def save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count):
+    """Save checkpoint data to resume scraping if interrupted"""
+    checkpoint_data = {
+        "collected_post_ids": list(collected_post_ids),
+        "oldest_timestamp_ms": oldest_timestamp_ms,
+        "scroll_count": scroll_count,
+        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    
+    os.makedirs("checkpoints", exist_ok=True)
+    
+    with open("checkpoints/scraper_checkpoint.json", "w") as f:
+        json.dump(checkpoint_data, f)
+    
+    logger.info(f"Saved checkpoint with {len(collected_post_ids)} post IDs")
+
+def load_checkpoint():
+    """Load checkpoint data to resume scraping"""
+    try:
+        if os.path.exists("checkpoints/scraper_checkpoint.json"):
+            with open("checkpoints/scraper_checkpoint.json", "r") as f:
+                checkpoint_data = json.load(f)
+            
+            collected_post_ids = set(checkpoint_data.get("collected_post_ids", []))
+            oldest_timestamp_ms = checkpoint_data.get("oldest_timestamp_ms", float('inf'))
+            scroll_count = checkpoint_data.get("scroll_count", 0)
+            
+            logger.info(f"Loaded checkpoint with {len(collected_post_ids)} post IDs, oldest timestamp: {datetime.fromtimestamp(oldest_timestamp_ms/1000).strftime('%Y-%m-%d') if oldest_timestamp_ms != float('inf') else 'None'}")
+            
+            return collected_post_ids, oldest_timestamp_ms, scroll_count
+        else:
+            logger.info("No checkpoint file found, starting fresh")
+            return set(), float('inf'), 0
+    except Exception as e:
+        logger.warning(f"Error loading checkpoint: {str(e)}, starting fresh")
+        return set(), float('inf'), 0
+
 def load_existing_data():
-    """Load existing data from the complete CSV file"""
+    """Load existing data to resume scraping"""
     posts_data = []
     collected_post_ids = set()
-    newest_timestamp_ms = 0  # Track the newest timestamp in the existing data
     
     try:
         if os.path.exists("output/aave_posts_complete.csv"):
             df = pd.read_csv("output/aave_posts_complete.csv")
-            
-            # Ensure timestamp_ms is numeric for comparison
-            df['timestamp_ms'] = pd.to_numeric(df['timestamp_ms'], errors='coerce')
-            
-            # Find the newest timestamp in the dataset
-            if 'timestamp_ms' in df.columns and not df['timestamp_ms'].empty:
-                newest_timestamp_ms = df['timestamp_ms'].max()
-                logger.info(f"Newest timestamp in existing data: {datetime.fromtimestamp(newest_timestamp_ms/1000).strftime('%Y-%m-%d %H:%M:%S')}")
-            
             posts_data = df.to_dict('records')
             collected_post_ids = set(df['post_id'].astype(str).tolist())
             logger.info(f"Loaded {len(posts_data)} existing posts from output file")
-            return posts_data, collected_post_ids, newest_timestamp_ms
+            return posts_data, collected_post_ids
+        else:
+            # Check for intermediate files
+            intermediate_files = [f for f in os.listdir("output") if f.startswith("aave_posts_intermediate_") and f.endswith(".csv")]
+            if intermediate_files:
+                # Get the most recent one (with highest number of posts)
+                most_recent = sorted(intermediate_files, key=lambda x: int(x.split("_")[-1].split(".")[0]), reverse=True)[0]
+                df = pd.read_csv(os.path.join("output", most_recent))
+                posts_data = df.to_dict('records')
+                collected_post_ids = set(df['post_id'].astype(str).tolist())
+                logger.info(f"Loaded {len(posts_data)} existing posts from intermediate file {most_recent}")
+                return posts_data, collected_post_ids
     except Exception as e:
         logger.warning(f"Error loading existing data: {str(e)}")
     
     logger.info("No existing data found, starting fresh")
-    return [], set(), 0
+    return [], set()
 
 def process_post(driver, wrapper, collected_post_ids, read_all_selector):
     """Process a single post wrapper element with stale-safe operations"""
@@ -190,7 +255,6 @@ def process_post(driver, wrapper, collected_post_ids, read_all_selector):
             return None, None
 
         if post_id in collected_post_ids:
-            logger.debug(f"Post {post_id} already collected, skipping...")
             return None, None
 
         timestamp_ms = safe_get_attribute(wrapper, "data-post-time")
@@ -263,73 +327,52 @@ def process_post(driver, wrapper, collected_post_ids, read_all_selector):
     except Exception as e:
         logger.warning(f"Error processing post: {str(e)}")
         return None, None
-
-def save_updated_data(posts_data, filename="aave_posts_complete.csv"):
-    """Save the updated data to a CSV file"""
-    if not posts_data:
-        logger.warning("No posts to save")
-        return
         
-    df = pd.DataFrame(posts_data)
+def scrape_coinmarketcap():
+    """Main function to scrape CoinMarketCap community posts"""
+    # Define target date (January 1, 2022) as timestamp
+    target_date = datetime(2022, 1, 1).timestamp() * 1000  # Convert to milliseconds
     
-    # Sort by timestamp so newest posts are first
-    try:
-        df['timestamp_ms'] = pd.to_numeric(df['timestamp_ms'], errors='coerce')
-        df = df.sort_values(by='timestamp_ms', ascending=False)
-    except Exception as e:
-        logger.warning(f"Error sorting data: {str(e)}")
-    
-    # Create output directory if it doesn't exist
-    os.makedirs("output", exist_ok=True)
-    
-    # Save backup of previous file
-    if os.path.exists(f"output/{filename}"):
-        backup_filename = f"output/backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}_aave_posts.csv"
-        shutil.copy2(f"output/{filename}", backup_filename)
-        logger.info(f"Created backup of existing data at {backup_filename}")
-    
-    # Save to CSV
-    outfile = f"output/{filename}"
-    df.to_csv(outfile, index=False)
-    logger.info(f"Saved {len(posts_data)} posts to {outfile}")
-        
-def scrape_new_coinmarketcap_posts():
-    """Function to scrape only new CoinMarketCap community posts"""
     # Read All button CSS selector
     read_all_selector = "span.read-all"
     
     driver = None
     temp_dir = None
     
-    # Load existing data - we need the post IDs and the newest timestamp
-    existing_posts, collected_post_ids, newest_timestamp_ms = load_existing_data()
+    # Try to load existing data and checkpoint
+    posts_data, collected_ids_from_data = load_existing_data()
+    collected_post_ids_checkpoint, oldest_timestamp_checkpoint, scroll_count_checkpoint = load_checkpoint()
     
-    if not existing_posts:
-        logger.warning("No existing data found. Please run the original scraper first.")
-        return
-        
-    # Convert newest timestamp to datetime for better logging
-    newest_timestamp_dt = datetime.fromtimestamp(newest_timestamp_ms / 1000) if newest_timestamp_ms > 0 else None
-    logger.info(f"Scraping posts newer than {newest_timestamp_dt}")
+    # Merge post IDs from both sources
+    collected_post_ids = collected_ids_from_data.union(collected_post_ids_checkpoint)
+    oldest_timestamp_ms = oldest_timestamp_checkpoint
+    scroll_count = scroll_count_checkpoint
     
-    # Track new posts
-    new_posts_data = []
-    new_posts_count = 0
-    
-    # Set a maximum runtime (30 minutes should be enough for new posts)
-    max_runtime = 30 * 60  # 30 minutes in seconds
+    # Set a maximum runtime for GitHub Actions (3 hours)
+    max_runtime = 3 * 60 * 60  # 3 hours in seconds
     start_time = time.time()
+    
+    # Set checkpoint saving interval (save every 5 minutes)
+    checkpoint_interval = 5 * 60  # 5 minutes in seconds
+    last_checkpoint_time = start_time
+    
+    # Track if we were interrupted in the previous run
+    interrupted = len(collected_post_ids) > 0
     
     try:
         # Initialize WebDriver
         driver, temp_dir = setup_driver()
+        
+        # Reduce logging level for stale elements to debug to minimize log spam
+        selenium_logger = logging.getLogger('selenium.webdriver.remote.remote_connection')
+        selenium_logger.setLevel(logging.WARNING)
         
         # Open the CoinMarketCap community page for AAVE
         url = "https://coinmarketcap.com/community/search/latest/balancer/"
         logger.info(f"Opening URL: {url}")
         driver.get(url)
         
-        # Set page load timeout
+        # Set page load timeout to avoid hanging indefinitely
         driver.set_page_load_timeout(30)
         
         # Handle cookie consent if present
@@ -341,7 +384,7 @@ def scrape_new_coinmarketcap_posts():
         except (TimeoutException, NoSuchElementException):
             logger.info("No cookie consent dialog found")
         
-        # Wait for posts to appear
+        # Wait for posts to appear dynamically
         try:
             WebDriverWait(driver, 30).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "div.post-wrapper.community"))
@@ -353,40 +396,66 @@ def scrape_new_coinmarketcap_posts():
                 driver.quit()
             return
     
-        # Initialize tracking variables
-        no_new_posts_count = 0
-        page_number = 1
-        scroll_count = 0
-        found_overlap = False
+        no_new_posts_count = 0  # Track consecutive scrolls with no new posts
+        stale_count = 0  # Count stale elements
         
-        # Process the first page
+        logger.info(f"Starting data collection with {len(collected_post_ids)} already collected posts...")
+        if interrupted:
+            logger.info(f"Resuming from previous run. Oldest timestamp: {datetime.fromtimestamp(oldest_timestamp_ms/1000).strftime('%Y-%m-%d') if oldest_timestamp_ms != float('inf') else 'None'}")
+        
+        # Scroll down to load more content if we're resuming
+        if interrupted:
+            # Scroll down multiple times to get closer to where we left off
+            initial_scrolls = min(50, scroll_count // 2)  # Do roughly half the scrolls we did before
+            logger.info(f"Doing {initial_scrolls} initial scrolls to get back to previous position...")
+            for i in range(initial_scrolls):
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(0.5)
+                if i % 10 == 0:
+                    logger.info(f"Initial scroll progress: {i+1}/{initial_scrolls}")
+    
         while True:
-            # Check if we've exceeded maximum runtime
+            # Check if we've exceeded the maximum runtime
             current_runtime = time.time() - start_time
             if current_runtime > max_runtime:
-                logger.info(f"Reached maximum runtime of {max_runtime/60:.1f} minutes, stopping.")
+                logger.info(f"Reached maximum runtime of {max_runtime/3600:.1f} hours, stopping.")
                 break
                 
-            # Get all visible post wrappers
+            # Save checkpoint periodically
+            current_time = time.time()
+            if current_time - last_checkpoint_time > checkpoint_interval:
+                save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count)
+                last_checkpoint_time = current_time
+                
             try:
-                post_wrappers = safe_find_elements(driver, By.CSS_SELECTOR, "div.post-wrapper.community")
-                logger.info(f"Found {len(post_wrappers)} posts on current view")
-            except Exception as e:
-                logger.warning(f"Error finding posts: {str(e)}")
-                post_wrappers = []
+                # Wait for posts to load after scrolling
+                post_wrappers = WebDriverWait(driver, 20).until(
+                    EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div.post-wrapper.community"))
+                )
+            except TimeoutException:
+                logger.warning("Timeout waiting for posts. Attempting to continue...")
+                # Try a different scroll approach
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(random.uniform(3.0, 5.0))
+                continue
+    
+            # Get the current height for comparison after scrolling
+            last_height = driver.execute_script("return document.body.scrollHeight")
+            
+            # Use our safe find elements function
+            post_wrappers = safe_find_elements(driver, By.CSS_SELECTOR, "div.post-wrapper.community")
     
             if not post_wrappers:
                 no_new_posts_count += 1
-                if no_new_posts_count >= 3:
+                if no_new_posts_count >= 5:
                     logger.info("No posts found after multiple attempts, stopping.")
                     break
-                logger.warning("No posts found, trying again...")
-                time.sleep(3)
+                logger.warning(f"No posts found on attempt {no_new_posts_count}, trying again...")
+                time.sleep(random.uniform(3.0, 5.0))
                 continue
     
-            # Process posts - check if any of them are newer than our newest post
-            new_in_batch = 0
-            overlap_found = False
+            prev_posts_count = len(collected_post_ids)
+            reached_target_date = False
             
             # Process posts in smaller batches to reduce stale element issues
             batch_size = 5
@@ -397,77 +466,116 @@ def scrape_new_coinmarketcap_posts():
                     post_id, post_data = process_post(driver, wrapper, collected_post_ids, read_all_selector)
                     
                     if post_id and post_data:
-                        timestamp_ms = post_data.get("timestamp_ms", 0)
+                        collected_post_ids.add(post_id)
+                        posts_data.append(post_data)
                         
-                        # Check if this post is newer than our newest existing post
-                        if timestamp_ms and timestamp_ms > newest_timestamp_ms:
-                            collected_post_ids.add(post_id)
-                            new_posts_data.append(post_data)
-                            new_in_batch += 1
-                            logger.info(f"Found new post from {post_data.get('timestamp')} by {post_data.get('author')}")
-                        else:
-                            # We've reached posts that are already in our dataset
-                            logger.info(f"Found overlap with existing data at post from {post_data.get('timestamp')}")
-                            overlap_found = True
-                            found_overlap = True
+                        # Check if we've reached our target date
+                        timestamp_ms = post_data.get("timestamp_ms")
+                        if timestamp_ms and timestamp_ms < oldest_timestamp_ms:
+                            oldest_timestamp_ms = timestamp_ms
+                            
+                        if timestamp_ms and timestamp_ms < target_date:
+                            logger.info(f"Reached target date (January 1, 2022), stopping. Post timestamp: {datetime.fromtimestamp(timestamp_ms/1000).strftime('%Y-%m-%d')}")
+                            reached_target_date = True
                             break
-                
-                if overlap_found:
-                    break
-                    
+                            
                 # Take a short break between batches
                 time.sleep(0.5)
-            
-            logger.info(f"Found {new_in_batch} new posts in this batch")
-            new_posts_count += new_in_batch
-            
-            # If we found overlap with existing data, we can stop
-            if overlap_found:
-                logger.info("Found overlap with existing data, no more new posts to scrape")
-                break
                 
-            # If no new posts were found in this batch, we might be at the end
-            if new_in_batch == 0:
-                no_new_posts_count += 1
-                if no_new_posts_count >= 3:
-                    logger.info("No new posts found after multiple attempts, stopping.")
+                if reached_target_date:
                     break
-            else:
+    
+            if reached_target_date:
+                logger.info("Breaking main loop after reaching target date")
+                break
+    
+            # Reset counter if we found new posts
+            if len(collected_post_ids) > prev_posts_count:
                 no_new_posts_count = 0
-                
-            # Scroll down to load more posts - use a mix of scrolling techniques
-            if scroll_count % 3 == 0:
-                # Scroll towards the bottom - but not completely, to avoid older posts
-                driver.execute_script("window.scrollTo({top: document.body.scrollHeight * 0.7, behavior: 'smooth'});")
             else:
-                # Scroll a fixed amount
-                scroll_amount = random.randint(600, 1000)
+                no_new_posts_count += 1
+                if no_new_posts_count >= 5:
+                    logger.info(f"No new posts found after {no_new_posts_count} scrolls, stopping.")
+                    break
+                logger.warning(f"No new posts in this scroll ({no_new_posts_count}/5 attempts)")
+    
+            # Save intermediate results every 50 posts
+            if len(posts_data) % 50 == 0 and len(posts_data) > 0:
+                logger.info(f"Saving intermediate results with {len(posts_data)} posts...")
+                save_data(posts_data, f"aave_posts_intermediate_{len(posts_data)}.csv", intermediate=True)
+    
+            # Anti-ban measures
+            if scroll_count % 10 == 0 and scroll_count > 0:
+                pause_time = random.uniform(10.0, 20.0)
+                logger.info(f"Taking a longer break ({pause_time:.2f}s) to avoid rate limiting...")
+                time.sleep(pause_time)
+    
+            # Random wait time before next scroll - longer wait to reduce stale elements
+            wait_time = random.uniform(3.0, 5.0)
+            logger.info(f"Waiting {wait_time:.2f} seconds before scrolling...")
+            time.sleep(wait_time)
+    
+            # Try multiple scroll methods to be more effective
+            if scroll_count % 3 == 0:
+                # Method 1: Scroll to bottom with smoother behavior
+                driver.execute_script("window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});")
+            else:
+                # Method 2: Scroll by a random amount with smoother behavior
+                scroll_amount = random.randint(600, 1200)  # Reduced scroll distance
                 driver.execute_script(f"window.scrollBy({{top: {scroll_amount}, behavior: 'smooth'}});")
-                
-            # Wait after scrolling
-            time.sleep(3)
+            
             scroll_count += 1
             
-            # Limit to prevent infinite loops
-            if scroll_count >= 15 and not found_overlap:
-                logger.info("Reached maximum scroll count without finding overlap with existing data.")
-                break
-        
-        # Now merge the new posts with the existing ones
-        if new_posts_data:
-            merged_posts = new_posts_data + existing_posts
-            logger.info(f"Added {len(new_posts_data)} new posts to existing {len(existing_posts)} posts")
-            save_updated_data(merged_posts)
-        else:
-            logger.info("No new posts found to add")
+            # Wait longer after scrolling to allow page to stabilize
+            time.sleep(3)
+    
+            # Check if scroll was effective
+            new_height = driver.execute_script("return document.body.scrollHeight")
+            if new_height == last_height:
+                logger.warning("Page height didn't change after scroll, trying a different approach...")
+                # Try clicking a "Load more" button if it exists
+                try:
+                    load_more_buttons = driver.find_elements(By.XPATH, "//button[contains(text(), 'Load') or contains(text(), 'more') or contains(text(), 'Show')]")
+                    if load_more_buttons:
+                        for button in load_more_buttons:
+                            try:
+                                driver.execute_script("arguments[0].click();", button)
+                                logger.info("Clicked a 'Load more' button")
+                                time.sleep(3)
+                                break
+                            except Exception as e:
+                                logger.warning(f"Failed to click 'Load more' button: {str(e)}")
+                except Exception as e:
+                    logger.warning(f"Error finding 'Load more' button: {str(e)}")
+                    
+                # If still no change, try refreshing the page occasionally
+                if scroll_count % 15 == 0 and new_height == last_height:
+                    logger.info("Page might be stuck, refreshing...")
+                    driver.refresh()
+                    time.sleep(5)  # Wait for page to reload
+                    # Re-handle cookie consent if needed
+                    try:
+                        WebDriverWait(driver, 5).until(
+                            EC.element_to_be_clickable((By.CSS_SELECTOR, "button[id*='cookie'], button[id*='consent']"))
+                        ).click()
+                    except:
+                        pass
+    
+            if scroll_count % 5 == 0:
+                logger.info(f"Completed {scroll_count} scrolls, collected {len(posts_data)} posts so far.")
+                if oldest_timestamp_ms != float('inf'):
+                    logger.info(f"Oldest post timestamp: {datetime.fromtimestamp(oldest_timestamp_ms/1000).strftime('%Y-%m-%d')}")
+    
+        # Save the final results and checkpoint
+        save_data(posts_data, "aave_posts_complete.csv", intermediate=False)
+        save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count)
         
     except Exception as e:
         logger.error(f"Critical error: {e}")
-        if new_posts_data:
-            # Save whatever we've collected so far
-            merged_posts = new_posts_data + existing_posts
-            logger.info(f"Saving {len(new_posts_data)} new posts collected before error...")
-            save_updated_data(merged_posts, "aave_posts_error_recovery.csv")
+        if posts_data:
+            logger.info(f"Saving {len(posts_data)} posts collected before error...")
+            save_data(posts_data, "aave_posts_error_recovery.csv", intermediate=False)
+            save_checkpoint(collected_post_ids, oldest_timestamp_ms, scroll_count)
     
     finally:
         if driver:
@@ -484,8 +592,7 @@ def scrape_new_coinmarketcap_posts():
 
 if __name__ == "__main__":
     try:
-        scrape_new_coinmarketcap_posts()
-        logger.info("Scraping of new posts completed successfully")
+        scrape_coinmarketcap()
     except KeyboardInterrupt:
         logger.info("Scraping stopped by user")
     except Exception as e:
