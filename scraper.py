@@ -325,7 +325,7 @@ def scrape_new_coinmarketcap_posts():
         driver, temp_dir = setup_driver()
         
         # Open the CoinMarketCap community page for AAVE
-        url = "s://coinmarketcap.com/community/search/latest/uniswap/"
+        url = "https://coinmarketcap.com/community/search/latest/uniswap/"
         logger.info(f"Opening URL: {url}")
         driver.get(url)
         
