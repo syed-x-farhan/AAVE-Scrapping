@@ -330,8 +330,8 @@ def process_post(driver, wrapper, collected_post_ids, read_all_selector):
         
 def scrape_coinmarketcap():
     """Main function to scrape CoinMarketCap community posts"""
-    # Define target date (January 1, 2022) as timestamp
-    target_date = datetime(2022, 1, 1).timestamp() * 1000  # Convert to milliseconds
+    # Define target date as timestamp
+    target_date = (datetime.now() - timedelta(days=18)).timestamp() * 1000  # Convert to milliseconds
     
     # Read All button CSS selector
     read_all_selector = "span.read-all"
