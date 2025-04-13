@@ -368,7 +368,7 @@ def scrape_coinmarketcap():
         selenium_logger.setLevel(logging.WARNING)
         
         # Open the CoinMarketCap community page for AAVE
-        url = "https://coinmarketcap.com/community/search/latest/pancakeswap/"
+        url = "https://coinmarketcap.com/community/search/latest/sushiswap/"
         logger.info(f"Opening URL: {url}")
         driver.get(url)
         
