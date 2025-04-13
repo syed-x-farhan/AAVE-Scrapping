@@ -1486,3 +1486,4 @@
 2025-04-01 19:38:28,757 - INFO - Saved checkpoint with 679 post IDs
 2025-04-01 19:38:28,862 - INFO - Browser closed
 2025-04-01 19:38:28,920 - INFO - Cleaned up temporary directory: /tmp/chrome-data-b5upsb6e
+2025-04-13 09:22:10,243 - CRITICAL - Unexpected error: name 'timedelta' is not defined
