@@ -1,0 +1,30 @@
+2025-04-13 10:24:08,087 - INFO - Newest timestamp in existing data: 2025-04-01 04:23:20
+2025-04-13 10:24:08,090 - INFO - Loaded 747 existing posts from output file
+2025-04-13 10:24:08,090 - INFO - Scraping posts newer than 2025-04-01 04:23:20.864000
+2025-04-13 10:24:08,091 - INFO - Created temporary directory for Chrome: /tmp/chrome-data-2u_vvbo6
+2025-04-13 10:24:17,966 - INFO - Opening URL: https://coinmarketcap.com/community/search/latest/uma/
+2025-04-13 10:24:25,096 - INFO - No cookie consent dialog found
+2025-04-13 10:24:25,103 - INFO - Posts loaded successfully.
+2025-04-13 10:24:25,137 - INFO - Found 6 posts on current view
+2025-04-13 10:24:25,742 - INFO - Collected post from 2025-04-13 09:15:00 by Unknown
+2025-04-13 10:24:25,742 - INFO - Found new post from 2025-04-13 09:15:00 by Unknown
+2025-04-13 10:24:26,898 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:24:28,923 - INFO - Collected post from 2025-04-13 06:59:04 by Unknown
+2025-04-13 10:24:28,923 - INFO - Found new post from 2025-04-13 06:59:04 by Unknown
+2025-04-13 10:24:29,525 - INFO - Collected post from 2025-04-06 21:39:05 by Unknown
+2025-04-13 10:24:29,525 - INFO - Found new post from 2025-04-06 21:39:05 by Unknown
+2025-04-13 10:24:30,144 - INFO - Collected post from 2025-04-06 02:25:45 by Unknown
+2025-04-13 10:24:30,144 - INFO - Found new post from 2025-04-06 02:25:45 by Unknown
+2025-04-13 10:24:32,306 - INFO - Found 4 new posts in this batch
+2025-04-13 10:24:35,365 - INFO - Found 11 posts on current view
+2025-04-13 10:24:38,637 - INFO - Successfully clicked 'Read all' button
+2025-04-13 10:24:40,661 - INFO - Collected post from 2025-03-26 15:23:57 by Unknown
+2025-04-13 10:24:40,661 - INFO - Found overlap with existing data at post from 2025-03-26 15:23:57
+2025-04-13 10:24:40,662 - INFO - Found 0 new posts in this batch
+2025-04-13 10:24:40,662 - INFO - Found overlap with existing data, no more new posts to scrape
+2025-04-13 10:24:40,662 - INFO - Added 4 new posts to existing 747 posts
+2025-04-13 10:24:40,664 - INFO - Created backup of existing data at output/backup_20250413_102440_aave_posts.csv
+2025-04-13 10:24:40,669 - INFO - Saved 751 posts to output/aave_posts_complete.csv
+2025-04-13 10:24:40,790 - INFO - Browser closed
+2025-04-13 10:24:40,812 - INFO - Cleaned up temporary directory: /tmp/chrome-data-2u_vvbo6
+2025-04-13 10:24:40,813 - INFO - Scraping of new posts completed successfully
